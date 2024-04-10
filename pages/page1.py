@@ -7,8 +7,8 @@ obj_data = st.session_state['obj_data']
 accomplished = obj_data[obj_data.columns[8:]]
 
 array_accomplished = accomplished.to_numpy().flatten()
-def boolean_values(x) :
-    match x :
+def boolean_values(X) :
+    match X :
         case 'Yes' :
             return(1)
         case 'No' :
