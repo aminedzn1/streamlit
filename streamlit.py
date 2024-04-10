@@ -30,5 +30,5 @@ else:
     output_df = st.data_editor(
         st.session_state.obj_data
         ) 
-
-output_df.to_csv("new_obj_data.csv", index = False)
+if st.button('Save') :
+     output_df.to_csv("new_obj_data.csv", index = False)
