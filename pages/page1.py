@@ -1,3 +1,7 @@
+import streamlit as st 
+import pandas as pd 
+import numpy as np
+
 
 accomplished = obj_data[obj_data.columns[8:]]
 
