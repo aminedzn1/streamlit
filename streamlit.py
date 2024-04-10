@@ -15,7 +15,10 @@ obj_data = obj_data.drop(0)
 obj_data = obj_data[:39]
 
 categories = ['Yes','No', 'N/A']
-obj_data['Global Status'] = obj_data['#'].astype("category").cat.remove_categories(obj_data['Global Status']).cat.add_categories(categories)
+obj_data["Global Status"] = (
+    obj_data["#"].astype("category").cat.remove_categories(obj_data['#']).cat.add_categories(categories)
+)
 
 st.write("objectives")
-edited_df = st.experimental_data_editor(obj_data)
+edited_obj_data = st.experimental_data_editor(obj_data)
+
