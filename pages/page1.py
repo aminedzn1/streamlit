@@ -8,13 +8,10 @@ accomplished = obj_data[obj_data.columns[8:]]
 
 array_accomplished = accomplished.to_numpy().flatten()
 def boolean_values(X) :
-    match X :
-        case 'Yes' :
-            return(1)
-        case 'No' :
-            return(0)
-        case _ : 
-            return(0)
+    if X == 'Yes' :
+        return 1
+    else :
+        return 0
 
 array_accomplished = array_accomplished.apply(lambda x : boolean_values(x))
 
