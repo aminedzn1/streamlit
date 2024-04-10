@@ -20,5 +20,6 @@ obj_data["Global Status"] = (
 )
 
 st.write("objectives")
-edited_obj_data = st.experimental_data_editor(obj_data)
+filtered = st.multiselect("Filter columns", options=list(obj_data.columns), default=list(obj_data.columns))
+edited_obj_data = st.experimental_data_editor(obj_data[filtered])
 
