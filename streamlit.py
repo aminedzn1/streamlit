@@ -5,4 +5,11 @@ st.set_page_config(
      page_icon = '',
 )
 st.title('MAin page')
-st.sidebar.success('Select a page above')
+
+import pandas as pd
+import numpy as np
+
+obj_data = pd.read_csv(r'Objectives 2024 - 1 & DOA - 2024 objective status EOY.csv', dtype = 'string',keep_default_na=False)
+obj_data.columns = obj_data.iloc[0]
+obj_data = obj_data.drop(0)
+obj_data = obj_data[:39]
