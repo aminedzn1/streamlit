@@ -14,23 +14,8 @@ obj_data.columns = obj_data.iloc[0]
 obj_data = obj_data.drop(0)
 obj_data = obj_data[:39]
 
-
+categories = ['Yes','No', 'N/A']
+obj_data['Global Status'] = obj_data['#'].astype("category").cat.remove_categories(obj_data['Global Status']).cat.add_categories(categories)
 
 st.write("objectives")
-st.write(obj_data)
-
-df = pd.DataFrame(
-    [
-        {"command": "st.selectbox", "rating": 4, "is_widget": True},
-        {"command": "st.balloons", "rating": 5, "is_widget": False},
-        {"command": "st.time_input", "rating": 3, "is_widget": True},
-    ]
-)
-
-custom_cat = ['aaa', 'bbb']
-
-df["command_as_category"] = (
-    df["command"].astype("category").cat.remove_categories(df['command']).cat.add_categories(custom_cat)
-)
-
-edited_df = st.experimental_data_editor(df)
+edited_df = st.experimental_data_editor(obj_data)
