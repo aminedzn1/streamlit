@@ -16,3 +16,4 @@ obj_data = obj_data[:39]
 
 st.write("objectives")
 st.write(obj_data)
+st.file_uploader('upload')
