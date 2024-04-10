@@ -20,10 +20,16 @@ obj_data["Global Status"] = (
 )
 
 st.write("objectives")
-filtered = st.multiselect("Filter columns", options=list(obj_data.columns), default=['Objective','Global Status'])
-edited_obj_data = st.experimental_data_editor(obj_data[filtered])
-
-st.write(edited_obj_data['Global Status'].head())
+#filtered = st.multiselect("Filter columns", options=list(obj_data.columns), default=['Objective','Global Status']) [filtered]
+edited_obj_data = st.experimental_data_editor(obj_data)
 
 if 'obj_data' not in st.session_state:
-    st.session_state['obj_data'] = obj_data
+    st.session_state.obj_data = st.experimental_data_editor(obj_data)
+    output_df = st.session_state.obj_data
+
+else:
+    output_df = st.experimental_data_editor(
+        st.session_state.obj_data
+        ) 
+
+output_df.to_csv("control.csv", index = False)
