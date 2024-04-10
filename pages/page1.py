@@ -13,6 +13,6 @@ def boolean_values(X) :
     else :
         return 0
 
-array_accomplished = array_accomplished.apply(lambda x : boolean_values(x))
+array_accomplished = np.array(pd.Series(array_accomplished).apply(lambda x : boolean_values(x)))
 
 st.write(f"{array_accomplished.astype(int).mean()*100}%")
