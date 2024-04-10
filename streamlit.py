@@ -13,7 +13,8 @@ obj_data = pd.read_csv(r'Objectives 2024 - 1 & DOA - 2024 objective status EOY.c
 obj_data.columns = obj_data.iloc[0]
 obj_data = obj_data.drop(0)
 obj_data = obj_data[:39]
+obj_data['Nomination Letter'] = st.file_uploader('upload letter')
+
 
 st.write("objectives")
 st.write(obj_data)
-st.file_uploader('upload')
