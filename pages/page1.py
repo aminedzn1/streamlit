@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd 
 import numpy as np
 
+obj_data = st.session_state['obj_data']
 
 accomplished = obj_data[obj_data.columns[8:]]
 
