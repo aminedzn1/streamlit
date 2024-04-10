@@ -23,7 +23,7 @@ st.write("objectives")
 filtered = st.multiselect("Filter columns", options=list(obj_data.columns), default=['Objective','Global Status'])
 edited_obj_data = st.experimental_data_editor(obj_data[filtered])
 
-st.write(obj_data['Global Status'].iloc[0])
+st.write(obj_data['Global Status'].iloc[1])
 
 if 'obj_data' not in st.session_state:
     st.session_state['obj_data'] = obj_data
