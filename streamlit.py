@@ -39,5 +39,5 @@ import os
 cwd = os.getcwd()
 st.write(cwd)
 
-new_obj_data = pd.read_csv(r'data/Objectives 2024 - 1 & DOA - 2024 objective status EOY.csv')
+new_obj_data = pd.read_csv(r'data/Objectives 2024 - 1 & DOA - 2024 objective status EOY.csv', index = False)
 st.write(new_obj_data)
