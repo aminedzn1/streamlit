@@ -32,7 +32,7 @@ else:
         )
 
 if st.button('Save') :
-     output_df.to_csv("new_obj_data.csv")
+     output_df.to_csv(r"data/Objectives 2024 - 1 & DOA - 2024 objective status EOY.csv")
 
 import glob
 import os
@@ -40,5 +40,5 @@ import os
 cwd = os.getcwd()
 st.write(cwd)
 
-new_obj_data = pd.read_csv(r'/mount/src/streamlit/new_obj_data.csv')
+new_obj_data = pd.read_csv(r'data/Objectives 2024 - 1 & DOA - 2024 objective status EOY.csv')
 st.write(new_obj_data)
