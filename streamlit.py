@@ -35,7 +35,7 @@ else:
         )
 
 if st.button('Save') :
-     output_df.to_csv("new_obj_data.csv", index = False)
+     output_df.to_csv("new_obj_data.csv")
 
 import glob
 import os
