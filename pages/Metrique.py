@@ -12,7 +12,7 @@ def boolean_values(X) :
         return(1)
     else :
         return(0)
-
+st.write(array_accomplished)
 array_accomplished = np.array(pd.Series(array_accomplished).apply(lambda x : boolean_values(x)))
 
 st.metric('Objective %',round(array_accomplished.mean()*100, 2))
