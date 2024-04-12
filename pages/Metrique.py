@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd 
 import numpy as np
 
-obj_data = st.session_state['obj_data']
+obj_data = pd.read_csv(r"data/Objectives 2024 - 1 & DOA - 2024 objective status EOY.csv")
 
 accomplished = obj_data[obj_data.columns[8:]]
 
