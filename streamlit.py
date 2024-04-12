@@ -33,3 +33,9 @@ else:
 
 if st.button('Save') :
      output_df.to_csv("new_obj_data.csv", index = False)
+
+import glob
+import os
+
+cwd = os.getcwd()
+st.write(cwd)
