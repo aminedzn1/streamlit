@@ -39,3 +39,6 @@ import os
 
 cwd = os.getcwd()
 st.write(cwd)
+
+new_obj_data = pd.read_csv(r'/mount/src/streamlit/new_obj_data.csv')
+st.write(new_obj_data)
