@@ -31,7 +31,7 @@ else:
         )
 
 if st.button('Save') :
-     output_df.to_csv(r"data/Objectives 2024 - 1 & DOA - 2024 objective status EOY.csv")
+     output_df.to_csv(r"data/Objectives 2024 - 1 & DOA - 2024 objective status EOY.csv", index = False)
 
 import glob
 import os
@@ -39,5 +39,5 @@ import os
 cwd = os.getcwd()
 st.write(cwd)
 
-new_obj_data = pd.read_csv(r'data/Objectives 2024 - 1 & DOA - 2024 objective status EOY.csv', index = False)
+new_obj_data = pd.read_csv(r'data/Objectives 2024 - 1 & DOA - 2024 objective status EOY.csv')
 st.write(new_obj_data)
