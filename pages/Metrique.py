@@ -12,7 +12,10 @@ except :
 ###########################################################################################################
 
 domain = st.selectbox('Fonction / Domaine', ("Global Status","1","1A","1C","1G","1I","1P","1S","1T","1V","1Y","1Z","B","S","P","Q"))
-accomplished = obj_data[obj_data.columns[domain]]
+try :    
+    accomplished = obj_data[obj_data.columns[domain]]
+except :
+    accomplished = obj_data[obj_data.columns[8:]]
 
 array_accomplished = accomplished.to_numpy().flatten()
 def boolean_values(X) :
