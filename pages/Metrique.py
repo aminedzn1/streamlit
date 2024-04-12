@@ -15,4 +15,4 @@ def boolean_values(X) :
 
 array_accomplished = np.array(pd.Series(array_accomplished).apply(lambda x : boolean_values(x)))
 
-st.metric('Objective %',array_accomplished.astype(int).mean()*100)
+st.metric('Objective %',round(array_accomplished.astype(int).mean()*100, 2))
