@@ -27,4 +27,18 @@ def boolean_values(X) :
 
 array_accomplished = np.array(pd.Series(array_accomplished).apply(lambda x : boolean_values(x)))
 
-st.metric('Objective %',round(array_accomplished.mean()*100, 2))
+###########################################################################################################
+
+value = round(array_accomplished.mean()*100, 2)
+if value < 50 : 
+    with open (r'styles/metric_red.css') as f:
+        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+        st.metric("Objective %", value)
+elif value > 50 and value < 85 : 
+    with open (r'styles/metric_amber.css') as f:
+        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+        st.metric("Objective %", value)
+elif value > 85 and value <= 100 : 
+    with open (r'styles/metric_green.css') as f:
+        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+        st.metric("Objective %", value)
