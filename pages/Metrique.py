@@ -9,9 +9,9 @@ accomplished = obj_data[obj_data.columns[8:]]
 array_accomplished = accomplished.to_numpy().flatten()
 def boolean_values(X) :
     if X == 'Yes' :
-        return 1
+        return(1)
     else :
-        return 0
+        return(0)
 
 array_accomplished = np.array(pd.Series(array_accomplished).apply(lambda x : boolean_values(x)))
 
