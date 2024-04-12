@@ -44,3 +44,4 @@ st.write(cwd)
 
 new_obj_data = pd.read_csv(r'data/Objectives 2024 - 1 & DOA - 2024 objective status EOY.csv')
 st.write(new_obj_data)
+st.session_state.obj_data = new_obj_data
