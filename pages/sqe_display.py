@@ -19,7 +19,7 @@ except :
 
 
 sqe_data.columns = ["Domain/Function","SQE Holder","Date of signature","End of validity","Part of active network?","SQE Active?"]
-filtered = st.multiselect("Filter columns", options=list(sqe_data.columns), default=['SQE Holder','SQE Active']) 
+filtered = st.multiselect("Filter columns", options=list(sqe_data.columns), default=['SQE Holder','SQE Active?']) 
 st.write(sqe_data[filtered])
 
 
