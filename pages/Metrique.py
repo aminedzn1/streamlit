@@ -83,4 +83,4 @@ comment = st.text_input("Comment")
 if st.button("Post") :
     comments.append(comment)
     st.session_state.comments = comments
-st.table(pd.DataFrame(comments))
+st.table(pd.DataFrame(comments, columns = ["Comments"]))
