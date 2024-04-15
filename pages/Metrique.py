@@ -20,7 +20,7 @@ except :
 
 array_accomplished = accomplished.to_numpy().flatten()
 def boolean_values(X) :
-    if X == 'Yes' :
+    if X == '1' :
         return(1)
     else :
         return(0)
