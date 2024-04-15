@@ -32,10 +32,13 @@ def boolean_values(X) :
         return(0)
 
 sqe_count_bool = np.array(sqe_data['SQE Active?'].apply(lambda x : boolean_values(x)))
+sqe_count_domain = pd.DataFrame([sqe_data['Fonction / Domaine'], sqe_count_bool], columns = ["function", "value"])
+sqe_count_domain = sqe_count_domain.groupby(["function"]).sum()
 
-value = f"{sum(sqe_count_bool)}/{len(sqe_count_bool)}"
+value = f"{sum(np.array(sqe_count_domain['value']) > 0)}/{len(sqe_count_domain['function'])}"
 st.metric("SQE number", value)
 ###########################################################################################################
+
 st.subheader('Add comment', divider = "red" )
 
 try : 
