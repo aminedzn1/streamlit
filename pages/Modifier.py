@@ -10,7 +10,7 @@ st.set_page_config(
 ###########################################################################################################
 st.title('2024 SMS in 1 & DOA Objectives')
 st.subheader('Edit objective table', divider = "red")
-st.write(f":green[{"1"}] → Achieved :red[{"0"}] → Not achieved")
+st.write(f":green[{1}] → Achieved :red[{0}] → Not achieved")
 try :
     obj_data = st.session_state.obj_data
 except : 
