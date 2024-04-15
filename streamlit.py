@@ -24,13 +24,3 @@ st.write(obj_data[filtered])
 
 
 ###########################################################################################################
-try : 
-    comments = st.session_state.comments
-except :    
-    comments = []
-comment = st.text_input("Comment")
-
-if st.button("Post") :
-    comments.append(comment)
-    st.session_state.comments = comments
-st.table(pd.DataFrame(comments))

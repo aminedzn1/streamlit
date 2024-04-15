@@ -46,3 +46,17 @@ elif value > 85 and value <= 100 :
     with open (r'styles/metric_green.css') as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
         st.metric("Objective %", value)
+
+###########################################################################################################
+st.subheader('Add comment', divider = "red" )
+ 
+try : 
+    comments = st.session_state.comments
+except :    
+    comments = []
+comment = st.text_input("Comment")
+
+if st.button("Post") :
+    comments.append(comment)
+    st.session_state.comments = comments
+st.table(pd.DataFrame(comments))
