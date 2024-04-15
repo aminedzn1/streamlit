@@ -22,6 +22,7 @@ except :
     accomplished = obj_data[obj_data.columns[8:]]
 
 array_accomplished = accomplished.to_numpy().flatten()
+array_accomplished = array_accomplished[array_accomplished != 'N/A']
 def boolean_values(X) :
     if X == '1' :
         return(1)
