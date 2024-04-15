@@ -27,7 +27,7 @@ st.write(obj_data[filtered])
 from pathlib import Path
 import sys
 
-sys.path.append(str(Path(chart).resolve().parent.parent))
+sys.path.append(str(Path(__file__).resolve().parent.parent))
 
 from datetime import datetime
 from utils import chart , db
