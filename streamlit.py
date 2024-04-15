@@ -36,8 +36,8 @@ def space(num_lines=1):
     for _ in range(num_lines):
         st.write("")
 
-conn = db.connect()
-comments = db.collect(conn)
+conn = utils.db.connect()
+comments = utils.db.collect(conn)
 
 with st.expander("💬 Open comments"):
 
@@ -65,7 +65,7 @@ with st.expander("💬 Open comments"):
 
     if submit:
         date = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
-        db.insert(conn, [[name, comment, date]])
+        utils.db.insert(conn, [[name, comment, date]])
         if "just_posted" not in st.session_state:
             st.session_state["just_posted"] = True
         st.experimental_rerun()
