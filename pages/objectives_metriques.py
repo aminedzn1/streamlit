@@ -67,16 +67,16 @@ with col2 :
     #value = round(array_filled.mean()*100, 2)
     value = 30
     if value < 50 : 
-        with open (r'styles/metric_red.css') as f:
-            st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+        with open (r'styles/metric_red.css') as f1:
+            st.markdown(f'<style>{f1.read()}</style>', unsafe_allow_html=True)
             st.metric("Objective filled %", value)
     elif value > 50 and value < 85 : 
-        with open (r'styles/metric_amber.css') as f:
-            st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+        with open (r'styles/metric_amber.css') as f1:
+            st.markdown(f'<style>{f1.read()}</style>', unsafe_allow_html=True)
             st.metric("Objective filled %", value)
     elif value > 85 and value <= 100 : 
-        with open (r'styles/metric_green.css') as f:
-            st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+        with open (r'styles/metric_green.css') as f1:
+            st.markdown(f'<style>{f1.read()}</style>', unsafe_allow_html=True)
             st.metric("Objective filled %", value)
 ###########################################################################################################
 st.subheader('Add comment', divider = "red" )
