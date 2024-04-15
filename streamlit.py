@@ -24,6 +24,11 @@ st.write(obj_data[filtered])
 
 
 ###########################################################################################################
+from pathlib import Path
+import sys
+
+sys.path.append(str(Path(chart).resolve().parent.parent))
+
 from datetime import datetime
 from utils import chart , db
 
