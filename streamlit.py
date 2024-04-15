@@ -24,13 +24,48 @@ st.write(obj_data[filtered])
 
 
 ###########################################################################################################
-#obj_data = obj_data[:39]
+from datetime import datetime
+from utils import chart, db
 
-# categories = ['Yes','No', 'N/A']
+COMMENT_TEMPLATE_MD = """{} - {}
+> {}"""
 
-#obj_data["Global Status"] = (
-#    obj_data["Global Status"].astype("category").cat.remove_categories(obj_data['Global Status']).cat.add_categories(categories)
-#)
 
-#filtered = st.multiselect("Filter columns", options=list(obj_data.columns), default=['Objective','Global Status']) [filtered]
+def space(num_lines=1):
+    """Adds empty lines to the Streamlit app."""
+    for _ in range(num_lines):
+        st.write("")
 
+conn = db.connect()
+comments = db.collect(conn)
+
+with st.expander("💬 Open comments"):
+
+    # Show comments
+
+    st.write("**Comments:**")
+
+    for index, entry in enumerate(comments.itertuples()):
+        st.markdown(COMMENT_TEMPLATE_MD.format(entry.name, entry.date, entry.comment))
+
+        is_last = index == len(comments) - 1
+        is_new = "just_posted" in st.session_state and is_last
+        if is_new:
+            st.success("☝️ Your comment was successfully posted.")
+
+    space(2)
+
+    # Insert comment
+
+    st.write("**Add your own comment:**")
+    form = st.form("comment")
+    name = form.text_input("Name")
+    comment = form.text_area("Comment")
+    submit = form.form_submit_button("Add comment")
+
+    if submit:
+        date = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+        db.insert(conn, [[name, comment, date]])
+        if "just_posted" not in st.session_state:
+            st.session_state["just_posted"] = True
+        st.experimental_rerun()
