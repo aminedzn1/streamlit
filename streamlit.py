@@ -26,6 +26,8 @@ st.write(obj_data[filtered])
 ###########################################################################################################
 comments = []
 comment = st.text_input("Comment")
+
 if st.button("Post") :
     comments.append(comment)
-st.write(comments)
+    st.session_state.comments = comments
+st.write(pd.DataFrame(comments))
