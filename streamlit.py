@@ -24,7 +24,7 @@ st.write(obj_data[filtered])
 
 
 ###########################################################################################################
-getdata = lambda x : []
+getdata = lambda : []
 comment = st.text_input("Comment")
 if st.button("Post") :
     getdata().append(comment)
