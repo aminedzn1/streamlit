@@ -8,7 +8,8 @@ st.set_page_config(
      page_icon = 'lower_left_ballpoint_pen'
 )
 ###########################################################################################################
-
+st.title('2024 SMS in 1 & DOA Objectives')
+st.subheader('Edit objective table', divider = "red")
 try :
     obj_data = st.session_state.obj_data
 except : 

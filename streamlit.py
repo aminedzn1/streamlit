@@ -7,7 +7,7 @@ st.set_page_config(
      page_title = 'Home page',
      page_icon = '',
 )
-st.title('2024 SMS & DOA Objectives')
+st.title('2024 SMS in 1 & DOA Objectives')
 ###########################################################################################################
 
 try :
@@ -19,7 +19,7 @@ except :
 
 
 obj_data.columns = ["Objective category","Source","#","Objective","KPI / Achievement criteria","Owners/ Applicability","Target date","Global Status","1","1A","1C","1G","1I","1P","1S","1T","1V","1Y","1Z","B","S","P","Q"]
-
+st.write("Show columns")
 filtered = st.multiselect("Filter columns", options=list(obj_data.columns), default=['Objective','Global Status']) 
 st.write(obj_data[filtered])
 
