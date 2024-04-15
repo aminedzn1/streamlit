@@ -51,7 +51,7 @@ with col1 :
         #value = round(array_accomplished.mean()*100, 2)
         value = 80
         if value < 50 : 
-            st.markdown(f'<p style="font-family:Verdana; color:Red; font-size: 30px;">{value}</p>', unsafe_allow_html=True)
+            st.markdown(f'<p style="font-family:Verdana; color:#e6b800; font-size: 30px;">{value}</p>', unsafe_allow_html=True)
 
         elif value > 50 and value < 85 : 
             st.markdown(f'<p style="font-family:Verdana; color:Amber; font-size: 30px;">{value}</p>', unsafe_allow_html=True)
