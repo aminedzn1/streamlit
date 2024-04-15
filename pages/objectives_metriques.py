@@ -48,33 +48,33 @@ array_filled = np.array(pd.Series(array_filled).apply(lambda x : filled_values(x
 ###########################################################################################################
 col1, col2 = st.columns(2)
 with col1 :
-        #value = round(array_accomplished.mean()*100, 2)
-        value = 80
-        if value < 50 : 
+        value = round(array_accomplished.mean()*100, 2)
+        if value < 50 :
+            st.write("Objective %") 
             st.markdown(f'<p style="font-family:Verdana; color:Red; font-size: 30px;">{value}</p>', unsafe_allow_html=True)
 
-        elif value > 50 and value < 85 : 
+        elif value > 50 and value < 85 :
+            st.write("Objective %") 
             st.markdown(f'<p style="font-family:Verdana; color:rgb(230, 184, 0); font-size: 30px;">{value}</p>', unsafe_allow_html=True)
 
-        elif value > 85 and value <= 100 : 
+        elif value > 85 and value <= 100 :
+            st.write("Objective %")
             st.markdown(f'<p style="font-family:Verdana; color:Green; font-size: 30px;">{value}</p>', unsafe_allow_html=True)
 
 
 with col2 :
-    #value = round(array_filled.mean()*100, 2)
-    value = 30
-    if value < 50 : 
-        with open (r'styles/metric_red.css') as f1:
-            st.markdown(f'<style>{f1.read()}</style>', unsafe_allow_html=True)
-            st.metric("Objective filled %", value)
-    elif value > 50 and value < 85 : 
-        with open (r'styles/metric_amber.css') as f1:
-            st.markdown(f'<style>{f1.read()}</style>', unsafe_allow_html=True)
-            st.metric("Objective filled %", value)
-    elif value > 85 and value <= 100 : 
-        with open (r'styles/metric_green.css') as f1:
-            st.markdown(f'<style>{f1.read()}</style>', unsafe_allow_html=True)
-            st.metric("Objective filled %", value)
+    value = round(array_filled.mean()*100, 2)
+    if value < 50 :
+        st.write("Objective %") 
+        st.markdown(f'<p style="font-family:Verdana; color:Red; font-size: 30px;">{value}</p>', unsafe_allow_html=True)
+
+    elif value > 50 and value < 85 :
+        st.write("Objective %") 
+        st.markdown(f'<p style="font-family:Verdana; color:rgb(230, 184, 0); font-size: 30px;">{value}</p>', unsafe_allow_html=True)
+
+    elif value > 85 and value <= 100 :
+        st.write("Objective %")
+        st.markdown(f'<p style="font-family:Verdana; color:Green; font-size: 30px;">{value}</p>', unsafe_allow_html=True)
 ###########################################################################################################
 st.subheader('Add comment', divider = "red" )
 
