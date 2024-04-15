@@ -2,6 +2,11 @@ import streamlit as st
 import pandas as pd 
 import numpy as np
 
+st.set_page_config(
+     page_title = 'Objectives Measure',
+     page_icon = 'bar_chart'
+)
+
 ###########################################################################################################
 st.title('2024 SMS in 1 & DOA Objectives by domain / function')
 
