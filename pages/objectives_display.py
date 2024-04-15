@@ -4,8 +4,8 @@ import numpy as np
 
 ###########################################################################################################
 st.set_page_config(
-     page_title = 'Home page',
-     page_icon = 'house',
+     page_title = 'Objective display',
+     page_icon = 'clipboard',
 )
 st.title('2024 SMS in 1 & DOA Objectives')
 ###########################################################################################################
