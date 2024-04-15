@@ -25,7 +25,7 @@ st.write(obj_data[filtered])
 
 ###########################################################################################################
 from datetime import datetime
-from utils import chart.py , db.py
+from utils import chart , db
 
 COMMENT_TEMPLATE_MD = """{} - {}
 > {}"""
