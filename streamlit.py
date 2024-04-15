@@ -24,7 +24,10 @@ st.write(obj_data[filtered])
 
 
 ###########################################################################################################
-comments = []
+try : 
+    comments = st.session_state.comments
+except :    
+    comments = []
 comment = st.text_input("Comment")
 
 if st.button("Post") :
