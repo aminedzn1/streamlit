@@ -22,11 +22,11 @@ with col1:
     col11, col12 = objectives.columns(2)
     objectives.page_link('pages/objectives_metriques.py', label = "", icon ='➕')
     with col11 :
-        objectives.write('Objective %')
-        objectives.markdown(st.session_state.obj_acc, unsafe_allow_html= True)
+        st.write('Objective %')
+        st.markdown(st.session_state.obj_acc, unsafe_allow_html= True)
     with col12 :
-        objectives.write('Filled %')
-        objectives.markdown(st.session_state.obj_fil, unsafe_allow_html= True)
+        st.write('Filled %')
+        st.markdown(st.session_state.obj_fil, unsafe_allow_html= True)
     st.subheader('SQE Nomination')
     st.subheader('CASID')
     st.subheader('Budget')
