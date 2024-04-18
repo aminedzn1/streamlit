@@ -16,14 +16,17 @@ st.title("1 & DOA SMS Dashboard")
 col1, col2, col3 = st.columns([1,2,1])
 
 with col1: 
-    st.subheader('Objectives')
-    col11, col12 = st.columns(2)
+    objectives = st.container()
+    objectives.subheader('Objectives')
+    
+    col11, col12 = objectives.columns(2)
+    objectives.page_link('objective_metriques.py', label = "", icon ='+')
     with col11 :
-        st.write('Objective %')
-        st.markdown(st.session_state.obj_acc, unsafe_allow_html= True)
+        objectives.write('Objective %')
+        objectives.markdown(st.session_state.obj_acc, unsafe_allow_html= True)
     with col12 :
-        st.write('Filled %')
-        st.markdown(st.session_state.obj_fil, unsafe_allow_html= True)
+        objectives.write('Filled %')
+        objectives.markdown(st.session_state.obj_fil, unsafe_allow_html= True)
     st.subheader('SQE Nomination')
     st.subheader('CASID')
     st.subheader('Budget')
