@@ -10,6 +10,13 @@ col1, col2, col3 = st.columns([1,2,1])
 
 with col1: 
     st.subheader('Objectives')
+    col11, col12 = st.columns(2)
+    with col11 :
+        st.write('Objective %')
+        st.session_state.obj_acc
+    with col12 :
+        st.write('Filled %')
+        st.session_state.obj_fil
     st.subheader('SQE Nomination')
     st.subheader('CASID')
     st.subheader('Budget')

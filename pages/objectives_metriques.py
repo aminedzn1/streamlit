@@ -51,30 +51,30 @@ with col1 :
         value = round(array_accomplished.mean()*100, 2)
         if value < 50 :
             st.write("Objective %") 
-            st.markdown(f'<p style="font-family:Verdana; color:Red; font-size: 30px;">{value}</p>', unsafe_allow_html=True)
+            st.session_state.obj_acc = st.markdown(f'<p style="font-family:Verdana; color:Red; font-size: 30px;">{value}</p>', unsafe_allow_html=True)
 
         elif value > 50 and value < 85 :
             st.write("Objective %") 
-            st.markdown(f'<p style="font-family:Verdana; color:rgb(230, 184, 0); font-size: 30px;">{value}</p>', unsafe_allow_html=True)
+            st.session_state.obj_acc = st.markdown(f'<p style="font-family:Verdana; color:rgb(230, 184, 0); font-size: 30px;">{value}</p>', unsafe_allow_html=True)
 
         elif value > 85 and value <= 100 :
             st.write("Objective %")
-            st.markdown(f'<p style="font-family:Verdana; color:Green; font-size: 30px;">{value}</p>', unsafe_allow_html=True)
+            st.session_state.obj_acc = st.markdown(f'<p style="font-family:Verdana; color:Green; font-size: 30px;">{value}</p>', unsafe_allow_html=True)
 
 
 with col2 :
     value = round(array_filled.mean()*100, 2)
     if value < 50 :
         st.write("Objective %") 
-        st.markdown(f'<p style="font-family:Verdana; color:Red; font-size: 30px;">{value}</p>', unsafe_allow_html=True)
+        st.session_state.obj_fil = st.markdown(f'<p style="font-family:Verdana; color:Red; font-size: 30px;">{value}</p>', unsafe_allow_html=True)
 
     elif value > 50 and value < 85 :
         st.write("Objective %") 
-        st.markdown(f'<p style="font-family:Verdana; color:rgb(230, 184, 0); font-size: 30px;">{value}</p>', unsafe_allow_html=True)
+        st.session_state.obj_fil = st.markdown(f'<p style="font-family:Verdana; color:rgb(230, 184, 0); font-size: 30px;">{value}</p>', unsafe_allow_html=True)
 
     elif value > 85 and value <= 100 :
         st.write("Objective %")
-        st.markdown(f'<p style="font-family:Verdana; color:Green; font-size: 30px;">{value}</p>', unsafe_allow_html=True)
+        st.session_state.obj_fil = st.markdown(f'<p style="font-family:Verdana; color:Green; font-size: 30px;">{value}</p>', unsafe_allow_html=True)
 ###########################################################################################################
 st.subheader('Add comment', divider = "red" )
 
