@@ -76,6 +76,8 @@ with col2 :
         st.write("Objective %")
         st.markdown(f'<p style="font-family:Arial; color:Green; font-size: 30px;">{value}</p>', unsafe_allow_html=True)
         st.session_state.obj_fil = f'<p style="font-family:Arial; color:Green; font-size: 30px;">{value}</p>'
+
+
 ###########################################################################################################
 st.subheader('Add comment', divider = "red" )
 
