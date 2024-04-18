@@ -40,7 +40,7 @@ domain_number = len(sqe_count_domain['activeBool'])
 value = f"{sqe_number}/{domain_number}"
 
 if sqe_number <= 5 :
-    st.write("Objective %") 
+    st.write("Domain/Function with SQE") 
     st.markdown(f'<p style="font-family:Verdana; color:Red; font-size: 30px;">{value}</p>', unsafe_allow_html=True)
 
 elif sqe_number > 5 and sqe_number <  domain_number :
