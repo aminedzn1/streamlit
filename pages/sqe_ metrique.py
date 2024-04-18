@@ -35,9 +35,21 @@ sqe_data['activeBool'] =sqe_data['SQE Active?'].apply(lambda x : boolean_values(
 
 
 sqe_count_domain = sqe_data[['Domain/Function', 'activeBool']].groupby(['Domain/Function']).sum()
+sqe_number = sum(np.array(sqe_count_domain['activeBool']) > 0)
+domain_number = len(sqe_count_domain['activeBool'])
+value = f"{sqe_number}/{domain_number}"
 
-value = f"{sum(np.array(sqe_count_domain['activeBool']) > 0)}/{len(sqe_count_domain['activeBool'])}"
-st.metric("SQE number", value)
+if sqe_number <= 5 :
+    st.write("Objective %") 
+    st.markdown(f'<p style="font-family:Verdana; color:Red; font-size: 30px;">{value}</p>', unsafe_allow_html=True)
+
+elif sqe_number > 5 and sqe_number <  domain_number :
+    st.write("Domain/Function with SQE") 
+    st.markdown(f'<p style="font-family:Arial; color:rgb(230, 184, 0); font-size: 30px;">{value}</p>', unsafe_allow_html=True)
+
+elif sqe_number == domain_number :
+    st.write("Domain/Function with SQE")
+    st.markdown(f'<p style="font-family:Arial; color:Green; font-size: 30px;">{value}</p>', unsafe_allow_html=True)
 ###########################################################################################################
 
 st.subheader('Add comment', divider = "red" )
