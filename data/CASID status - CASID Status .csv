@@ -1,0 +1,50 @@
+Categories,Supplier,Ref,CoC,CASID leader,Objective date for signature,Current status,"CASID Leader Identified on
+(planned in blue)
+(dark when performed)","Date of CASID introduction to the supplier
+(planned in blue)
+(dark when performed)","Date of Airbus supporting team identification
+(planned in blue)
+(dark when performed)","Internal Kick-off Meeting (KoM) date
+(planned in blue)
+(dark when performed)","External KoM date
+(planned in blue)
+(dark when performed)","CASID WorkShop (WS) date
+(planned in blue)
+(dark when performed)","CASID content validation initiation date
+(planned in blue)
+(dark when performed)","CASID signature date
+(planned in blue)
+(dark when performed)","Handover for the CASID Follow-up initiation date
+(planned in blue)
+(dark when performed)","Loop closed
+(planned in blue)
+(dark when performed)",Cancelation date,Handover to,Comments,#VALUE!,Step #,1 if G | 0.5 if A | 0 if R,Status,Status definitions
+Initial deployment,Safran Landing Systems,,1Y,Philippe GARANG,End 2022,7. CASID content validated,,,,,,,,janv. 2024,,,,,"Way of working agreed with the supllier following the WS (2022)
+Important delay in the validation of the CASID content, resolved thanks to the modification proposed on the CASID template.",#VALUE!,7,"0,500",1. CASID Leader Identified,The CASID leader is nominated by the Ho the Domain concerned.
+Deployment follow-up,Rolls Royce,X70PP2200359 Issue 1,1P,Philippe VIGARIOS,,9. Handover for the CASID follow-up performed,,,,,Feb 2022,June 2022,June 2022,December 2022,24-janv.-23,Q4 2024,,Philippe VIGARIOS,08/04/2024: Meeting to be organised regarding the CASID follow-up after 2 years.,,9,"1,000",2. CASID introduced to the supplier,"A letter is sent by Airbus to the Supplier CEO or Head of Engineering introducing the CASID initiative, the scope of the CASID,  and the name of the CASID leader.
+"
+Deployment follow-up,Pratt and Whitney,X70PP2200364 issue 1,1P,Philippe VIGARIOS,,9. Handover for the CASID follow-up performed,,,,,Jan 2022,March 2022,16 May 2022,June 2023,10-juil.-2023,,,Philippe VIGARIOS,08/04/2024: Meeting for the follow-up will be planned 2025,,9,"1,000",3. Airbus supporting team identified,The Airbus supporting team should be limited to 10 people to allow an efficient workshop.
+Initial deployment,Safran Aerosystems (ATA28),,1Y,Pascal PAMPAGNIN,End 2025,4. Internal Kick-off Meeting (KoM) performed,,,13-janv.-2023,,06-mars-2024,06-mars-2024,,déc. 2024,,,,,"Planned in 2022, postponed to 2024
+
+03-Oct-23: The supplier KOM was done 13-Jan-23; progress meeting was done 26-Sep-23.
+Safran's proposal is to merge existing CASID on ATA35 oxygen with this one for ATA28 fuels, arguing they have the same process for continued airworthiness. On our side, we do not see any adverse comment, but we want to be sure three is no issue at Airbus (Quality & SMS). The proposal date for the workshop is now March 2024.",,4,"0,000",4. Internal Kick-off Meeting (KoM) performed,"The CASID leader organizes the kickoff meeting with the identified Airbus supporting team to introduce the CASID objective, content and the input needed to prepare the CASID."
+Deployment follow-up,Collins Aerospace Mechanical Systems / Ratier Figeac,X27D23001106 Issue 1,1Y,Richard MONTEL,,9. Handover for the CASID follow-up performed,,,,,22-juin-23,,,,,,,Richard MONTEL,,,9,"1,000",5. External KoM performed,The CASID leader contacts the supplier making reference to the letter to agree and organizes the KoM. 
+Initial deployment,CFM Safran/GE,,1P,Philippe VIGARIOS,End 2024,7. CASID content validated,,,,,Jan 2023,05-nov.-2023,Feb 2024,Q4,,,,,"No WS: only exchange of CASID drafts.
+08/04/2024: Signature blocked due to POA involvement at the last minute.",,#VALUE!,#VALUE!,6. CASID WorkShop (WS) performed,The WS can be performed on site (with a minimum of 4 days).
+Initial deployment,International Aero Engines,,1P,Philippe VIGARIOS,End 2024,7. CASID content validated,,,,,,,16 may 2022,june 2024,,,,,"11-Sep-23: Has not yet started because PW is under lot of pressure due to the SA crisis.
+08/04/2024: Begining April 2024: Signature initiated by Pratt",,#VALUE!,#VALUE!,7. CASID content validated,"The CASID leader ensures that the CASID is validated by a representative of WG, SMS/Continued Airworthiness and the supplier teams.
+"
+Initial deployment,Honeywell International Inc.,N/A,1Y,Richard MONTEL,End 2024,6. CASID Workshop (WS) performed,,,,,24-oct.-2023,22-janv.-2024,juin 2024,déc. 2024,,,,,,,6,"0,500",8. CASID signed,After consolidation and validation steps.
+Initial deployment,Collins Avionics Interior (Kidde),N/A,1Y,Pascal PAMPAGNIN,End 2024,3. Airbus supporting team identified,,,,13-oct.-2023,,,,,,,,,"16/11/2023: Issue with the scope of the CASID for deployement. It is still planned to have it with the supplier before end of year. Further details will be provided soon
+
+08/11/2023: We have been informed that there is a planned CASID for A220 cockpit avionics --> Planned 2026
+
+11-Sep-23: Kidde is not yet informed of the CASID.",,3,"0,000",9. Handover for the CASID Follow-up performed,N/A
+Deployment follow-up,B/E Aerospace,X35D15033292 Issue A,1C,Olaf WERK,,9. Handover for the CASID follow-up performed,,,,,,,,,04-févr.-2016,,,Olaf WERK,,,9,"1,000",10. Close the loop performed,"One year after the signature of the CASID, the CASID leader meets the Person nominated in the CASID to ensure the follow-up to receive his/her feedback (REX for CASID deployement) and propose some improvement to the E2E process CASID management."
+Deployment follow-up,Zodiac Aerospace --> Safran,X35D17034212 Issue A,1C,Olaf WERK --> Patrick Bricard?,,9. Handover for the CASID follow-up performed,,,,,,,,,08-mai-2018,,,Pascal PAMPAGNIN,Requested for an update by the supplier,,9,"1,000",0. Canceled and replaced,N/A
+Deployment follow-up,Collins Aerospace Electric Power Systems -UTAS,X24PP1900150 Issue 1,1Y,Philippe GAUCHERON,,9. Handover for the CASID follow-up performed,,,,,,,,,23-mai-19,,,,"CASID owner (Design Office or S or PO) pending confirmation. The 1Y SMS officer will discuss with 1YIE (Roland AYME, JOA LIBANIO-FADIGAS) in January 2024, as far as the design office is concerned, how they want to maintain this document and for which purpose.",,9,"1,000",0. Canceled and not replaced,N/A
+Deployment follow-up,Premium AEROTEC GmbH (PAG),XxxCT191 1600 Issue 1.1,1A,Bernd ANDOLEIT,,0. Canceled and replaced,,,,,,,,,,,,,Replaced by Airbus Aerostructure,,,,,
+Deployment follow-up,Airbus Aerostructure,XxxCT2304041 Issue 1.0,1A,Bernd ANDOLEIT,,9. Handover for the CASID follow-up performed,,,,,,,,,27-sept.-23,,,Bernd ANDOLEIT,,,9,"1,000",,
+Initial deployment,Airbus Atlantic,,1A,,,To be requested,,,,,,,,,,,,,,,#VALUE!,#VALUE!,,
+Initial deployment,Parker (ATA29),,1Y,Richard MONTEL,End 2025,1. CASID Leader identified,20/12/2023,31/03/2024,,,,,,,,,,,,,1,"0,000",,
+Initial deployment,Honeywell (ATA21),,1Y,Richard MONTEL,End 2025,1. CASID Leader identified,20/12/2023,31/03/2024,,,,,,,,,,,,,1,"0,000",,
