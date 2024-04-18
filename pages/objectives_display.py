@@ -24,3 +24,4 @@ st.write(obj_data[filtered])
 
 
 ###########################################################################################################
+st.page_link("pages/objectives_modify_table.py", label = 'Update', icon = '🖊️')

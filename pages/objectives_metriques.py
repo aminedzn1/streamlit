@@ -76,8 +76,8 @@ with col2 :
         st.write("Objectives filled")
         st.markdown(f'<p style="font-family:Arial; color:Green; font-size: 30px;">{value} %</p>', unsafe_allow_html=True)
         st.session_state.obj_fil = f'<p style="font-family:Arial; color:Green; font-size: 30px;">{value} %</p>'
-
-
+###########################################################################################################
+st.page_link("pages/objectives_display.py", label = 'Details')
 ###########################################################################################################
 st.subheader('Add comment', divider = "red" )
 
