@@ -36,7 +36,7 @@ sqe_data['activeBool'] =sqe_data['SQE Active?'].apply(lambda x : boolean_values(
 
 sqe_count_domain = sqe_data[['Domain/Function', 'activeBool']].groupby(['Domain/Function']).sum()
 
-value = f"{sum(np.array(sqe_count_domain['value']) > 0)}/{len(sqe_count_domain['Domain/Function'])}"
+value = f"{sum(np.array(sqe_count_domain['activeBool']) > 0)}/{len(sqe_count_domain['Domain/Function'])}"
 st.metric("SQE number", value)
 ###########################################################################################################
 
