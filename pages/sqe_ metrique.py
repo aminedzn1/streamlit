@@ -32,7 +32,7 @@ def boolean_values(X) :
         return(0)
 
 sqe_count_bool = np.array(sqe_data['SQE Active?'].apply(lambda x : boolean_values(x)))
-sqe_count_domain = pd.DataFrame([sqe_data['Domain/Function'], pd.Series(sqe_count_bool)])
+sqe_count_domain = pd.DataFrame({sqe_data['Domain/Function'][i] : sqe_count_bool[i] for i in range (len(sqe_count_bool))})
 st.write(sqe_count_domain)
 sqe_count_domain = sqe_count_domain.groupby(["function"]).sum()
 st.write(sqe_count_bool)
