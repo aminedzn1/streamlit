@@ -20,10 +20,10 @@ with col1:
     objectives.subheader('Objectives')
     col11, col12 = objectives.columns(2)
     with col11 :
-        st.write('Objective %')
+        st.write('Accomplished')
         st.markdown(st.session_state.obj_acc, unsafe_allow_html= True)
     with col12 :
-        st.write('Filled %')
+        st.write('Filled')
         st.markdown(st.session_state.obj_fil, unsafe_allow_html= True)
     objectives.page_link("pages/objectives_metriques.py", label = 'Details')
     st.subheader('SQE Nomination')
