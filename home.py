@@ -20,7 +20,7 @@ with col1:
     objectives.subheader('Objectives')
     
     col11, col12 = objectives.columns(2)
-    objectives.page_link('objective_metriques.py', label = "", icon ='➕')
+    objectives.page_link('objectives_metriques.py', label = "", icon ='➕')
     with col11 :
         objectives.write('Objective %')
         objectives.markdown(st.session_state.obj_acc, unsafe_allow_html= True)
