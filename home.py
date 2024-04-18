@@ -13,10 +13,10 @@ with col1:
     col11, col12 = st.columns(2)
     with col11 :
         st.write('Objective %')
-        st.session_state.obj_acc
+        st.markdown(st.session_state.obj_acc, unsafe_allow_html= True)
     with col12 :
         st.write('Filled %')
-        st.session_state.obj_fil
+        st.markdown(st.session_state.obj_fil, unsafe_allow_html= True)
     st.subheader('SQE Nomination')
     st.subheader('CASID')
     st.subheader('Budget')
