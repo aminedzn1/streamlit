@@ -18,7 +18,7 @@ casid_data = pd.read_csv(r'data/CASID status - CASID Status .csv', dtype = 'stri
 
 filtered = st.multiselect("Filter columns", options=list(casid_data.columns), default=['Supplier','CoC','Current status']) 
 st.write(casid_data[filtered])
-
+ 
 col1, col2 = st.columns(2)
 with col1 :
     st.write(casid_data['Current status'].value_counts())
@@ -30,3 +30,5 @@ with col2 :
     except :
         pass 
 ###########################################################################################################
+
+st.session_state.casid_data = casid_data

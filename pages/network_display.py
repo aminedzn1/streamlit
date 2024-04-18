@@ -14,3 +14,7 @@ network_data = pd.read_csv(r"data/Network Contact list - SMS contact.csv")
 filtered = st.multiselect("Filter columns", options = list(network_data.columns), default = ["Name", "Siglum", "Trained"])
 
 st.write(network_data[filtered])
+
+###########################################################################################################
+
+st.session_state.network_data = network_data
