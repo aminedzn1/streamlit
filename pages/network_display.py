@@ -11,6 +11,6 @@ st.title('SMS Network contact list')
 
 network_data = pd.read_csv(r"data/Network Contact list - SMS contact.csv")
 
-filtered = st.multiselect("Filter columns", ["Name","E-mail","Phone number","Role","Domain","Siglum","Technical perimeter","ATA","Sites","Nomination status","Nomination letter Reference","Trained","Role 2"])
+filtered = st.multiselect("Filter columns", options = list(network_data.columns), default = ["Name", "Siglum", "Trained"])
 
 st.write(network_data[filtered])
