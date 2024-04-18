@@ -18,7 +18,7 @@ col1, col2, col3 = st.columns([1,2,1])
 with col1: 
     objectives = st.container()
     col11, col12 = objectives.columns(2)
-    objectives.page_link('pages/objectives_metriques.py', label = "<p style ='font-size: 40px;'>Objectives</p>")
+    st.markdown("<a href='pages/objectives_metriques.py' target='_self' style = 'font-size: 40px'>subpage</a>", unsafe_allow_html=True)
     with col11 :
         st.write('Objective %')
         st.markdown(st.session_state.obj_acc, unsafe_allow_html= True)
