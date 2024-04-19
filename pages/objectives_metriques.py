@@ -79,12 +79,17 @@ with col2 :
 ###########################################################################################################
 st.page_link("pages/objectives_display.py", label = 'Details')
 ###########################################################################################################
+import plotly.express as px
+
 plot_objectives = pd.DataFrame(np.random.randn(len(accomplished.columns), 2),columns=['Accomplished', 'Filled'])
 plot_objectives.index = accomplished.columns
 for function in plot_objectives.index :
     plot_objectives.loc[function, 'Accomplished'] = accomplished[function].apply(boolean_values).sum()
     plot_objectives.loc[function, 'Filled'] = accomplished[function].apply(filled_values).sum()
-st.bar_chart(plot_objectives)
+
+fig = px.bar(plot_objectives)
+
+st.plotly_chart(fig)
 
 
 ###########################################################################################################
