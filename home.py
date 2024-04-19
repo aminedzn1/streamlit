@@ -46,3 +46,4 @@ with col2 :
         st.markdown('<p style = "font-family:Arial; font-size: 40px;">1</p>', unsafe_allow_html= True)
 with col3 :
     st.subheader('Assurance')
+    st.subheader('Promotion')
