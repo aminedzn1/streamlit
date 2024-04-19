@@ -33,7 +33,7 @@ with col1:
                             css_styles ="""
 {
     background-color: rgb(15,15,106);
-    border-radius: 15%;
+    border-radius: 15px;
 }
 """, ) :
         objectives = st.container()
