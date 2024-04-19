@@ -7,8 +7,8 @@ import numpy as np
 st.set_page_config(
      page_title = '1 & DOA SMS Dashboard',
      page_icon = 'barchart',
-     layout = 'wide',
-     initial_sidebar_state = 'collapsed'
+     layout = 'wide'#,
+     #initial_sidebar_state = 'collapsed'
 )
 
 st.markdown(
