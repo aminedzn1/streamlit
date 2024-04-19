@@ -9,7 +9,7 @@ st.set_page_config(
 )
 ###########################################################################################################
 
-st.page_link('Home', icon = '🏠', use_container_width=True)
+st.page_link('home.py', label = 'Home', icon = '🏠', use_container_width=True)
 
 ###########################################################################################################
 st.title('2024 SMS in 1 & DOA Objectives by domain / function')
