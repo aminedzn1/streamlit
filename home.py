@@ -1,7 +1,8 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-from streamlit_extras.stylable_container import stylable_container
+from streamlit_extras.stylable_container import stylable_container 
+from streamlit_extras.switch_page_button import switch_page
 ###########################################################################################################
 
 st.set_page_config(
@@ -50,7 +51,9 @@ with col1:
     with stylable_container(key = 'Details_button', css_styles="""{
                             background-color:rgb(0, 77, 128)
     }""")    :
-        objectives.button('Details')
+        details_obj = objectives.button('Details')
+        if details_obj :
+            switch_page('objectives metriques')
     st.subheader('SQE Nomination')
     st.subheader('CASID')
     st.subheader('Budget')
