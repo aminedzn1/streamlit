@@ -83,7 +83,7 @@ accomplished = accomplished.replace({"1" : "1",
                                       "0" : "0",
                                       "N/A" : None,
                                       "Function level" : None})
-st.bar_chart(accomplished)
+st.bar_chart(accomplished.transpose())
 
 
 ###########################################################################################################
