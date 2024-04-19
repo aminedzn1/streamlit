@@ -105,7 +105,7 @@ for function in plot_objectives.index :
 
 fig = px.bar(plot_objectives, barmode= 'group')
 
-st.plotly_chart(fig)
+st.plotly_chart(fig, use_container_width=True)
 
 
 
