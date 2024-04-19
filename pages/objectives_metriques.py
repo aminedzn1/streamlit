@@ -79,11 +79,12 @@ with col2 :
 ###########################################################################################################
 st.page_link("pages/objectives_display.py", label = 'Details')
 ###########################################################################################################
-accomplished = accomplished.replace({"1" : "1",
-                                      "0" : "0",
-                                      "N/A" : None,
-                                      "Function level" : None}).astype(int)
-st.bar_chart(accomplished)
+plot_objectives = pd.DataFrame(columns=['Function','Accomplished', 'Filled'])
+plot_objectives.index = accomplished.columns
+for function in plot_objectives.index :
+    plot_objectives.loc[function, 'Accomplished'] = accomplished[function].apply(boolean_values).sum()
+    plot_objectives.loc[function, 'Filled'] = accomplished[function].apply(filled_values).sum()
+st.bar_chart(plot_objectives)
 
 
 ###########################################################################################################
