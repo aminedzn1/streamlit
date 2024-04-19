@@ -47,7 +47,7 @@ with col1:
     with col12 :
         st.write('Filled')
         st.markdown(st.session_state.obj_fil, unsafe_allow_html= True)
-    objectives.page_link("pages/objectives_metriques.py", label = 'Details')
+    objectives.page_link("pages/objectives_metriques.py", label = 'Details', icon='🔎')
     st.subheader('SQE Nomination')
     st.subheader('CASID')
     st.subheader('Budget')
