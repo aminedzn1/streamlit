@@ -28,7 +28,8 @@ st.title("1 & DOA SMS Dashboard")
 col1, col2, col3 = st.columns([1,2,1])
 
 with col1:
-    st.markdown('<style>{div[data-testid="stContainer"] > div:first-of-type {background-color: rgb(0,0,102);}}</style>') 
+    with open(r'styles/container.css') as f:
+        st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
     objectives = st.container()
     objectives.subheader('Objectives')
     col11, col12 = objectives.columns(2)
