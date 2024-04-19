@@ -57,7 +57,7 @@ with col2 :
                             css_styles = container_style, ) : 
         col21, col22 = st.columns(2)
     with col21 : 
-        st.write('Assessement on time')
+        st.markdown('Assessement on time')
         st.markdown(f'<p style="font-family:Arial; color:Red; font-size: 40px;padding-top:-10px;">44 %</p>', unsafe_allow_html=True)
         st.write('Acknowledgement on time')
         st.markdown(f'<p style="font-family:Arial; color:Green; font-size: 40px;">89 %</p>', unsafe_allow_html=True)
