@@ -79,7 +79,7 @@ with col2 :
 ###########################################################################################################
 st.page_link("pages/objectives_display.py", label = 'Details')
 ###########################################################################################################
-plot_objectives = pd.DataFrame(np.random.randn(len(accomplished.columns)-1, 2),columns=['Accomplished', 'Filled'])
+plot_objectives = pd.DataFrame(np.random.randn(len(accomplished.columns), 2),columns=['Accomplished', 'Filled'])
 plot_objectives.index = accomplished.columns
 for function in plot_objectives.index :
     plot_objectives.loc[function, 'Accomplished'] = accomplished[function].apply(boolean_values).sum()
