@@ -26,8 +26,8 @@ st.markdown(
 st.title("1 & DOA SMS Dashboard")
 container_style = """
 {
-    background-color: rgb(0,0,56);
-    border-left : 10px solid rgb(0,0, 56);
+    background-color: #051650;
+    border-left : 10px solid #051650;
     border-radius : 10px;
 }
   
@@ -49,7 +49,7 @@ with col1:
         st.write('Filled')
         st.markdown(st.session_state.obj_fil, unsafe_allow_html= True)
     with stylable_container(key = 'Details_button', css_styles="""button{
-                            background-color:rgb(0,0,56)
+                            background-color:#051650
     }""")    :
         details_obj = st.button('Details')
         if details_obj :
