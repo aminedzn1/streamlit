@@ -5,8 +5,22 @@ import numpy as np
 
 st.set_page_config(
      page_title = 'Objectives Measure',
-     page_icon = 'bar_chart'
+     page_icon = 'bar_chart',
+     layout = 'wide',
+     initial_sidebar_state = 'collapsed'
 )
+
+st.markdown(
+    """
+<style>
+    [data-testid="collapsedControl"] {
+        display: none
+    }
+</style>
+""",
+    unsafe_allow_html=True,
+)
+
 ###########################################################################################################
 
 st.page_link('home.py', label = 'Home', icon = '🏠', use_container_width=True)

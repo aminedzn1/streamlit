@@ -5,8 +5,22 @@ import numpy as np
 ###########################################################################################################
 st.set_page_config(
      page_title = 'Modifier',
-     page_icon = 'lower_left_ballpoint_pen'
+     page_icon = 'lower_left_ballpoint_pen',
+     layout = 'wide',
+     initial_sidebar_state = 'collapsed'
 )
+
+st.markdown(
+    """
+<style>
+    [data-testid="collapsedControl"] {
+        display: none
+    }
+</style>
+""",
+    unsafe_allow_html=True,
+)
+
 st.page_link('home.py', label = 'Home', icon = '🏠', use_container_width=True)
 ###########################################################################################################
 st.title('2024 SMS in 1 & DOA Objectives')
