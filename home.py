@@ -29,6 +29,7 @@ container_style = """
     background-color: #051650;
     border-left : 10px solid #051650;
     border-radius : 10px;
+    padding-left:50px;
 }
   
 }
