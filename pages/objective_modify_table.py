@@ -7,6 +7,7 @@ st.set_page_config(
      page_title = 'Modifier',
      page_icon = 'lower_left_ballpoint_pen'
 )
+st.page_link('home.py', label = 'Home', icon = '🏠', use_container_width=True)
 ###########################################################################################################
 st.title('2024 SMS in 1 & DOA Objectives')
 st.subheader('Edit objective table', divider = "red")

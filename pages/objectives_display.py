@@ -7,6 +7,7 @@ st.set_page_config(
      page_title = 'Objective display',
      page_icon = 'clipboard',
 )
+st.page_link('home.py', label = 'Home', icon = '🏠', use_container_width=True)
 st.title('2024 SMS in 1 & DOA Objectives')
 ###########################################################################################################
 
