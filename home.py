@@ -48,7 +48,7 @@ with col1:
     with col12 :
         st.write('Filled')
         st.markdown(st.session_state.obj_fil, unsafe_allow_html= True)
-    with stylable_container(key = 'Details_button', css_styles="""{
+    with stylable_container(key = 'Details_button', css_styles="""button{
                             background-color:rgb(255, 204, 255)
     }""")    :
         details_obj = objectives.button('Details')
