@@ -32,9 +32,14 @@ with col1:
     with stylable_container(key = 'metric_container',
                             css_styles ="""
 {
-    background-color: rgb(15,15,106);
+    text-shadow:
+    1px 1px 1px gray,
+    2px 2px 1px gray;
+    background-color: rgb(35,35,156);
     border-radius: 15px;
-    border : 4mm ridge rgba(15, 15, 106, 1.2);
+    border : 4mm ridge rgba(35, 35, 156, .6);
+}
+  
 }
 """, ) :
         objectives = st.container()
