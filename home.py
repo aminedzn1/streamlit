@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-
+from streamlit_extras.stylable_container import stylable_container
 ###########################################################################################################
 
 st.set_page_config(
@@ -28,9 +28,15 @@ st.title("1 & DOA SMS Dashboard")
 col1, col2, col3 = st.columns([1,2,1])
 
 with col1:
-    objectives = st.container()
-    with open(r'styles/container.css') as f:
-        st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
+    
+    with stylable_container(key = 'metric_container',
+                            css_styles ="""
+{
+    background-color: rgb(0,0,106);
+    border-radius: 15%;
+}
+""", ) :
+        objectives = st.container()
     objectives.subheader('Objectives')
     col11, col12 = objectives.columns(2)
     with col11 :
