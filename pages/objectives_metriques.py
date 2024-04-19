@@ -1,12 +1,19 @@
 import streamlit as st 
 import pandas as pd 
 import numpy as np
+from streamlit_option_menu import option_menu
 
 st.set_page_config(
      page_title = 'Objectives Measure',
      page_icon = 'bar_chart'
 )
+###########################################################################################################
 
+# 2. horizontal menu
+selected2 = option_menu(None, ["Home", "Upload", "Tasks", 'Settings'], 
+    icons=['house', 'cloud-upload', "list-task", 'gear'], 
+    menu_icon="cast", default_index=0, orientation="horizontal")
+selected2
 ###########################################################################################################
 st.title('2024 SMS in 1 & DOA Objectives by domain / function')
 
