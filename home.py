@@ -36,7 +36,7 @@ with col1:
     border-radius: 25%;
 }
 """, ) :
-        objectives = st.page_link("pages/objectives_metriques.py", label = 'Objectives')
+        objectives = st.button('Objectives')
     objectives.subheader('Objectives')
     col11, col12 = objectives.columns(2)
     with col11 :
