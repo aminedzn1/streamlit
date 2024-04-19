@@ -50,7 +50,7 @@ with col1:
     with stylable_container(key = 'Details_button', css_styles="""{
                             background-color:rgb(0, 77, 128)
     }""")    :
-        objectives.button('Details', icon='🔎')
+        objectives.button('Details')
     st.subheader('SQE Nomination')
     st.subheader('CASID')
     st.subheader('Budget')
