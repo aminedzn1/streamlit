@@ -26,7 +26,7 @@ st.title("1 & DOA SMS Dashboard")
 container_style = """
 {
     background-color: rgb(0,0,66);
-    border-left : 5px solid rgb(0, 77, 128);
+
     border-radius : 10px;
 }
   
