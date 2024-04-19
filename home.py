@@ -32,11 +32,11 @@ with col1:
     with stylable_container(key = 'metric_container',
                             css_styles ="""
 {
-    background-color: rgb(0,0,106);
-    border-radius: 25%;
+    background-color: rgb(15,15,106);
+    border-radius: 15%;
 }
 """, ) :
-        objectives = st.button('Objectives')
+        objectives = st.container()
     objectives.subheader('Objectives')
     col11, col12 = objectives.columns(2)
     with col11 :
@@ -45,7 +45,7 @@ with col1:
     with col12 :
         st.write('Filled')
         st.markdown(st.session_state.obj_fil, unsafe_allow_html= True)
-    #objectives.page_link("pages/objectives_metriques.py", label = 'Details')
+    objectives.page_link("pages/objectives_metriques.py", label = 'Details')
     st.subheader('SQE Nomination')
     st.subheader('CASID')
     st.subheader('Budget')
