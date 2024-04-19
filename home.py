@@ -27,7 +27,7 @@ container_style = """
 {
     background-color: rgb(0,0,66);
     border-radius: 15px;
-    border : 1mm ridge rgba(35, 35, 66, .6);
+    border : 1mm ridge rgba(35, 35, 66, 1);
 }
   
 }
