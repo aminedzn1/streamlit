@@ -50,7 +50,8 @@ with col1:
         st.write('Filled')
         st.markdown(st.session_state.obj_fil, unsafe_allow_html= True)
     with stylable_container(key = 'Details_button', css_styles="""button{
-                            background-color:#051650
+                            background-color:#051650;
+                            border: 1px solid #ffffff;
     }""")    :
         details_obj = st.button('Details')
         if details_obj :
