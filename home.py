@@ -27,7 +27,8 @@ st.title("1 & DOA SMS Dashboard")
 ###########################################################################################################
 col1, col2, col3 = st.columns([1,2,1])
 
-with col1: 
+with col1:
+    st.markdown('div[data-testid="stContainer"] > div:first-of-type {background-color: rgb(0,0,102);}') 
     objectives = st.container()
     objectives.subheader('Objectives')
     col11, col12 = objectives.columns(2)
