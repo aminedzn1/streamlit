@@ -87,7 +87,7 @@ for function in plot_objectives.index :
     plot_objectives.loc[function, 'Accomplished'] = accomplished[function].apply(boolean_values).sum()
     plot_objectives.loc[function, 'Filled'] = accomplished[function].apply(filled_values).sum()
 
-fig = px.bar(plot_objectives)
+fig = px.bar(plot_objectives, barmode= 'group')
 
 st.plotly_chart(fig)
 
