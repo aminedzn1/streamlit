@@ -28,7 +28,6 @@ container_style = """
     background-color: rgb(0,0,66);
     border-left : 10px solid rgb(0, 0, 66);
     border-radius : 10px;
-    padding-bottom : 0px
 }
   
 }
