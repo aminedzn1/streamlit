@@ -34,7 +34,7 @@ with col1:
 {
     background-color: rgb(15,15,106);
     border-radius: 15px;
-    border : 4mm ridge rgba(15, 15, 106, .6);
+    border : 4mm ridge rgba(15, 15, 106, 1.2);
 }
 """, ) :
         objectives = st.container()
