@@ -81,8 +81,6 @@ with col2 :
 #        st.markdown(f'<p style="font-family:Arial; color:Green; font-size: 30px;">{value} %</p>', unsafe_allow_html=True)
         st.session_state.obj_fil = f'<p style="font-family:Arial; color:Green; font-size: 30px;">{value} %</p>'
 ###########################################################################################################
-st.page_link("pages/objectives_display.py", label = 'Details')
-###########################################################################################################
 import plotly.express as px
 
 plot_objectives = pd.DataFrame(np.random.randn(len(accomplished.columns), 2),columns=['Accomplished', 'Filled'])
@@ -96,16 +94,7 @@ fig = px.bar(plot_objectives, barmode= 'group')
 st.plotly_chart(fig)
 
 
+
 ###########################################################################################################
-st.subheader('Add comment', divider = "red" )
-
-try : 
-    comments = st.session_state.comments
-except :    
-    comments = []
-comment = st.text_input("Comment")
-
-if st.button("Post") :
-    comments = [comment] + comments
-    st.session_state.comments = comments
-st.table(pd.DataFrame(comments, columns = ["Comments"]))
+st.page_link("pages/objectives_display.py", label = 'Details')
+###########################################################################################################
