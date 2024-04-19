@@ -37,7 +37,7 @@ with col1:
     2px 2px 1px gray;
     background-color: rgb(35,35,156);
     border-radius: 15px;
-    border : 4mm ridge rgba(35, 35, 156, .6);
+    border : 1mm ridge rgba(35, 35, 156, .6);
 }
   
 }
