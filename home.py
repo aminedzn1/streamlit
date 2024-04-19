@@ -35,9 +35,9 @@ with col1:
     text-shadow:
     1px 1px 1px gray,
     2px 2px 1px gray;
-    background-color: rgb(35,35,156);
+    background-color: rgb(0,0,106);
     border-radius: 15px;
-    border : 1mm ridge rgba(35, 35, 156, .6);
+    border : 1mm ridge rgba(35, 35, 106, .6);
 }
   
 }
