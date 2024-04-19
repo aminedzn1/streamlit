@@ -51,7 +51,7 @@ with col1:
     with stylable_container(key = 'Details_button', css_styles="""{
                             background-color:rgb(0, 77, 128)
     }""")    :
-        details_obj = objectives.button('Details')
+        details_obj = objectives.button('Details', use_container_width= True)
         if details_obj :
             switch_page('objectives metriques')
     st.subheader('SQE Nomination')
