@@ -49,7 +49,7 @@ with col1:
         st.write('Filled')
         st.markdown(st.session_state.obj_fil, unsafe_allow_html= True)
     with stylable_container(key = 'Details_button', css_styles="""button{
-                            background-color:rgb(0, 153, 204)
+                            background-color:rgb(0,0,66)
     }""")    :
         details_obj = st.button('Details')
         if details_obj :
