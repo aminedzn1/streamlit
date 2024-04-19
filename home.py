@@ -29,20 +29,20 @@ col1, col2, col3 = st.columns([1,2,1])
 
 with col1:
     
-    with stylable_container(key = 'metric_container',
-                            css_styles ="""
-{
-    text-shadow:
-    1px 1px 1px gray,
-    2px 2px 1px gray;
-    background-color: rgb(0,0,66);
-    border-radius: 15px;
-    border : 1mm ridge rgba(35, 35, 66, .6);
-}
-  
-}
-""", ) :
-        objectives = st.container()
+#    with stylable_container(key = 'metric_container',
+#                            css_styles ="""
+#{
+#    text-shadow:
+#    1px 1px 1px gray,
+#    2px 2px 1px gray;
+#    background-color: rgb(0,0,66);
+#    border-radius: 15px;
+#    border : 1mm ridge rgba(35, 35, 66, .6);
+#}
+#  
+#}
+#""", ) :
+    objectives = st.container()
     objectives.subheader('Objectives')
     col11, col12 = objectives.columns(2)
     with col11 :
