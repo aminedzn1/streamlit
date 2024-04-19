@@ -49,9 +49,9 @@ with col1:
         st.write('Filled')
         st.markdown(st.session_state.obj_fil, unsafe_allow_html= True)
     with stylable_container(key = 'Details_button', css_styles="""{
-                            background-color:rgb(0, 77, 128)
+                            background-color:rgb(66, 66, 0);
     }""")    :
-        details_obj = objectives.button('Details', use_container_width= True)
+        details_obj = objectives.button('Details')
         if details_obj :
             switch_page('objectives metriques')
     st.subheader('SQE Nomination')
