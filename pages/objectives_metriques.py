@@ -19,12 +19,12 @@ obj_data.columns = ["Objective category","Source","#","Objective","KPI / Achieve
 
 ###########################################################################################################
 
-domain = st.selectbox('Fonction / Domaine', ("All","Global Status","1","1A","1C","1G","1I","1P","1S","1T","1V","1Y","1Z","B","S","P","Q"))
+#domain = st.selectbox('Fonction / Domaine', ("All","Global Status","1","1A","1C","1G","1I","1P","1S","1T","1V","1Y","1Z","B","S","P","Q"))
 
-try :    
-    accomplished = obj_data[domain]
-except :
-    accomplished = obj_data[obj_data.columns[8:]]
+#try :    
+#    accomplished = obj_data[domain]
+#except :
+accomplished = obj_data[obj_data.columns[8:]]
 
 array_accomplished = accomplished.to_numpy().flatten()
 array_filled = accomplished.to_numpy().flatten()
