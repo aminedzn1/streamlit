@@ -36,7 +36,7 @@ with col1:
     border-radius: 25%;
 }
 """, ) :
-        objectives = st.container()
+        objectives = st.page_link("pages/objectives_metriques.py", label = 'Objectives')
     objectives.subheader('Objectives')
     col11, col12 = objectives.columns(2)
     with col11 :
@@ -45,7 +45,7 @@ with col1:
     with col12 :
         st.write('Filled')
         st.markdown(st.session_state.obj_fil, unsafe_allow_html= True)
-    objectives.page_link("pages/objectives_metriques.py", label = 'Details')
+    #objectives.page_link("pages/objectives_metriques.py", label = 'Details')
     st.subheader('SQE Nomination')
     st.subheader('CASID')
     st.subheader('Budget')
