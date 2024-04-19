@@ -47,7 +47,7 @@ with col1:
     with col12 :
         st.write('Filled')
         st.markdown(st.session_state.obj_fil, unsafe_allow_html= True)
-    objectives.page_link("pages/objectives_metriques.py", label = 'Details', icon='🔎', use_container_width=True)
+    objectives.page_link("pages/objectives_metriques.py", label = '<p style ="background-color:rgb(0, 77, 128);">Details</p>', icon='🔎')
     st.subheader('SQE Nomination')
     st.subheader('CASID')
     st.subheader('Budget')
@@ -58,7 +58,7 @@ with col2 :
         col21, col22 = st.columns(2)
     with col21 : 
         st.markdown('Assessement on time')
-        st.markdown(f'<p style="font-family:Arial; color:Red; font-size: 40px;padding-top:-10px;">44 %</p>', unsafe_allow_html=True)
+        st.markdown(f'<p style="font-family:Arial; color:Red; font-size: 40px;">44 %</p>', unsafe_allow_html=True)
         st.write('Acknowledgement on time')
         st.markdown(f'<p style="font-family:Arial; color:Green; font-size: 40px;">89 %</p>', unsafe_allow_html=True)
 
