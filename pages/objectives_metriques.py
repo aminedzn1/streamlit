@@ -79,7 +79,10 @@ with col2 :
 ###########################################################################################################
 st.page_link("pages/objectives_display.py", label = 'Details')
 ###########################################################################################################
-
+accomplished = accomplished.replace({"1" : 1,
+                                      "0" : 0,
+                                      "N/A" : None,
+                                      "Function level" : None})
 st.bar_chart(accomplished)
 
 
