@@ -54,7 +54,7 @@ with col1:
 with col2 :
     st.subheader('Risk Management on Systemic Safety Topics')
     with stylable_container(key = 'metric_container2',
-                            css_styles = container_style, )
+                            css_styles = container_style, ) : 
         col21, col22 = st.columns(2)
     with col21 : 
         st.write('Assessement on time')
