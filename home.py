@@ -64,8 +64,7 @@ with col2 :
     with col22 : 
         st.write('Number of open SMS cases')
         st.markdown('<p style = "font-family:Arial; font-size: 40px;">34</p>', unsafe_allow_html= True)
-        st.write('Number of closed SMS cases')
-        st.markdown('<p style = "font-family:Arial; font-size: 40px;">1</p>', unsafe_allow_html= True)
+    st.write('Sources of SMS cases')
 with col3 :
     st.subheader('Assurance')
     st.subheader('Promotion')
