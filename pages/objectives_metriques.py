@@ -1,7 +1,8 @@
 import streamlit as st 
 import pandas as pd 
 import numpy as np
-
+from streamlit_extras.stylable_container import stylable_container 
+from streamlit_extras.switch_page_button import switch_page
 
 st.set_page_config(
      page_title = 'Objectives Measure',
@@ -37,12 +38,12 @@ obj_data.columns = ["Objective category","Source","#","Objective","KPI / Achieve
 
 ###########################################################################################################
 
-domain = st.selectbox('Fonction / Domaine', ("All","Global Status","1","1A","1C","1G","1I","1P","1S","1T","1V","1Y","1Z","B","S","P","Q"))
+#domain = st.selectbox('Fonction / Domaine', ("All","Global Status","1","1A","1C","1G","1I","1P","1S","1T","1V","1Y","1Z","B","S","P","Q"))
 
-try :    
-    accomplished = obj_data[domain]
-except :
-    accomplished = obj_data[obj_data.columns[8:]]
+#try :    
+#    accomplished = obj_data[domain]
+#except :
+accomplished = obj_data[obj_data.columns[8:]]
 
 array_accomplished = accomplished.to_numpy().flatten()
 array_filled = accomplished.to_numpy().flatten()
@@ -64,44 +65,45 @@ def boolean_values(X) :
 array_accomplished = np.array(pd.Series(array_accomplished).apply(lambda x : boolean_values(x)))
 array_filled = np.array(pd.Series(array_filled).apply(lambda x : filled_values(x)))
 ###########################################################################################################
-col1, col2 = st.columns(2)
-with col1 :
-        value = round(array_accomplished.mean()*100, 2)
-        if value < 50 :
-            st.write("Objectives accomplished") 
-            st.markdown(f'<p style="font-family:Arial; color:Red; font-size: 30px;">{value} %</p>', unsafe_allow_html=True)
-            st.session_state.obj_acc = f'<p style="font-family:Arial; color:Red; font-size: 30px;">{value} %</p>'
-        elif value > 50 and value < 85 :
-            st.write("Objectives accomplished") 
-            st.markdown(f'<p style="font-family:Arial; color:rgb(230, 184, 0); font-size: 30px;">{value} %</p>', unsafe_allow_html=True)
-            st.session_state.obj_acc = f'<p style="font-family:Arial; color:rgb(230, 184, 0); font-size: 30px;">{value} %</p>'
-        elif value > 85 and value <= 100 :
-            st.write("Objectives accomplished")
-            st.markdown(f'<p style="font-family:Arial; color:Green; font-size: 30px;">{value} %</p>', unsafe_allow_html=True)
-            st.session_state.obj_acc = f'<p style="font-family:Arial; color:Green; font-size: 30px;">{value} %</p>'
+#col1, col2 = st.columns(2)
+#with col1 :
+#        value = round(array_accomplished.mean()*100, 2)
+#        if value < 50 :
+#            st.write("Objectives accomplished") 
+#            st.markdown(f'<p style="font-family:Arial; color:Red; font-size: 30px;">{value} %</p>', unsafe_allow_html=True)
+#            st.session_state.obj_acc = f'<p style="font-family:Arial; color:Red; font-size: 30px;">{value} %</p>'
+#        elif value > 50 and value < 85 :
+#            st.write("Objectives accomplished") 
+#            st.markdown(f'<p style="font-family:Arial; color:rgb(230, 184, 0); font-size: 30px;">{value} %</p>', unsafe_allow_html=True)
+#            st.session_state.obj_acc = f'<p style="font-family:Arial; color:rgb(230, 184, 0); font-size: 30px;">{value} %</p>'
+#        elif value > 85 and value <= 100 :
+#            st.write("Objectives accomplished")
+#            st.markdown(f'<p style="font-family:Arial; color:Green; font-size: 30px;">{value} %</p>', unsafe_allow_html=True)
+#            st.session_state.obj_acc = f'<p style="font-family:Arial; color:Green; font-size: 30px;">{value} %</p>'
 
-with col2 :
-    value = round(array_filled.mean()*100, 2)
-    if value < 50 :
-        st.write("Objectives filled") 
-        st.markdown(f'<p style="font-family:Arial; color:Red; font-size: 30px;">{value} %</p>', unsafe_allow_html=True)
-        st.session_state.obj_fil = f'<p style="font-family:Arial; color:Red; font-size: 30px;">{value} %</p>'
-    elif value > 50 and value < 85 :
-        st.write("Objectives filled") 
-        st.markdown(f'<p style="font-family:Arial; color:rgb(230, 184, 0); font-size: 30px;">{value} %</p>', unsafe_allow_html=True)
-        st.session_state.obj_fil = f'<p style="font-family:Arial; color:rgb(230, 184, 0); font-size: 30px;">{value}  %</p>'
-    elif value > 85 and value <= 100 :
-        st.write("Objectives filled")
-        st.markdown(f'<p style="font-family:Arial; color:Green; font-size: 30px;">{value} %</p>', unsafe_allow_html=True)
-        st.session_state.obj_fil = f'<p style="font-family:Arial; color:Green; font-size: 30px;">{value} %</p>'
+#with col2 :
+#    value = round(array_filled.mean()*100, 2)
+#    if value < 50 :
+#        st.write("Objectives filled") 
+#        st.markdown(f'<p style="font-family:Arial; color:Red; font-size: 30px;">{value} %</p>', unsafe_allow_html=True)
+#        st.session_state.obj_fil = f'<p style="font-family:Arial; color:Red; font-size: 30px;">{value} %</p>'
+#    elif value > 50 and value < 85 :
+#        st.write("Objectives filled") 
+#        st.markdown(f'<p style="font-family:Arial; color:rgb(230, 184, 0); font-size: 30px;">{value} %</p>', unsafe_allow_html=True)
+#        st.session_state.obj_fil = f'<p style="font-family:Arial; color:rgb(230, 184, 0); font-size: 30px;">{value}  %</p>'
+#    elif value > 85 and value <= 100 :
+#        st.write("Objectives filled")
+#        st.markdown(f'<p style="font-family:Arial; color:Green; font-size: 30px;">{value} %</p>', unsafe_allow_html=True)
+#        st.session_state.obj_fil = f'<p style="font-family:Arial; color:Green; font-size: 30px;">{value} %</p>'
 ###########################################################################################################
 import plotly.express as px
 
 plot_objectives = pd.DataFrame(np.random.randn(len(accomplished.columns), 2),columns=['Accomplished', 'Filled'])
 plot_objectives.index = accomplished.columns
 for function in plot_objectives.index :
-    plot_objectives.loc[function, 'Accomplished'] = accomplished[function].apply(boolean_values).sum()
-    plot_objectives.loc[function, 'Filled'] = accomplished[function].apply(filled_values).sum()
+    plot_objectives.loc[function, 'Accomplished'] = accomplished[function].apply(boolean_values).mean()*100
+    plot_objectives.loc[function, 'Filled'] = accomplished[function].apply(filled_values).mean()*100
+    plot_objectives.loc[function, 'Accomplished'] = plot_objectives.loc[function, 'Accomplished'] * 100 / plot_objectives.loc[function, 'Filled']
 
 fig = px.bar(plot_objectives, barmode= 'group')
 
@@ -110,5 +112,49 @@ st.plotly_chart(fig, use_container_width=True)
 
 
 ###########################################################################################################
-st.page_link("pages/objectives_display.py", label = 'Details')
+with stylable_container(key = 'Details_button', css_styles="""button{
+                            background-color:#051650;
+                            border: 1px solid #ffffff;
+    }""")    :
+        details_obj = st.button('Details')
+        if details_obj :
+            switch_page('objectives display')
 ###########################################################################################################
+
+global_status = obj_data['Global Status']
+
+array_accomplished = global_status.to_numpy().flatten()
+array_filled = global_status.to_numpy().flatten()
+
+array_accomplished = array_accomplished[array_accomplished != 'N/A']
+array_filled = array_filled[array_filled !='N/A']
+
+array_accomplished = np.array(pd.Series(array_accomplished).apply(lambda x : boolean_values(x)))
+array_filled = np.array(pd.Series(array_filled).apply(lambda x : filled_values(x)))
+
+
+value = round(array_accomplished.mean()*100, 2)
+if value < 50 :
+    st.session_state.obj_acc = f'<p style="font-family:Arial; color:Red; font-size: 30px;">{value} %</p>'
+
+elif value > 50 and value < 85 :
+    st.session_state.obj_acc = f'<p style="font-family:Arial; color:rgb(230, 184, 0); font-size: 30px;">{value} %</p>'
+
+elif value > 85 and value <= 100 :
+    st.session_state.obj_acc = f'<p style="font-family:Arial; color:Green; font-size: 30px;">{value} %</p>'
+
+
+value = round(array_filled.mean()*100, 2)
+if value < 50 :
+    st.session_state.obj_fil = f'<p style="font-family:Arial; color:Red; font-size: 30px;">{value} %</p>'
+
+elif value > 50 and value < 85 :
+    st.session_state.obj_fil = f'<p style="font-family:Arial; color:rgb(230, 184, 0); font-size: 30px;">{value}  %</p>'
+
+elif value > 85 and value <= 100 :
+    st.session_state.obj_fil = f'<p style="font-family:Arial; color:Green; font-size: 30px;">{value} %</p>'
+
+with open("data/obj_acc.txt") as f :
+    f.write(st.session_state.obj_acc)
+with open("data/obj_fil.txt") as f : 
+    f.write(st.session_state.obj_fil)

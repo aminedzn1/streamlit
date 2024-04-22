@@ -45,7 +45,11 @@ with col1:
     col11, col12 = objectives.columns(2)
     with col11 :
         st.write('Accomplished')
-        st.markdown(st.session_state.obj_acc, unsafe_allow_html= True)
+        try :
+            st.markdown(st.session_state.obj_acc, unsafe_allow_html= True)
+        except :
+            with open('data/obj_acc.txt') as f :
+                st.session_state.obj_acc = f.read()
     with col12 :
         st.write('Filled')
         st.markdown(st.session_state.obj_fil, unsafe_allow_html= True)
