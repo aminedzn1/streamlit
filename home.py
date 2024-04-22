@@ -50,9 +50,15 @@ with col1:
         except :
             with open('data/obj_acc.txt') as f :
                 st.session_state.obj_acc = f.read()
+                st.markdown(st.session_state.obj_acc, unsafe_allow_html= True)
     with col12 :
         st.write('Filled')
-        st.markdown(st.session_state.obj_fil, unsafe_allow_html= True)
+        try : 
+            st.markdown(st.session_state.obj_fil, unsafe_allow_html= True)
+        except : 
+            with open('data/obj_fil.txt') as f :
+                st.session_state.obj_fil = f.read()
+                st.markdown(st.session_state.obj_fil, unsafe_allow_html= True)
     with stylable_container(key = 'Details_button', css_styles="""button{
                             background-color:#051650;
                             border: 1px solid #ffffff;
