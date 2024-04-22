@@ -65,7 +65,7 @@ with col1:
                             background-color:#051650;
                             border: 1px solid #ffffff;
     }""")    :
-        details_obj = st.button('Details')
+        details_obj = st.button('Details', key = "DETAILSOBJETS")
     if details_obj : 
         switch_page('objectives metriques')
     
@@ -82,11 +82,11 @@ with col1:
         with open('data/sqe_kpi.txt') as f :
             st.session_state.sqe_kpi = f.read()
         sqe.markdown(st.session_state.sqe_kpi, unsafe_allow_html=True)
-    with stylable_container(key = 'Details_button2', css_styles="""button{
+    with stylable_container(key = 'Details_button', css_styles="""button{
                             background-color:#051650;
                             border: 1px solid #ffffff;
     }""")    :
-        details_sqe = st.button('Details')
+        details_sqe = st.button('Details', key = 'DETAILSSQE')
     
     if details_sqe : 
         switch_page('sqe metrique')
