@@ -68,8 +68,7 @@ with col1:
                 st.markdown(st.session_state.obj_fil, unsafe_allow_html= True)
 
     details_obj = details_button()
-    if details_obj :
-        switch_page('objectives metriques')
+    if details_obj : switch_page('objectives metriques')
     st.subheader('SQE Nomination')
     with stylable_container(key = 'metric_container',
                             css_styles = container_style, ) :
@@ -81,6 +80,9 @@ with col1:
         with open('data/sqe_kpi.txt') as f :
             st.session_state.sqe_kpi = f.read()
         sqe.markdown(st.session_state.sqe_kpi, unsafe_allow_html=True)
+    details_sqe = details_button()
+    if details_sqe : switch_page('sqe metrique')
+
     st.subheader('CASID')
     st.subheader('Budget')
 with col2 :
