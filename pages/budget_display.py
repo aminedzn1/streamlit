@@ -73,4 +73,4 @@ line_2 = go.Scatter(
 )
 fig = go.Figure(data=[bar_1,bar_2,line_1,line_2])
 
-st.plotly_chart(fig)
+st.plotly_chart(fig, use_container_width=True)
