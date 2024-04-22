@@ -67,6 +67,16 @@ with col1:
         if details_obj :
             switch_page('objectives metriques')
     st.subheader('SQE Nomination')
+    with stylable_container(key = 'metric_container',
+                            css_styles = container_style, ) :
+        sqe = st.container()
+    sqe.write('Domain / Function with SQE')
+    try :    
+        sqe.markdown(st.session_state.sqe_kpi, unsafe_allow_html=True)
+    except :
+        with open('data/sqe_kpi.txt') as f :
+            st.session_state.sqe_kpi = f.read()
+        sqe.markdown(st.session_state.sqe_kpi, unsafe_allow_html=True)
     st.subheader('CASID')
     st.subheader('Budget')
 with col2 :
