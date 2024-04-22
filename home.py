@@ -34,13 +34,6 @@ container_style = """
   
 }
 """
-def details_button() :
-    with stylable_container(key = 'Details_button', css_styles="""button{
-                            background-color:#051650;
-                            border: 1px solid #ffffff;
-    }""")    :
-        randkey = np.random.rand()
-        return  (st.button('Details', key = str(randkey) ))
 
 ###########################################################################################################
 col1, col2, col3 = st.columns([1,2,1])
@@ -68,8 +61,16 @@ with col1:
                 st.session_state.obj_fil = f.read()
                 st.markdown(st.session_state.obj_fil, unsafe_allow_html= True)
 
-    details_obj = details_button()
-    if details_obj : switch_page('objectives metriques')
+    with stylable_container(key = 'Details_button', css_styles="""button{
+                            background-color:#051650;
+                            border: 1px solid #ffffff;
+    }""")    :
+        details_obj = st.button('Details')
+    if details_obj : 
+        switch_page('objectives metriques')
+    
+###########################################################################################################    
+
     st.subheader('SQE Nomination')
     with stylable_container(key = 'metric_container',
                             css_styles = container_style, ) :
@@ -81,8 +82,16 @@ with col1:
         with open('data/sqe_kpi.txt') as f :
             st.session_state.sqe_kpi = f.read()
         sqe.markdown(st.session_state.sqe_kpi, unsafe_allow_html=True)
-    details_sqe = details_button()
-    if details_sqe : switch_page('sqe metrique')
+    with stylable_container(key = 'Details_button', css_styles="""button{
+                            background-color:#051650;
+                            border: 1px solid #ffffff;
+    }""")    :
+        details_sqe = st.button('Details')
+    
+    if details_sqe : 
+        switch_page('sqe metrique')
+
+###########################################################################################################    
 
     st.subheader('CASID')
     st.subheader('Budget')
