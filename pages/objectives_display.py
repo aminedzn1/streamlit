@@ -41,15 +41,15 @@ st.dataframe(obj_data[filtered],use_container_width=True)
 ###########################################################################################################
 st.page_link("pages/objective_modify_table.py", label = 'Update', icon = '🖊️')
 ###########################################################################################################
-st.subheader('Add comment', divider = "blue" )
+#st.subheader('Add comment', divider = "blue" )
 
-try : 
-    comments = st.session_state.comments
-except :    
-    comments = []
-comment = st.text_input("Comment")
+#try : 
+#    comments = st.session_state.comments
+#except :    
+#    comments = []
+#comment = st.text_input("Comment")
 
-if st.button("Post") :
-    comments = [comment] + comments
-    st.session_state.comments = comments
-st.table(pd.DataFrame(comments, columns = ["Comments"]))
+#if st.button("Post") :
+#    comments = [comment] + comments
+#    st.session_state.comments = comments
+#st.table(pd.DataFrame(comments, columns = ["Comments"]))
