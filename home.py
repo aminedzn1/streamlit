@@ -34,6 +34,13 @@ container_style = """
   
 }
 """
+def details_button() :
+    with stylable_container(key = 'Details_button', css_styles="""button{
+                            background-color:#051650;
+                            border: 1px solid #ffffff;
+    }""")    :
+        return  (st.button('Details'))
+
 ###########################################################################################################
 col1, col2, col3 = st.columns([1,2,1])
 
@@ -59,11 +66,8 @@ with col1:
             with open('data/obj_fil.txt') as f :
                 st.session_state.obj_fil = f.read()
                 st.markdown(st.session_state.obj_fil, unsafe_allow_html= True)
-    with stylable_container(key = 'Details_button', css_styles="""button{
-                            background-color:#051650;
-                            border: 1px solid #ffffff;
-    }""")    :
-        details_obj = st.button('Details')
+
+        details_obj = details_button()
         if details_obj :
             switch_page('objectives metriques')
     st.subheader('SQE Nomination')
