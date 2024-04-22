@@ -106,6 +106,6 @@ with open('data/sqe_kpi.txt', 'w') as f:
 domain = st.selectbox('Fonction / Domaine', ("1","1A","1C","1G","1I","1P","1S","1T","1V","1Y","1Z","B","S","P","Q"))
 
 st.write(f"Number of SQE for {domain}") 
-st.markdown(f'<p style="font-family:Arial; color:{sqe_count_domain.loc[domain,'color']}; font-size: 30px;">{sqe_count_domain.loc[domain,'count']}</p>', unsafe_allow_html=True)
+st.markdown(f'<p style="font-family:Arial; color:{sqe_count_domain.loc[domain,"color"]}; font-size: 30px;">{sqe_count_domain.loc[domain,'count']}</p>', unsafe_allow_html=True)
 
 ###########################################################################################################
