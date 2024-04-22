@@ -81,7 +81,7 @@ with col1:
     st.subheader('Budget')
 with col2 :
     st.subheader('Risk Management on Systemic Safety Topics')
-    with stylable_container(key = 'metric_container2',
+    with stylable_container(key = 'metric_container',
                             css_styles = container_style, ) : 
         col21, col22 = st.columns(2)
     with col21 : 
