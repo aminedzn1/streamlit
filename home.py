@@ -39,7 +39,8 @@ def details_button() :
                             background-color:#051650;
                             border: 1px solid #ffffff;
     }""")    :
-        return  (st.button('Details'))
+        randkey = np.random.rand()
+        return  (st.button('Details', key = str(randkey) ))
 
 ###########################################################################################################
 col1, col2, col3 = st.columns([1,2,1])
