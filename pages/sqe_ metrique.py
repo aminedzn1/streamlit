@@ -135,7 +135,7 @@ domain = st.selectbox('Fonction / Domaine', ("1","1A","1C","1G","1I","1P","1S","
 with stylable_container(key = 'metric_container',
                         css_styles = container_style, ) :
     co = st.container()
-co.write(f"Number of SQE for {domain}") 
-co.markdown(f'<p style="font-family:Arial; color:{sqe_count_domain.loc[domain,"color"]}; font-size: 30px;">{sqe_count_domain.loc[domain,"activeBool"]}</p>', unsafe_allow_html=True)
+co.markdown(f'<p style="font-family:Arial; color:White; font-size: 20px;">Number of SQE for {domain}</p>', unsafe_allow_html=True) 
+co.markdown(f'<p style="font-family:Arial; color:{sqe_count_domain.loc[domain,"color"]}; font-size: 50px;">{sqe_count_domain.loc[domain,"activeBool"]}</p>', unsafe_allow_html=True)
 
 ###########################################################################################################
