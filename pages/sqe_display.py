@@ -6,8 +6,26 @@ import numpy as np
 st.set_page_config(
      page_title = 'SQE display',
      page_icon = 'clipboard',
+     layout = 'wide',
+     initial_sidebar_state = 'collapsed'
 )
-st.title('SQE')
+
+st.markdown(
+    """
+<style>
+    [data-testid="collapsedControl"] {
+        display: none
+    }
+</style>
+""",
+    unsafe_allow_html=True,
+)
+###########################################################################################################
+
+st.page_link('home.py', label = 'Home', icon = '🏠', use_container_width=True)
+
+###########################################################################################################
+st.title('SQE Data')
 ###########################################################################################################
 
 try :
@@ -18,9 +36,9 @@ except :
 ###########################################################################################################
 
 
-sqe_data.columns = ["Domain/Function","SQE Holder","Date of signature","End of validity","Part of active network?","SQE Active?"]
+#sqe_data.columns = ["Domain/Function","SQE Holder","Date of signature","End of validity","Part of active network?","SQE Active?"]
 filtered = st.multiselect("Filter columns", options=list(sqe_data.columns), default=['SQE Holder','SQE Active?']) 
-st.write(sqe_data[filtered])
+st.table(sqe_data[filtered])
 
 
 ###########################################################################################################

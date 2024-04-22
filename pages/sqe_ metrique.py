@@ -139,3 +139,10 @@ co.markdown(f'<p style="font-family:Arial; color:White; font-size: 20px;">Number
 co.markdown(f'<p style="font-family:Arial; color:{sqe_count_domain.loc[domain,"color"]}; font-size: 50px;">{sqe_count_domain.loc[domain,"activeBool"]}</p>', unsafe_allow_html=True)
 
 ###########################################################################################################
+with stylable_container(key = 'Details_button', css_styles="""button{
+                            background-color:#051650;
+                            border: 1px solid #ffffff;
+    }""")    :
+        details_obj = st.button('Details', key = "DETAILSOBJETS")
+if details_obj : 
+        switch_page('sqe display')
