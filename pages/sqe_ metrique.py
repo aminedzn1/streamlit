@@ -68,9 +68,9 @@ domain_number = len(sqe_count_domain['activeBool'])
 
 value = f"{sqe_number}/{domain_number}"
 
-if 'Red' in sqe_count_domain['color'] :
+if 'Red' in list(sqe_count_domain['color']) :
     st.session_state.sqe_kpi = f'<p style="font-family:Arial; color:Red; font-size: 30px;">{value}</p>'
-elif 'rgb(230, 184, 0)' in sqe_count_domain['color']  :
+elif 'rgb(230, 184, 0)' in list(sqe_count_domain['color'])  :
     st.session_state.sqe_kpi = f'<p style="font-family:Arial; color:rgb(230, 184, 0); font-size: 30px;">{value}</p>'
 else : 
     st.session_state.sqe_kpi = f'<p style="font-family:Arial; color:Green; font-size: 30px;">{value}</p>'
