@@ -1,10 +1,25 @@
 import streamlit as st 
 import pandas as pd 
 import numpy as np
+from streamlit_extras.stylable_container import stylable_container 
+from streamlit_extras.switch_page_button import switch_page
 
 st.set_page_config(
      page_title = 'SQE Measure',
-     page_icon = 'bar_chart'
+     page_icon = 'bar_chart',
+     layout = 'wide',
+     initial_sidebar_state = 'collapsed'
+)
+
+st.markdown(
+    """
+<style>
+    [data-testid="collapsedControl"] {
+        display: none
+    }
+</style>
+""",
+    unsafe_allow_html=True,
 )
 
 ###########################################################################################################
@@ -106,10 +121,21 @@ with open('data/sqe_kpi.txt', 'w') as f:
 #    comments = [comment] + comments
 #    st.session_state.comments = comments
 #st.table(pd.DataFrame(comments, columns = ["Comments"]))
-
+container_style = """
+{
+    background-color: #051650;
+    border: 1px solid #ffffff;
+    border-radius : 10px;
+    padding-left:30px;
+}
+  
+}
+"""
 domain = st.selectbox('Fonction / Domaine', ("1","1A","1C","1G","1I","1P","1S","1T","1V","1Y","1Z","B","S","P","Q"))
-
-st.write(f"Number of SQE for {domain}") 
-st.markdown(f'<p style="font-family:Arial; color:{sqe_count_domain.loc[domain,"color"]}; font-size: 30px;">{sqe_count_domain.loc[domain,"activeBool"]}</p>', unsafe_allow_html=True)
+with stylable_container(key = 'metric_container',
+                        css_styles = container_style, ) :
+    co = st.container()
+co.write(f"Number of SQE for {domain}") 
+co.markdown(f'<p style="font-family:Arial; color:{sqe_count_domain.loc[domain,"color"]}; font-size: 30px;">{sqe_count_domain.loc[domain,"activeBool"]}</p>', unsafe_allow_html=True)
 
 ###########################################################################################################
