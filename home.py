@@ -6,7 +6,7 @@ from streamlit_extras.switch_page_button import switch_page
 ###########################################################################################################
 
 st.set_page_config(
-     page_title = '1 & DOA SMS Dashboard',
+     page_title = '1 & DOA SMS CoCkPiT',
      page_icon = 'barchart',
      layout = 'wide',
      initial_sidebar_state = 'collapsed'
