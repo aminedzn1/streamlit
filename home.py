@@ -94,7 +94,13 @@ with col1:
 ###########################################################################################################    
 
     st.subheader('CASID')
+###########################################################################################################    
+
     st.subheader('Budget')
+    try:
+        st.plotly_chart(st.session_state.budg_fig)
+    except:
+        st.write(":/")
 with col2 :
     st.subheader('Risk Management on Systemic Safety Topics')
     with stylable_container(key = 'metric_container',
