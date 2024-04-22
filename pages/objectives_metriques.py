@@ -154,7 +154,7 @@ elif value > 50 and value < 85 :
 elif value > 85 and value <= 100 :
     st.session_state.obj_fil = f'<p style="font-family:Arial; color:Green; font-size: 30px;">{value} %</p>'
 
-with open("data/obj_acc.txt") as f :
+with open("data/obj_acc.txt", 'x') as f :
     f.write(st.session_state.obj_acc)
-with open("data/obj_fil.txt") as f : 
+with open("data/obj_fil.txt", 'x') as f : 
     f.write(st.session_state.obj_fil)
