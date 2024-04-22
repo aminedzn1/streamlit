@@ -69,7 +69,7 @@ line_2 = go.Scatter(
     mode="lines",
     name='Target linear evolution (k€)',
     zorder=4,
-    marker=dict(color="green"),
+    marker=dict(color="red"),
 )
 fig = go.Figure(data=[bar_1,bar_2,line_1,line_2])
 
