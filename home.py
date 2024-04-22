@@ -98,7 +98,7 @@ with col1:
 
     st.subheader('Budget')
     try:
-        st.plotly_chart(st.session_state.budg_fig)
+        st.plotly_chart(st.session_state.budg_fig, use_container_width=True)
     except:
         st.write(":/")
 with col2 :
