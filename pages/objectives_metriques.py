@@ -133,7 +133,7 @@ array_accomplished = np.array(pd.Series(array_accomplished).apply(lambda x : boo
 array_filled = np.array(pd.Series(array_filled).apply(lambda x : filled_values(x)))
 
 
-value = round(array_accomplished.mean()*100, 2)
+value = round(array_accomplished.mean()*100 / array_filled.mean(), 2) 
 if value < 50 :
     st.session_state.obj_acc = f'<p style="font-family:Arial; color:Red; font-size: 30px;">{value} %</p>'
 
