@@ -67,9 +67,9 @@ with col1:
                 st.session_state.obj_fil = f.read()
                 st.markdown(st.session_state.obj_fil, unsafe_allow_html= True)
 
-        details_obj = details_button()
-        if details_obj :
-            switch_page('objectives metriques')
+    details_obj = details_button()
+    if details_obj :
+        switch_page('objectives metriques')
     st.subheader('SQE Nomination')
     with stylable_container(key = 'metric_container',
                             css_styles = container_style, ) :
