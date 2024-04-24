@@ -94,21 +94,7 @@ with col1:
 ###########################################################################################################    
 
     st.subheader('CASID')
-###########################################################################################################    
 
-    st.subheader('Budget')
-    try:
-        st.plotly_chart(st.session_state.budg_fig, use_container_width=True)
-    except:
-        st.write(":/")
-    with stylable_container(key = 'Details_button', css_styles="""button{
-                            background-color:#051650;
-                            border: 1px solid #ffffff;
-    }""")    :
-        details_budg = st.button('Details', key = 'DETAILSBUDGET')
-    
-    if details_budg : 
-        switch_page('budget display')
 with col2 :
     st.subheader('Risk Management on Systemic Safety Topics')
     with stylable_container(key = 'metric_container',
@@ -123,7 +109,22 @@ with col2 :
     with col22 : 
         st.write('Number of open SMS cases')
         st.markdown('<p style = "font-family:Arial; font-size: 40px;">34</p>', unsafe_allow_html= True)
-    st.write('Sources of SMS cases')
+        st.write('Sources of SMS cases')
+    ###########################################################################################################    
+
+    st.subheader('Budget')
+    try:
+        st.plotly_chart(st.session_state.budg_fig, use_container_width=True)
+    except:
+        st.write(":/")
+    with stylable_container(key = 'Details_button', css_styles="""button{
+                            background-color:#051650;
+                            border: 1px solid #ffffff;
+    }""")    :
+        details_budg = st.button('Details', key = 'DETAILSBUDGET')
+    
+    if details_budg : 
+        switch_page('budget display')
 with col3 :
     st.subheader('Assurance')
     st.subheader('Promotion')
