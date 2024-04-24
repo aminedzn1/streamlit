@@ -72,5 +72,7 @@ line_2 = go.Scatter(
     marker=dict(color="red"),
 )
 fig = go.Figure(data=[bar_1,bar_2,line_1,line_2])
+st.plotly_chart(fig)
 
+fig.update_layout(showlegend=False)
 st.session_state.budg_fig = fig
