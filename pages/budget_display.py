@@ -84,7 +84,7 @@ tol = .05*y_tar[month]
 if delta > tol :
     text = f"""
 <p style ="font-family:Arial; font-size:30px; color: White;">{y_evo[month]} k€ \n</p>
-<p style ="font-family:Arial; font-size:10px; color: rgb(230, 184, 0);">+{delta}</p>
+<p style ="font-family:Arial; font-size:20px; color: rgb(230, 184, 0);">+{delta}</p>
 """
 elif delta < - tol :
     text = f"""
@@ -94,7 +94,7 @@ elif delta < - tol :
 else :
     text = f"""
 <p style ="font-family:Arial; font-size:30px; color: White;">{y_evo[month]} k€ \n</p>
-<p style ="font-family:Arial; font-size:10px; color: Green;">{delta}</p>
+<p style ="font-family:Arial; font-size:20px; color: Green;">{delta}</p>
 """
 
 st.session_state.budg_metr = text
