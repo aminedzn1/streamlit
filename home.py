@@ -9,7 +9,7 @@ st.set_page_config(
      page_title = '1 & DOA SMS CoCkPiT',
      page_icon = 'barchart',
      layout = 'wide',
-#     initial_sidebar_state = 'collapsed'
+     initial_sidebar_state = 'collapsed'
 )
 
 st.markdown(
