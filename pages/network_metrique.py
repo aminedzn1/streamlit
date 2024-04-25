@@ -40,7 +40,7 @@ plot_tr = plot_tr.rename(columns = {'trainedBool' : 'Percent trained'})
 import plotly.express as px
 fig = px.bar(plot_tr)
 
-st.plotly_chart(fig)
+st.plotly_chart(fig, use_container_width= True)
 
 ###########################################################################################################
 with stylable_container(key = 'Details_button', css_styles="""button{
