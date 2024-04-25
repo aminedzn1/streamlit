@@ -16,5 +16,3 @@ filtered = st.multiselect("Filter columns", options = list(network_data.columns)
 st.write(network_data[filtered])
 
 ###########################################################################################################
-
-st.session_state.network_data = network_data

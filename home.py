@@ -191,6 +191,13 @@ text =f"<p style = 'font-family:Arial; font-size:30px; color:White;'>{value}</p>
 st.session_state.promo = text
 ###########################################################################################################
 ###########################################################################################################
+#TRAINED
+network_data = pd.read_csv(r'data/Network Contact list - SMS contact.csv')
+value = round(np.mean(network_data['Trained'] == 'Yes')*100, 2)
+text = f"<p style = 'font-family:Arial; font-size: 30px;'>{value} %</p>"
+st.session_state.trained = text
+###########################################################################################################
+###########################################################################################################
 #DAHSBOARD
 
 col1, col2, col3 = st.columns([1,2,1])
@@ -283,11 +290,9 @@ with col3 :
     with stylable_container(key = 'metric_container',
                             css_styles = container_style, ) : 
         promo = st.container()
-    promo.write("Number of promotions")
-    try:
-        promo.markdown(st.session_state.promo, unsafe_allow_html=True)
-    except:
-        promo.write(":/")
+    promo.write("Number of promotions in the last 3 months")
+    promo.markdown(st.session_state.promo, unsafe_allow_html=True)
+
     with stylable_container(key = 'Details_button', css_styles="""button{
                             background-color:#051650;
                             border: 1px solid #ffffff;
@@ -295,3 +300,16 @@ with col3 :
         details_promo = st.button('Details', key = 'DETAILSPROMO')
     if details_promo :
         switch_page('promotion display')
+    with stylable_container(key = 'metric_container',
+                            css_styles = container_style, ) : 
+        training = st.container()
+    training.write("Trained safety reps")
+    training.markdown(st.session_state.trained, unsafe_allow_html=True)
+
+    with stylable_container(key = 'Details_button', css_styles="""button{
+                            background-color:#051650;
+                            border: 1px solid #ffffff;
+    }""")    :
+        details_training = st.button('Details', key = 'DETAILSTRAINING')
+    if details_promo :
+        switch_page('network display')
