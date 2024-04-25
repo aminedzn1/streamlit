@@ -118,9 +118,9 @@ with col2 :
         budg = st.container()
     budg.write("Actuals")
     try:
-        st.markdown(st.session_state.budg_metr, unsafe_allow_html=True)
+        budg.markdown(st.session_state.budg_metr, unsafe_allow_html=True)
     except:
-        st.write(":/")
+        budg.write(":/")
     with stylable_container(key = 'Details_button', css_styles="""button{
                             background-color:#051650;
                             border: 1px solid #ffffff;
