@@ -34,8 +34,168 @@ container_style = """
   
 }
 """
+#################################################################################################################################
+#OBJECTIFS
+obj_data = pd.read_csv(r'data/Objectives 2024 - 1 & DOA - 2024 objective status EOY.csv', dtype = 'string',keep_default_na=False)
+global_status = obj_data['Global Status']
+
+array_accomplished = global_status.to_numpy().flatten()
+array_filled = global_status.to_numpy().flatten()
+
+array_accomplished = array_accomplished[array_accomplished != 'N/A']
+array_filled = array_filled[array_filled !='N/A']
+def filled_values(X) : 
+    if X == "1" or X == "0" :
+        return (1)
+    else : 
+        return (0)
+    
+def boolean_values(X) :
+    if X == '1' :
+        return(1)
+    else :
+        return(0)
+array_accomplished = np.array(pd.Series(array_accomplished).apply(lambda x : boolean_values(x)))
+array_filled = np.array(pd.Series(array_filled).apply(lambda x : filled_values(x)))
+
+
+value = round(array_accomplished.mean()*100 / array_filled.mean(), 2) 
+if value < 50 :
+    st.session_state.obj_acc = f'<p style="font-family:Arial; color:Red; font-size: 30px;">{value} %</p>'
+
+elif value > 50 and value < 85 :
+    st.session_state.obj_acc = f'<p style="font-family:Arial; color:rgb(230, 184, 0); font-size: 30px;">{value} %</p>'
+
+elif value > 85 and value <= 100 :
+    st.session_state.obj_acc = f'<p style="font-family:Arial; color:Green; font-size: 30px;">{value} %</p>'
+
+
+value = round(array_filled.mean()*100, 2)
+if value < 50 :
+    st.session_state.obj_fil = f'<p style="font-family:Arial; color:Red; font-size: 30px;">{value} %</p>'
+
+elif value > 50 and value < 85 :
+    st.session_state.obj_fil = f'<p style="font-family:Arial; color:rgb(230, 184, 0); font-size: 30px;">{value}  %</p>'
+
+elif value > 85 and value <= 100 :
+    st.session_state.obj_fil = f'<p style="font-family:Arial; color:Green; font-size: 30px;">{value} %</p>'
+###########################################################################################################
+###########################################################################################################
+#BUDGET
+data_budg = pd.read_csv(r'data/sms_budget_yoy.csv')
+
+x = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+y_act = list(data_budg['Actuals (k€)'])
+y_com = list(data_budg['Commitment (k€)'])
+y_evo = list(data_budg['Actuals evolution (k€)'])
+y_tar = list(data_budg['Target linear evolution (k€)'])
+
+month = np.argmax(y_evo) - 1
+delta = y_tar[month] - y_evo[month]
+tol = .05*y_tar[month]
+
+if delta < -tol :
+    text = f"""
+<p style ="font-family:Arial; font-size:30px; color: White;">{y_evo[month]} k€ \n</p>
+<p style ="font-family:Arial; font-size:20px; color: rgb(230, 184, 0);">Overspend of {delta} k€</p>
+"""
+elif delta > tol :
+    text = f"""
+<p style ="font-family:Arial; font-size:30px; color: White;">{y_evo[month]} k€ \n</p>
+<p style ="font-family:Arial; font-size:20px; color: Red;">Underspend of {delta} k€</p>
+"""
+else :
+    if delta > 0 :
+        text = f"""
+    <p style ="font-family:Arial; font-size:30px; color: White;">{y_evo[month]} k€ \n</p>
+    <p style ="font-family:Arial; font-size:20px; color: Green;">Underspend of {delta} k€</p>
+    """
+    else :
+        text = f"""
+    <p style ="font-family:Arial; font-size:30px; color: White;">{y_evo[month]} k€ \n</p>
+    <p style ="font-family:Arial; font-size:20px; color: Green;">Overspend of {delta} k€</p>
+    """
+
+st.session_state.budg_metr = text
 
 ###########################################################################################################
+###########################################################################################################
+#SQE
+sqe_data = pd.read_csv(r'data/SQE Follow-up - Sheet1.csv', dtype = 'string',keep_default_na=False)
+###########################################################################################################
+
+def boolean_values(X) :
+    if X == 'Y' :
+        return(1)
+    else : 
+        return(0)
+def date_alert (X) :
+    inAMonth = pd.Timestamp.today() + pd.DateOffset(months=1)
+    if inAMonth > X and  pd.Timestamp.today() < X  :
+        return(1)
+    elif pd.Timestamp.today() > X :
+        return(2)
+    else : 
+        return(0)
+
+sqe_data['activeBool'] =sqe_data['SQE Active?'].apply(lambda x : boolean_values(x))
+sqe_data['End of validity'] = pd.to_datetime(sqe_data['End of validity'],dayfirst = True, format = 'mixed')
+sqe_data['dateAlert'] = sqe_data['End of validity'].apply(date_alert)
+sqe_data['color'] = ''
+for i in sqe_data.index :
+    if sqe_data.loc[i,'dateAlert'] == 2 :
+        sqe_data.loc[i, 'SQE Active?'] = 'N'
+        sqe_data.loc[i, 'activeBool'] = 0
+
+for i in sqe_data.index :
+    if sqe_data.loc[i,'SQE Active?'] == 'Y' and sqe_data.loc[i, 'dateAlert'] == 0 :
+        sqe_data.loc[i,'color'] = 'Green'
+    elif sqe_data.loc[i,'SQE Active?'] == 'Y' and sqe_data.loc[i, 'dateAlert'] == 1 :
+        sqe_data.loc[i,'color'] = 'rgb(230, 184, 0)'
+    else :
+        sqe_data.loc[i,'color'] = 'Red'
+############################################################################################################
+
+sqe_count_domain = sqe_data[['Domain/Function', 'activeBool']].groupby(['Domain/Function']).sum()
+sqe_count_domain['color'] = ''
+for func in sqe_count_domain.index :
+    vColor = list(sqe_data.loc[sqe_data['Domain/Function'] == func]['color'])
+    if 'Green' in vColor :
+        sqe_count_domain.loc[func,'color'] = 'Green'
+    elif 'rgb(230,184,0)' in vColor :
+        sqe_count_domain.loc[func,'color'] = 'rgb(230,184,0)'
+    else : 
+        sqe_count_domain.loc[func,'color'] = 'Red'
+
+sqe_number = sum(np.array(sqe_count_domain['activeBool']) > 0)
+domain_number = len(sqe_count_domain['activeBool'])
+
+value = f"{sqe_number}/{domain_number}"
+
+if 'Red' in list(sqe_count_domain['color']) :
+    st.session_state.sqe_kpi = f'<p style="font-family:Arial; color:Red; font-size: 30px;">{value}</p>'
+elif 'rgb(230, 184, 0)' in list(sqe_count_domain['color'])  :
+    st.session_state.sqe_kpi = f'<p style="font-family:Arial; color:rgb(230, 184, 0); font-size: 30px;">{value}</p>'
+else : 
+    st.session_state.sqe_kpi = f'<p style="font-family:Arial; color:Green; font-size: 30px;">{value}</p>'
+###########################################################################################################
+###########################################################################################################
+#PROMO
+promo = pd.read_csv(r'data/Engineering SMS Promotion Follow-up - Safety Briefing, Training, Hub.csv')
+promo['Date'] = pd.to_datetime(promo['Date'], dayfirst=True,format='mixed')
+troismois = pd.Timestamp.today() - pd.DateOffset(months = 3)
+promo = promo.loc[promo['Date']>troismois]
+
+filt = st.multiselect("Filter columns",options=promo.columns, default =['Promotion Type','Date'] )
+st.table(promo[filt])
+
+value  = len(list(promo['Date']))
+text =f"<p style = 'font-family:Arial; font-size:30px; color:White;'>{value}</p>"
+st.session_state.promo = text
+###########################################################################################################
+###########################################################################################################
+#DAHSBOARD
+
 col1, col2, col3 = st.columns([1,2,1])
 
 with col1:
@@ -46,20 +206,11 @@ with col1:
     col11, col12 = objectives.columns(2)
     with col11 :
         st.write('Accomplished')
-        try :
-            st.markdown(st.session_state.obj_acc, unsafe_allow_html= True)
-        except :
-            with open('data/obj_acc.txt') as f :
-                st.session_state.obj_acc = f.read()
-                st.markdown(st.session_state.obj_acc, unsafe_allow_html= True)
+        st.markdown(st.session_state.obj_acc, unsafe_allow_html= True)
+
     with col12 :
         st.write('Filled')
-        try : 
-            st.markdown(st.session_state.obj_fil, unsafe_allow_html= True)
-        except : 
-            with open('data/obj_fil.txt') as f :
-                st.session_state.obj_fil = f.read()
-                st.markdown(st.session_state.obj_fil, unsafe_allow_html= True)
+        st.markdown(st.session_state.obj_fil, unsafe_allow_html= True)
 
     with stylable_container(key = 'Details_button', css_styles="""button{
                             background-color:#051650;

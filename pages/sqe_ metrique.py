@@ -29,14 +29,7 @@ st.page_link('home.py', label = 'Home', icon = '🏠', use_container_width=True)
 ###########################################################################################################
 st.title('2024 SMS in 1 & DOA SQE by domain / function')
 
-try :
-    sqe_data = st.session_state.sqe_data
-except : 
-    sqe_data = pd.read_csv(r'data/SQE Follow-up - Sheet1.csv', dtype = 'string',keep_default_na=False)
-    st.session_state.sqe_data = sqe_data
-
-#sqe_data.columns = ["Domain/Function","SQE Holder","Date of signature","End of validity","Part of active network?","SQE Active?"]
-
+sqe_data = pd.read_csv(r'data/SQE Follow-up - Sheet1.csv', dtype = 'string',keep_default_na=False)
 ###########################################################################################################
 
 def boolean_values(X) :
@@ -82,45 +75,6 @@ for func in sqe_count_domain.index :
     else : 
         sqe_count_domain.loc[func,'color'] = 'Red'
 
-sqe_number = sum(np.array(sqe_count_domain['activeBool']) > 0)
-domain_number = len(sqe_count_domain['activeBool'])
-
-value = f"{sqe_number}/{domain_number}"
-
-if 'Red' in list(sqe_count_domain['color']) :
-    st.session_state.sqe_kpi = f'<p style="font-family:Arial; color:Red; font-size: 30px;">{value}</p>'
-elif 'rgb(230, 184, 0)' in list(sqe_count_domain['color'])  :
-    st.session_state.sqe_kpi = f'<p style="font-family:Arial; color:rgb(230, 184, 0); font-size: 30px;">{value}</p>'
-else : 
-    st.session_state.sqe_kpi = f'<p style="font-family:Arial; color:Green; font-size: 30px;">{value}</p>'
-with open('data/sqe_kpi.txt', 'w') as f:
-    f.write(st.session_state.sqe_kpi)
-
-#if sqe_number <= 5 :
-#    st.write("Domain/Function with SQE") 
-#    st.markdown(f'<p style="font-family:Arial; color:Red; font-size: 30px;">{value}</p>', unsafe_allow_html=True)
-
-#elif sqe_number > 5 and sqe_number <  domain_number :
-#    st.write("Domain/Function with SQE") 
-#    st.markdown(f'<p style="font-family:Arial; color:rgb(230, 184, 0); font-size: 30px;">{value}</p>', unsafe_allow_html=True)
-
-#elif sqe_number == domain_number :
-#    st.write("Domain/Function with SQE")
-#    st.markdown(f'<p style="font-family:Arial; color:Green; font-size: 30px;">{value}</p>', unsafe_allow_html=True)
-###########################################################################################################
-
-#st.subheader('Add comment', divider = "red" )
-
-#try : 
-#    comments = st.session_state.comments
-#except :    
-#    comments = []
-#comment = st.text_input("Comment")
-
-#if st.button("Post") :
-#    comments = [comment] + comments
-#    st.session_state.comments = comments
-#st.table(pd.DataFrame(comments, columns = ["Comments"]))
 container_style = """
 {
     background-color: #051650;
