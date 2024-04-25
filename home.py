@@ -311,5 +311,5 @@ with col3 :
                             border: 1px solid #ffffff;
     }""")    :
         details_training = st.button('Details', key = 'DETAILSTRAINING')
-    if details_promo :
-        switch_page('network display')
+    if details_training :
+        switch_page('network metrique')
