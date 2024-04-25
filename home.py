@@ -90,26 +90,6 @@ with col1:
     
     if details_sqe : 
         switch_page('sqe metrique')
-
-###########################################################################################################    
-
-    st.subheader('CASID')
-
-with col2 :
-    st.subheader('Risk Management on Systemic Safety Topics')
-    with stylable_container(key = 'metric_container',
-                            css_styles = container_style, ) : 
-        col21, col22 = st.columns(2)
-    with col21 : 
-        st.markdown('Assessement on time')
-        st.markdown(f'<p style="font-family:Arial; color:Red; font-size: 30px;">44 %</p>', unsafe_allow_html=True)
-        st.write('Acknowledgement on time')
-        st.markdown(f'<p style="font-family:Arial; color:Green; font-size: 30px;">89 %</p>', unsafe_allow_html=True)
-
-    with col22 : 
-        st.write('Number of open SMS cases')
-        st.markdown('<p style = "font-family:Arial; font-size: 30px;">34</p>', unsafe_allow_html= True)
-        st.write('Sources of SMS cases')
     ###########################################################################################################    
 
     st.subheader('Budget')
@@ -129,6 +109,26 @@ with col2 :
     
     if details_budg : 
         switch_page('budget display')
+###########################################################################################################    
+
+    st.subheader('CASID')
+
+with col2 :
+    st.subheader('Risk Management on Systemic Safety Topics')
+    with stylable_container(key = 'metric_container',
+                            css_styles = container_style, ) : 
+        col21, col22 = st.columns(2)
+    with col21 : 
+        st.markdown('Assessement on time')
+        st.markdown(f'<p style="font-family:Arial; color:Red; font-size: 30px;">44 %</p>', unsafe_allow_html=True)
+        st.write('Acknowledgement on time')
+        st.markdown(f'<p style="font-family:Arial; color:Green; font-size: 30px;">89 %</p>', unsafe_allow_html=True)
+
+    with col22 : 
+        st.write('Number of open SMS cases')
+        st.markdown('<p style = "font-family:Arial; font-size: 30px;">34</p>', unsafe_allow_html= True)
+        st.write('Sources of SMS cases')
+
 with col3 :
     st.subheader('Assurance')
     st.subheader('Promotion')
