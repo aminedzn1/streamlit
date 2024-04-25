@@ -31,7 +31,7 @@ obj_data = pd.read_csv(r'data/Objectives 2024 - 1 & DOA - 2024 objective status 
 
 
 filtered = st.multiselect("Filter columns", options=list(obj_data.columns), default=['Objective','Global Status']) 
-st.table(obj_data[filtered],use_container_width=True)
+st.table(obj_data[filtered])
 
 
 
