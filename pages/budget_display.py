@@ -89,7 +89,7 @@ if delta > tol :
 elif delta < - tol :
     text = f"""
 <p style ="font-family:Arial; font-size:30px; color: White;">{y_evo[month]} k€ \n</p>
-<p style ="font-family:Arial; font-size:10px; color: Red;">{delta}</p>
+<p style ="font-family:Arial; font-size:20px; color: Red;">{delta}</p>
 """
 else :
     text = f"""
