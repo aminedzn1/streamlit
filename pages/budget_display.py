@@ -81,20 +81,26 @@ month = np.argmax(y_evo) - 1
 delta = y_tar[month] - y_evo[month]
 tol = .05*y_tar[month]
 
-if delta > tol :
+if delta < -tol :
     text = f"""
 <p style ="font-family:Arial; font-size:30px; color: White;">{y_evo[month]} k€ \n</p>
-<p style ="font-family:Arial; font-size:20px; color: rgb(230, 184, 0);">+{delta}</p>
+<p style ="font-family:Arial; font-size:20px; color: rgb(230, 184, 0);">Overspend of {delta} k€</p>
 """
-elif delta < - tol :
+elif delta > tol :
     text = f"""
 <p style ="font-family:Arial; font-size:30px; color: White;">{y_evo[month]} k€ \n</p>
-<p style ="font-family:Arial; font-size:20px; color: Red;">{delta}</p>
+<p style ="font-family:Arial; font-size:20px; color: Red;">Underspend of {delta} k€</p>
 """
 else :
-    text = f"""
-<p style ="font-family:Arial; font-size:30px; color: White;">{y_evo[month]} k€ \n</p>
-<p style ="font-family:Arial; font-size:20px; color: Green;">{delta}</p>
-"""
+    if delta > 0 :
+        text = f"""
+    <p style ="font-family:Arial; font-size:30px; color: White;">{y_evo[month]} k€ \n</p>
+    <p style ="font-family:Arial; font-size:20px; color: Green;">Underspend of {delta} k€</p>
+    """
+    else :
+        text = f"""
+    <p style ="font-family:Arial; font-size:30px; color: White;">{y_evo[month]} k€ \n</p>
+    <p style ="font-family:Arial; font-size:20px; color: Green;">Overspend of {delta} k€</p>
+    """
 
 st.session_state.budg_metr = text
