@@ -38,9 +38,7 @@ filtered = st.multiselect("Filter columns", options=list(obj_data.columns), defa
 st.dataframe(obj_data[filtered],use_container_width=True)
 
 
-###########################################################################################################
-st.page_link("pages/objective_modify_table.py", label = 'Update', icon = '🖊️')
-###########################################################################################################
+
 #st.subheader('Add comment', divider = "blue" )
 
 #try : 

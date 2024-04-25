@@ -132,3 +132,18 @@ with col2 :
 with col3 :
     st.subheader('Assurance')
     st.subheader('Promotion')
+    with stylable_container(key = 'metric_container',
+                            css_styles = container_style, ) : 
+        promo = st.container()
+    promo.write("Number of promotions")
+    try:
+        promo.markdown(st.session_state.promo, unsafe_allow_html=True)
+    except:
+        promo.write(":/")
+    with stylable_container(key = 'Details_button', css_styles="""button{
+                            background-color:#051650;
+                            border: 1px solid #ffffff;
+    }""")    :
+        details_promo = st.button('Details', key = 'DETAILSPROMO')
+    if details_promo :
+        switch_page('promotion display')
