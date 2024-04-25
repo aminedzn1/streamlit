@@ -186,9 +186,6 @@ promo['Date'] = pd.to_datetime(promo['Date'], dayfirst=True,format='mixed')
 troismois = pd.Timestamp.today() - pd.DateOffset(months = 3)
 promo = promo.loc[promo['Date']>troismois]
 
-filt = st.multiselect("Filter columns",options=promo.columns, default =['Promotion Type','Date'] )
-st.table(promo[filt])
-
 value  = len(list(promo['Date']))
 text =f"<p style = 'font-family:Arial; font-size:30px; color:White;'>{value}</p>"
 st.session_state.promo = text
