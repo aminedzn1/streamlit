@@ -113,8 +113,12 @@ with col2 :
     ###########################################################################################################    
 
     st.subheader('Budget')
+    with stylable_container(key = 'metric_container',
+                            css_styles = container_style, ) : 
+        budg = st.container()
+    budg.write("Actuals")
     try:
-        st.plotly_chart(st.session_state.budg_fig, use_container_width=True)
+        st.markdown(st.session_state.budg_metr, unsafe_allow_html=True)
     except:
         st.write(":/")
     with stylable_container(key = 'Details_button', css_styles="""button{
