@@ -34,6 +34,7 @@ network_data = pd.read_csv(r'data/Network Contact list - SMS contact.csv')
 network_data['trainedBool'] = (network_data['Trained'] == 'Yes')
 
 plot_tr = network_data[['Domain', 'trainedBool']].groupby(['Domain']).mean()
+plot_tr['trainedBool'] = plot_tr['trainedBool'].apply(lambda x : round(x*100, 2))
 plot_tr = plot_tr.rename(columns = {'trainedBool' : 'Percent trained'})
 
 import plotly.express as px
