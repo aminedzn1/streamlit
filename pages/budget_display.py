@@ -77,14 +77,14 @@ st.plotly_chart(fig, use_container_width=True)
 fig.update_layout(legend=dict(x=0, y=1))  
 st.session_state.budg_fig = fig
 
-month = pd.Timestamp.today().month -2
+month = pd.Timestamp.today().month 
 delta = y_tar[month] - y_evo[month]
 tol = .05*y_tar[month]
 
 if delta > tol :
     text = f"""
 <p style ="font-family:Arial; font-size:30px; color: White;">{y_evo[month]} k€ \n</p>
-<p style ="font-family:Arial; font-size:10px; color: rgb(230, 184, 0);">{delta}</p>
+<p style ="font-family:Arial; font-size:10px; color: rgb(230, 184, 0);">+{delta}</p>
 """
 elif delta < - tol :
     text = f"""
