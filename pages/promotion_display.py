@@ -27,7 +27,7 @@ st.title('1 & DOA SMS Promotion Follow-up in the last 3 months')
 promo = pd.read_csv(r'data/Engineering SMS Promotion Follow-up - Safety Briefing, Training, Hub.csv')
 promo['Date'] = pd.to_datetime(promo['Date'], dayfirst=True,format='mixed')
 troismois = pd.Timestamp.today() - pd.DateOffset(months = 3)
-#promo = promo.loc[promo['Date']>troismois]
+promo = promo.loc[promo['Date']>troismois]
 
 filt = st.multiselect("Filter columns",options=promo.columns, default =['Promotion Type','Date'] )
 st.table(promo[filt])
