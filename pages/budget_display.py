@@ -77,7 +77,7 @@ st.plotly_chart(fig, use_container_width=True)
 fig.update_layout(legend=dict(x=0, y=1))  
 st.session_state.budg_fig = fig
 
-month = np.argmax(y_evo)
+month = np.argmax(y_evo) - 1
 delta = y_tar[month] - y_evo[month]
 tol = .05*y_tar[month]
 
