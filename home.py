@@ -263,7 +263,7 @@ with col1:
         details_budg = st.button('Details', key = 'DETAILSBUDGET')
     
     if details_budg : 
-        switch_page('budget display')
+        switch_page('budget metrique')
 ###########################################################################################################    
 
     st.subheader('CASID')
