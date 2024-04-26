@@ -30,6 +30,7 @@ container_style = """
     border: 1px solid #ffffff;
     border-radius : 10px;
     padding-left:30px;
+    padding-down:30px;
 }
   
 }
