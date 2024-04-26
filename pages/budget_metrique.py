@@ -97,7 +97,7 @@ target = go.Scatter(
       marker=dict(symbol = 'cross-thin',color="green"),
       name = 'Target (k€)'
 )
-spending = px.bar(
+spending = go.bar(
     x=x,
     y=[y_2,y_3],
     name = ['Actuals (k€)','Commitment (k€)']
