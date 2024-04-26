@@ -314,7 +314,6 @@ with col2 :
         st.markdown('Number of Internal findings on time')
         st.markdown(f'<p style="font-family:Arial; color:White; font-size: 30px;">2/3</p>', unsafe_allow_html=True)
 with col3 :
-    st.subheader('Assurance')
     st.subheader('Promotion')
     with stylable_container(key = 'metric_container',
                             css_styles = container_style, ) : 
