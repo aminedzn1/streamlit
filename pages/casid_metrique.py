@@ -41,7 +41,7 @@ casid_data['statusus'] = casid_data['Current status'].apply(lambda x : trans(x))
 ###########################################################################################################
 df =  casid_data.loc[(casid_data['statusus'] >=2)]
 
-df = df[['CoC', 'statusus']]
+df = df[['CoC', 'statusus']].reset_index()
 df['Status'] = ''
 for i in df.index :
     if df.iloc[i, 'statusus']>= 4 :
