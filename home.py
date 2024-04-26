@@ -299,7 +299,20 @@ with col2 :
         st.markdown('<p style = "font-family:Arial; font-size: 30px;">34</p>', unsafe_allow_html= True)
         st.write('Sources of SMS cases')
         st.markdown(pd.DataFrame(np.array([['OCCURENCE', 2],['SARI', 10],['TEST', 4],['OTHERS', 3]]), columns = ['Source', 'Number']).style.hide(axis="index").to_html(), unsafe_allow_html=True)
-
+    st.subheader('Assurance')
+    with stylable_container(key = 'metric_container',
+                            css_styles = container_style, ) : 
+        col21b, col22b = st.columns(2)
+    with col21b : 
+        st.markdown('Deployement')
+        st.markdown(f'<p style="font-family:Arial; color:white; font-size: 30px;">44 %</p>', unsafe_allow_html=True)
+        st.write('DOA ScoreCard')
+        st.markdown(f'<p style="font-family:Arial; color:Green; font-size: 30px;">⬤</p>', unsafe_allow_html=True)
+    with col22b :
+        st.markdown('Number of EASA findings on time')
+        st.markdown(f'<p style="font-family:Arial; color:White; font-size: 30px;">1/1</p>', unsafe_allow_html=True)
+        st.markdown('Number of Internal findings on time')
+        st.markdown(f'<p style="font-family:Arial; color:White; font-size: 30px;">2/3</p>', unsafe_allow_html=True)
 with col3 :
     st.subheader('Assurance')
     st.subheader('Promotion')
