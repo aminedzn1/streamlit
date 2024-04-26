@@ -27,12 +27,12 @@ st.page_link('home.py', label = 'Home', icon = '🏠', use_container_width=True)
 ###########################################################################################################
 data_budg = pd.read_csv(r'data/sms_budget_yoy.csv')
 
-filt = st.multiselect("Filter columns", options = data_budg.columns, default = data_budg.columns.all() )
+filt = st.multiselect("Filter columns", options = data_budg.columns, default = list(data_budg.columns) )
 
 st.table(data_budg[filt])
 
 data_func = pd.read_csv(r'data/sms_budget_f.csv')
 
-filt2 = st.multiselect("Filter columns", options = data_func.columns, default = data_func.columns.all() )
+filt2 = st.multiselect("Filter columns", options = data_func.columns, default = list(data_budg.columns) )
 
 st.table(data_budg[filt])
