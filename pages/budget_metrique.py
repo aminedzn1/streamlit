@@ -32,7 +32,7 @@ st.title('1 & DOA SMS Budget')
 ###########################################################################################################
 
 data_budg = pd.read_csv(r'data/sms_budget_yoy.csv')
-
+st.subheader('Global budget status')
 x = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 y_act = list(data_budg['Actuals (k€)'])
 y_com = list(data_budg['Commitment (k€)'])
@@ -75,6 +75,7 @@ st.plotly_chart(fig, use_container_width=True)
 
 
 ###########################################################################################################
+st.subheader('Budget status per domain')
 data = pd.read_csv(r'data/sms_budget_f.csv')
 x = list(data['Domain/Function'])
 y_1 = list(data['Baseline (k€)'])
@@ -91,7 +92,7 @@ fig.add_trace(go.Scatter(
       x=x,
       y=y_1,
       mode = 'markers',
-      marker=dict(symbol = "line-ew-open",color="red",size = 30),
+      marker=dict(symbol = "line-ew-open",color="red",size = 40),
       name = 'Baseline (k€)'
 )) 
 
@@ -99,7 +100,7 @@ fig.add_trace(go.Scatter(
       x=x,
       y=y_4,
       mode = 'markers',
-      marker=dict(symbol = 'cross', color="green",size = 20),
+      marker=dict(symbol = 'arrow-right', color="green",size = 20),
       name = 'Target (k€)'
 )) 
 
