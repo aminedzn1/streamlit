@@ -41,4 +41,5 @@ df = df.replace({'4. Internal Kick-off Meeting (KoM) performed': 'Kick-off',
                  '2. CASID introduced to the supplier': 'Nomination'})
 
 df = df.groupby(['CoC','Current status']).size()
-st.write(df)
+fig = px.bar(df, x = 'CoC', y = 0, color = 'Current status', barmode='group')
+st.plotly_chart(fig)
