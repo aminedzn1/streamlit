@@ -100,7 +100,7 @@ target = go.Scatter(
 fig = go.Figure(data = [baseline,target])
 fig.add_bar(
     data_frame=data[['Domain/Function','Actuals (k€)','Commitment (k€)']],
-    x='Domain/Function',
+    x=x,
     y=['Actuals (k€)','Commitment (k€)']
 )
 
