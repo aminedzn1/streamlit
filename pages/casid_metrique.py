@@ -36,7 +36,7 @@ def trans(x):
         return(int(x[0]))
     except :
         return(0)
-casid_data['statusus'] = casid_data['Current status'].apply(trans())
+casid_data['statusus'] = casid_data['Current status'].apply(lambda x : trans(x))
 
 ###########################################################################################################
 df =  casid_data.loc[(casid_data['statusus'] >=2)]
