@@ -7,23 +7,13 @@ st.set_page_config(
      page_title = 'ePPS display',
      page_icon = 'clipboard',
 )
-st.title('PPS mock up')
+st.title('1 & DOA SMS cases')
 ###########################################################################################################
 
 pps_data = pd.read_csv(r'data/SMS FILTERED DATA ADDED COLUMNS (1).csv', dtype = 'string',keep_default_na=False)
-st.subheader('Top 3 SMS cases')
-st.write(pps_data.head(3))
+speakup_data = pd.read_csv(r'data/Report database non-confidential - Employee speak-up follow-up.csv',dtype = 'string',keep_default_na=False)
 
-col1, col2 = st.columns(2)
+speakup_data['Timestamp'] = pd.to_datetime(speakup_data['Timestamp'], dayfirst=True, format='mixed')
+speakup_data['Initial amployee feedback'] = pd.to_datetime(speakup_data['Initial amployee feedback'], dayfirst=True, format='mixed')
 
-with col1 : 
-     st.write('Assessement on time')
-     st.markdown(f'<p style="font-family:Arial; color:Red; font-size: 30px;">44 %</p>', unsafe_allow_html=True)
-     st.write('Acknowledgement on time')
-     st.markdown(f'<p style="font-family:Arial; color:Green; font-size: 30px;">89 %</p>', unsafe_allow_html=True)
-
-with col2 : 
-     st.write('Number of open SMS cases')
-     st.markdown('<p style = "font-family:Arial; font-size: 40px;">34</p>', unsafe_allow_html= True)
-     st.write('Number of closed SMS cases')
-     st.markdown('<p style = "font-family:Arial; font-size: 40px;">1</p>', unsafe_allow_html= True)
+speakup_data['onTime'] = (speakup_data['Initial amployee feedback'] - speakup_data['Timestamp']) > pd.DateOffset(days =21)

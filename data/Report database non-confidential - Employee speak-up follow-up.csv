@@ -1,0 +1,132 @@
+"I SMS reference
+YYYY-MMM-000",Timestamp,Email Address," If you wish, you can request confidentiality by ticking the box below and limiting the distribution to only the I and domain SMS Officers. Your identity will be treated as confidential but you will be contacted if there are any follow­up questions or if anything is unclear.",Choose Your Language,What is the detection date?,Is the subject linked to a process or organizational issue ?,Where the potential safety threat has been detected? (Business Unit),Is the subject linked to an A/C program or all program,"What is the potential safety threat ? (factual description of the event, who, how)","If a mitigation mean has been implemented, please describe it.","If you want to attach a file to your report, please tick the box and send it by email (exept if the report is confidential): sms.engineering@airbus.com",Confirmed as potential SMS concern,Comment / justification,Initial employee feedback,ePPS reference,Domain leader (dept),Concern Coordinator,MMM-YYYY
+2022-Jan-001,31-Jan-2022,stephane.boussu@airbus.com,,French,13-Jan-2022,Airbus Helicopters,Airbus-Helicopters,Airbus Helicopters,confidential speak-up  received thru Gsite form,,,No (justification here→),"This comes from a confidential report. This information is confidential
+It is a systemic safety topic for Airbus Helicopter",17-Jan-22,N/A,1,,1-2022
+2022-Apr-001,14-Apr-2022,atipu.ponglux@airbus.com,,English,07-Apr-2022,"Process, Organization",1A,A320 Family,"The Flap Track Fairings #2 (Fwd Fixed, Aft Fixed and Movable Fairings) are interchangeable across the A318/A319A320 CEO fleet. Generally, our repair designs on the SA Flap Track Fairings are wet layup repair (either dry carbon fabric or dry glass fabric with laminating resin). 
+
+However, on A318 with PW6000 engines (A318-121 and A318-122), the maximum surface temperature on the Flap Track Fairings #2 can go upto 104 degC based on the flight test. This is greater than the curing temperature of those wet lay up repair material. Hence, it is detrimental to the wet layup repair material and its strength. Therefore, the interchangeability of the Flap Track Fairings #2 which had been repaired with those wet layup repair materials must be restricted to exclude the installation on A318-121 and A318-122.
+
+There are ~140 RDAF/RDAS which have been issued without the interchangeability restriction. Hence, there is a risk that these repaired Flap Track Fairings #2 would be swapped and installed on A318-121 or A318-122.
+","The directive email has been set to reiterate/remind the team about the limitation.
+The Repair Engineering Knowledge Base has been updated to include this information.",,Yes,"Meeting organized with the speak-up originator.
+
+The speak-up originator is part of the case resolution and is therefore ""provided"" regular feedback. ",28-Apr-22,209068289,1S,MALATERRE FRANCK,4-2022
+2022-Apr-002,15-Apr-2022,christophe.casse@airbus.com,,French,12-Apr-2022,Processus,1P,All Program,"Nous nous engageons actuellement dans un processus de Baisse marge de sécurité des avions au travers de revues taches MRB pour des raisons de couts opérationnels en demandant des mises à jours de SSA puis de changement de valeur de candidat CMR là ou des marges sont identifiés, soit par exemple que les calculs avaient des marges, soit que sur la base de retour expérience qui permettent d'établir que les FC plus faibles en service, soit que d'autres taches MRB non considérées dans la SSA permettent de baisser l'exposition, surtout sur des pannes cachées., etc...Cela ne remets pas en cause la véracité des méthodes de calculs et d'évaluations de risques évoquées mais dans l'engagement pris par Airbus d'amélioration continu de la sécurité, quel est le processus et l'organisation associée s'assurant de l'approbation de tels choix acceptables de baisses de marges de sécurité(réduction des marges)? SMS organisation? Safety director? Safety board? ou autres?",non,,Yes,Acknowledgement of receipt sent saying feedback will be provided at a later date. ,,211422751,1P,,4-2022
+2022-Jul-001,12-Jul-2022,alain.santgerma@airbus.com,,English,31-Oct-2021,Process,1A,A320 Family,"During a visit to Broughton last 
+November, speaking to the fitters to understand what could be done to 
+better our design. Speaking to Mr. Ian Thompson at the SA pressurisation 
+station who pointed out that the solitary flap brake and the solitary slat 
+brake are no longer being tested at the function test station. As per him, 
+this step was removed from the SOP about 5 years ago. His question was if 
+they are not being tested in Broughton at the pressurization station then 
+where are they being tested? Are they being tested in the FAL at 
+Tls/Hamburg (if a defect is found isn't it easier to correct it in 
+Broughton as compared to Tls/Hamburg)? It could be a safety issue if they 
+are not being tested at all.",,,Yes,This comes from a confidential report,04 May 2022,,1A,Santgerma,7-2022
+2022-Aug-001,05-Aug-2022,miruna.dubois.external@airbus.com,,English,04-Aug-2022,Process,1,No related to any program,"The DOA concern process, now managed by QIO and Airbus Function's DAN network, will be managed under the SMS of Engineering. There may be a change in process, methods and tools, which may lead the DOA concerns being less well treated. ","Some discussions took place with some DAN and QIO members, to better understand their process and take their constraints into account when introducing the DOA concerns in the SMS. ",,Yes,"DOA concerns manage systemic corrective actions for safety concerns. If not properly done, this may prevent us from enhancing the safety of Airbus aircraft. ",Yes,209194955,1,Cécile ROUBAUD,8-2022
+2022-Oct-001,21-Oct-2022,cecile.roubaud@airbus.com,,English,18-Oct-2022,Process and Organization,1A,All Program,1A,,,No (justification here→),"For the example provided, it is normal that the DQN proposed was rejected as it was a standard part. The NSA 8186 was however updated to reflect the additional info requested by Manuf.  ",9-May-23,N/A,1A,,10-2022
+2022-Nov-001,23-Nov-2022,leon.elton@airbus.com,,English,21-Nov-2022,Process,1S,No related to any program,1S,"Feedback shared to Design office.  
+Lesson learnt shared with the In-service engineering team within 1SY responsible for these parts.  It was identified the need to ensure 4-eyes (1SY in addition to the RTE)  performed on the PN for future cases to detect PN impacted by FAR regulation.",,No (justification here→),"The process is ensuring a regular check of the quality / compliance to the regulations (through Quality and Google Form feeding RDAF Working Group)
+The case will be reported through the RDAF WG Google form and will be transmitted to 1IAZ/1S/SBC Quality & Process owners as well.",11-May-23,N/A,1S,Benoiît VERLINDE,11-2022
+2022-Dec-001,22-Dec-2022,louis.poussac@airbus.com,,English,14-Dec-2022,Process,1S,All Program,"In this specific case, the issue came from the input data to the AOT (ATA 35) from the QSR process that was incorrect.  We had two cases as following:
+
+ - Multiple errors in the list of affected units provided in the TOAC of the QSR by POx (Such as incorrect MSN listed as having the PN installed at delivery, SN/PN do not correspond etc)
+
+- As per TOAC, SATAIR parts were supposed to be secured (scrapped, put in quarantine). However, one customer informed us that several PN which were supposed to be handled by SATAIR were, in fact, installed on their A/Cs. 
+The securitization of the parts was then not effective (maybe not launched) leading to additional impacted units being released into service which were not part of the AOT.
+
+Given the second point, if not detected by an operator may have led to impact units installed undetected and unchecked for a/c life.",We will update the AOT by deleting the appendix (TOAC) and in lieu recommend Airlines to check directly the VSIL from the supplier which lists all the potentially affected parts.,,Yes,,,210383760,1S,Benoit VERLINDE,12-2022
+2023-Apr-001,25-Apr-2023,sebastien.sahuguede@airbus.com,,English,23-Mar-2023,Process,1S,A350,"Release of an RDAF to install a spare part (alternative PN from a supplier, which is not qualified for the datum A/C) using the SIAS (Spare Interchangeability Approval Sheet, see M1017) process. Problem is that SIAS process only applies to AIRBUS part and not supplier part. 2 cases TR 81059831 & 81095315",Technical analysis done to assess any safety impact on the aircraft,,Yes,,,210089008,1I,,4-2023
+2023-Apr-002,28-Apr-2023,thorsten.knijnenburg@airbus.com,,English,21-Apr-2023,Process,1C,A350,"Change of the installation place of FIN 101MJ ASPSU with Li Ionen battery without involved of the correct ATA chapter and without update of the Zone Safety Analysis and EWIS document to secure the ASPSU function.
+MOD 115766 / MP L20884 Galley Cooling, MOD item is Galley Cooling BUT with a big impact on our ATA52-71 device called ASPSU FIN 101MJ.
+Valid for A350-900 (from MSN561, aircraft is flying) as well -1000, and -1000F in future. 
+ATA52-71 is not part of the TRS L20884",none,,Yes,,26-May-23,210613503,1C,,4-2023
+2023-Jun-001,06-Jun-2023,laurence.riom@airbus.com,,English,19-Apr-2023,Process,EASA,No related to any program,Parts non qualified potentially installed on inservice aircraft,Not yet,Attach a file,Yes,,,210165625,1,Philippe VIGARIOS,6-2023
+2023-Jun-002,21-Jun-2023,ilja.waigl@airbus.com,,English,21-Jun-2023,Process,1C,"A330/A340, A300/A310","In 2021 an In-Service Occurrence SA.20.04615/LR.21.07933 were raised dealing with an explosion of the ATA33 Emergency Power supply Unit Battery Pack.
+
+The same battery pack is used on the A330/A340 and A300/A310 fleet as energy source for the Autonomous Stand-By Power supply Unit (ASPSU) and on the A340-600 for the Slide Release Power Supply Unit (SRPSU). 
+
+For ASPSU and SRPSU 1CD1C prepared in 2021 a DRAFT EngO, preliminary discussed with Continued Airworthiness but not further processed in accordance with the Airbus Procedures. Accordingly until today no assessment of the Impact of Airworthiness was done.
+
+Basing on the Investigation results an update of the Aircraft Maintenance Manual (AMM) is mandated to state that the ASPSU/SRPSU Battery test shall only be done on Aircraft when the Battery is not older than 2 years and shall not repeated in case of a failed Battery test.
+",,Attach a file,No (justification here→),"The speak-up originators needs to request an AMM update as per the appropriate process. 
+
+The SMS case will be closed once the speak-up originator will be informed.",05-Jul-23,N/A,1C,,6-2023
+2023-Jun-003,28-Jun-2023,olivier.sarrazin@airbus.com,,French,27-Jun-2023,Processus,OMIIT + ATI,"A330/A340, A300/A310, Beluga ST + Beluga XL","Possibilité de rupture des interfaces de transports (jigs) pendant un transport interne en Beluga ST ou Beluga XL:
+Lors de la revue d'un dossier de calcul d'un bâti de transport (jig) par ATI, plusieurs erreurs ont été détectées à posteriori des transports (écarts entre le dossier de définition et le dossier de justification de la définition non détectés pendant le processus de conception M20129), avec comme conséquences des marges réelles de sécurités potentiellement non démontrées (RF<1). OMIIT a confirmé que ce même type d'erreur peut exister dans les dossiers de calculs justifiant les interfaces de transports actuels. ",Non,Attach a file,Yes,"Non-consolidated approved Airbus data.
+ATI has their own DOA, the program is aware of this topic.
+Stephane wanted to keep track of it, in anticipation, as this is a tooling topic, and O is responsible of jigs.",,210346940,1,,6-2023
+,16-Aug-2023,youenn.quiniou@airbus.com,,English,01-Jun-2023,"Process, Organization",1Y,A300/A310,"Justification of the continious in service use of an Old MLG Uplock for A300 fleet is tentatively pushed using as a justification a test sequence known to be not representative of the in service usage and the feared failure mode.
+- MLG & MLGD uplocks - SLS VSBs update - A300 SE SB A25441-32-911+A2545-32-913 rev01 ",,Attach a file,Yes,,,,1Y,,8-2023
+2023-Sep-001,11-Sep-2023,cecile.roubaud@airbus.com,,English,07-Jul-2023,Process,1Z,"A320 Family, Other program to be confirmed","This speak-up form is completed to ensure traceability of a topic discussed and exchange via e-mail between Sebastien MALLARD and Stéphane BOUSSU. There is a potential issue on the management of the SARI SE-21.0583, traceability issue of MLG installation. Indeed the solution of the manufacturing issue seems to be the PBS (product breakdown structure) update but it has been rejected (cf. attachement for more detail), the support of Engineering team is expected.
+","Yes, via a check and a file follow-up (managed by the SARI)",Attach a file,No (justification here→),"DOA Concern closed, it is not a Systemic Safety concern in DOA. The management of the SARI needs to be followed with the support of the engineering team as per MC.PS.07 [comment taken from the 20231011 Monthly, added by Cécile on 10-Oct-23 16h04]",18-Oct-23,N/A,1Z,,9-2023
+2023-Oct-001,19-Oct-2023,ludovic.lefevre@airbus.com,,English,09-Oct-2023,Process,1S,All Program,"A320 / A330 / A300 - ATA 35 - QSRs O² Generator Loose (TO/F/CB/22-00005 & TH/D/CB/22-00006)
+August 2022: QSR opened on O² generator loose.
+October 2023:  Population to be considered for in-service still not frozen  (As per TOACs 22197 units on A320Fam, 656 units on A330, VSB draft version for in-service corrective action with 3504 units, no clear evidence  that re-torquing procedure has been accomplished on all the units excluded (i.e. 19349 units)).
+Before releasing VSB, 1SY needs a consolidated & validated list of affected units to be corrected in-service.
+
+After several meeting with peoples involved in the QSR and especially involved for TOAC definition, no one is able to provide evidence that the units excluded were corrected. We discovered the issue, by seeing that for some units it was indicated that 1SYCY team member performed the rework. This cannot be possible because we do not have delegation/qualification to perform maintenance activity on aircraft.
+",,Attach a file,Yes,,,210383760,1S,Benoit VERLINDE,10-2023
+2024-Jan-001,29-Jan-2024,pierre.montanier@airbus.com,,English,08-Dec-2023,Process,"Suppliers, mainly seat suppliers",All Program,"In Dec 2023, CES advised us about VSIL 25-364 issued by their seat supplier Thompson AERO. This VSIL provides instruction to be performed on aircraft, whereas a VSIL is only to provide information. 
+This is the latest example but other suppliers provided, from time to time, instruction via non-appropriate documentation (such as VSIL) and without informing the aircraft manufacturer thus impossibility to cover it with the appropriate documentation at aircraft level. ",,,Yes,,02/02/2024,211276100,1,Cécile ROUBAUD,1-2024
+2024-02-001,19-Feb-2024,celine.bedja.external@airbus.com,,French,19-Feb-2024,test reception gform,test reception gform,test reception gform,test reception gform,,,No (justification here→),Tests,,,,,2-2024
+2024-02-002,19-Feb-2024,celine.bedja.external@airbus.com,,French,19-Feb-2024,test reception gform,test reception gform,test reception gform,test reception gform,,,No (justification here→),Tests,,,,,2-2024
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
+,,,,,,,,,,,,,,,,,,12-1899
