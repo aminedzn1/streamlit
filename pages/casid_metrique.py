@@ -31,7 +31,12 @@ st.title('1 & DOA CASID Status')
 ###########################################################################################################
 
 casid_data = pd.read_csv(r'data/CASID status - CASID Status .csv', dtype = 'string',keep_default_na=False)
-casid_data['statusus'] = casid_data['Current status'].apply(lambda x : int(x[0]))
+def trans(x): 
+    try :
+        return(int(x[0]))
+    except :
+        return(0)
+casid_data['statusus'] = casid_data['Current status'].apply(trans())
 
 ###########################################################################################################
 df =  casid_data.loc[(casid_data['statusus'] >=2)]
