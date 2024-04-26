@@ -284,7 +284,7 @@ with col2 :
     with stylable_container(key = 'metric_container',
                             css_styles = container_style, ) : 
         source = st.container()
-    source.table(pd.DataFrame(np.array([['OCCURENCE', 2],['SARI', 10],['TEST', 4],['OTHERS', 3]]), columns = ['Source', 'Number']))
+    source.markdown(pd.DataFrame(np.array([['OCCURENCE', 2],['SARI', 10],['TEST', 4],['OTHERS', 3]]), columns = ['Source', 'Number']).style.hide(axis="index").to_html(), unsafe_allow_html=True)
 
 with col3 :
     st.subheader('Assurance')
