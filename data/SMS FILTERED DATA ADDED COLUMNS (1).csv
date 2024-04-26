@@ -1,0 +1,541 @@
+﻿assessement_on_time,acknowledgement_on_time,start_to_s1_time,start_to_s0_time,domain,skywise_pps_id,aircraft_program,pps_title,pps_start_date,originator,owner,facilitator,reoccurence,complexity_level,pps_level,confidential,severity,occurence_growth,detection_urgency,risk_priority_number,product_name,unit,ata,station,external_customer_issues,customer_name,list_impacted_product_serial_number,list_impacted_product_part_number,list_impacted_product_name,list_impacted_product_date,list_impacted_product_location,list_impacted_product_additional_information,trigger_name,trigger_type,trigger_reference,sap_system,impact_safety,impact_safety_description,impact_quality,impact_quality_description,impact_cost,impact_cost_description,impact_delivery,impact_delivery_description,impact_people,impact_people_description,issue_detection_date,what_issue_detected_owner_view,what_issue_detected_originator_view,where_issue_detected_owner_view,where_issue_detected_originator_view,when_issue_detected_owner_view,when_issue_detected_originator_view,who_issue_detected_owner_view,who_issue_detected_originator_view,how_issue_detected_owner_view,how_issue_detected_originator_view,problem_description,pictures_description,system_status,latest_status,status_draft_time,status_s0_time,status_s1_time,status_s4_time,status_s5_time,status_s6_time,status_s7_time,status_stop_time,status_clos_time,status_dlfl_time,ishikawa_material,ishikawa_machine_tools,ishikawa_method_process,ishikawa_maintenance,ishikawa_people,ishikawa_environment_culture,complementaty_information,date_action_plan_defined,five_times_why_tool_answer_1,statement_confirmation_answer_1,five_times_why_tool_answer_2,statement_confirmation_answer_2,five_times_why_tool_answer_3,statement_confirmation_answer_3,five_times_why_tool_answer_4,statement_confirmation_answer_4,five_times_why_tool_answer_5,statement_confirmation_answer_5,root_cause_description,root_cause_classif_description,other_case,other_case_comments,poka_yoke,poka_yoke_comments,documentation_up_to_date,documentation_up_to_date_comments,problem_or_corrective_action_communicated_to_stakeholder,problem_or_corrective_action_communicated_to_stakeholder_comments,using_operational_process_confirmation,using_operational_process_confirmation_comments,best_practice,successful_comments,planned_closure_date,closure_date,owner_signature_date,facilitator_signature_date,originator_signature_date,mft_area,skywise_non_conformity_id,skywise_concession_id,skywise_sari_id,skywise_event_id,skywise_audit_id,arp_id,affected_supplier,is_deleted
+100,0,50.0,50.0,1P,000209942890,[A320NEO],1P - SMS PW fan blade redesign missing calibration for Flight Clearance,2023-04-17,1PV,Q1YP,Q1YP,N,1,1,false,08,01,10,0080,[PW Fan Blades redesign],,[7X],,N,,,,,,,,[OTHERS],[OTH],[N/A],,true,,true,,true,,false,,false,,2023-04-03," 
+ Full set of Pratt <(>&<)> Whitney Fan Blades redesign not caracterized 
+ ",," 
+ In Design Office",," 
+ fan blades installation: mid january 2023 
+ detection of discrepancy: mid february 2023 
+ PPS MFT building 3 april 2023",," 
+ Design Office",," 
+ informal discussion relating to new fan blades performance, realisation from the team that data was missing",," 
+ Any engine or fan blades set delivered to Airbus has to be calibrated, at the test stand, by engine manufacturer prior to delivery to caracterized associated engine thrust and define potential aircraft limitation or trim the engine 
+ For the new fan blades redesign it appears that the blades were sent to Airbus without those mandatory calibration tests",,"[DRFT, S0, S1, S4, S1, S4, S1, S4]",S4,[2023-04-17 11:11:02],2023-05-23,2023-05-23,"[2023-06-13 09:07:30, 2023-06-13 09:23:02, 2023-06-13 10:07:01]",,,,,,,,," 
+ Redesign fan blades calibration at the test stand was not performed",,,,,2023-05-30," 
+ Redesign fan blades calibration at the test stand was not performed",," 
+ Request from Airbus to receive parts as soon as available to secure on time delivery to compensate already announced delays to support icing flight test campaign window (push back 1 year otherwise)",," 
+ Missing tests not identified because OAD not implicated in Safety of flight discussion",," 
+ OAD involvement not required during Safety of flight discussion",," 
+ Lack of checklist for SoF and Lack of knowledge",,"[OAD not implicated during Safety of flight discussion because of:
+- lack of knowledge it was necessary
+- no document requested it, Urgent request for parts and SI done quickly to avoid missing natural icing flight test window]","[Proceso-No descrito  ||  Process-Not described  ||  Processus-Non décrit  ||  Prozess-Nicht beschrieben, Andere  ||  Autres  ||  Others  ||  Otros]",,,,,,,,,,,false,,,,,,,,,[],[],[],[],,,false
+100,100,33.0,21.0,1V,000210053898,[A321],1V - SMS - Engine cranking started while an operator was still working on Pylon area,2023-05-11,1VXT,1VIO,Q1V,N,1,1,false,10,01,05,0050,[MSN 6839],,[ATA28],,N,,,,,,,,[OTHERS],[OTH],[TER-2023-04/0005],,true,,true,,true,,false,,true,,2023-04-20," 
+ Engine cranking started while an operator was still in the pylon area",," 
+ In the cabin, through the video in the pylon area 
+ and from the ground, by an operator",," 
+ Few seconds after the engine cranking started",," 
+ An EASA member and a ground operator",," 
+ By video and visually on ground",," 
+ During Firex test, engine no. 2 cranking started while an operator was still working on pylon area",,"[DRFT, S0, S1, S4, S1, S4, S1, S4, S1, S4, S1, S4]",S4,[2023-05-11 14:54:01],2023-05-11,2023-05-23,"[2023-09-04 18:30:09, 2023-09-11 15:12:31, 2023-10-30 16:52:20, 2023-10-31 16:31:21, 2023-12-14 12:59:53]",,,,,,,,,,,,,,2023-05-31," 
+ “Maintain communication between the ground and the cockpit” voluntarily not respected. Alternative used.",," 
+ Inadequate real-time risk assessment (positive signs that installation was completed and area was clear).",,,,,,,,"[Afternoon team has not participated to previous test, nor to morning rehearsal, EASA presence adding pressure, Inadequate real-time risk assessment (positive signs that installation was completed and area was clear)., No lessons learnt briefed from previous test, Temperature of the bottle increasing adding pressure, Briefing inadequate: no briefing instructions between the morning and afternoon ground teams, Complex and rare test, MSN was not the one the TFE is affected to, Non-availability of a/c to enable training on installation before actual test, Reduced number of firex bottles adding pressure, SOVAM access rights not suited for the team in place, Sharing of the Bikini area with the VOLCAN campaign, Test programme planning already rescheduled and late, Too many people for the test, “Maintain communication between the ground and the cockpit” voluntarily not respected. Alternative used., Weather conditions degrading adding pressure, Modification of installation procedure during test, SOVAM used to onboard people]","[Arbeitsbedingungen-Ressourcenmanagement  ||  Cond.de trabajo-Gestión de recursos  ||  Conditions de travail-Tâche allouée et gestion des  ||  Work.cond.-Task alloc. and Resources Managmt, Andere  ||  Autres  ||  Others  ||  Otros, Andere  ||  Autres  ||  Others  ||  Otros, Andere  ||  Autres  ||  Others  ||  Otros, Andere  ||  Autres  ||  Others  ||  Otros, Arbeitsbedingungen-Ressourcenmanagement  ||  Cond.de trabajo-Gestión de recursos  ||  Conditions de travail-Tâche allouée et gestion des  ||  Work.cond.-Task alloc. and Resources Managmt, Mensch-Nicht ausgebildet  ||  People-Not trained  ||  Persona-No entrenada  ||  Personnes-Non formées, Arbeitsbedingungen-Ressourcenmanagement  ||  Cond.de trabajo-Gestión de recursos  ||  Conditions de travail-Tâche allouée et gestion des  ||  Work.cond.-Task alloc. and Resources Managmt, Arbeitsbedingungen-Ressourcenmanagement  ||  Cond.de trabajo-Gestión de recursos  ||  Conditions de travail-Tâche allouée et gestion des  ||  Work.cond.-Task alloc. and Resources Managmt, Andere  ||  Autres  ||  Others  ||  Otros, Herramienta-No validada  ||  Outils-Non validés pour l'utilisation  ||  Tools-Not validated for use  ||  Werkzeug-Nicht validiert, Arbeitsbedingungen-Ressourcenmanagement  ||  Cond.de trabajo-Gestión de recursos  ||  Conditions de travail-Tâche allouée et gestion des  ||  Work.cond.-Task alloc. and Resources Managmt, Arbeitsbedingungen-Planung  ||  Cond.de trabajo-Planificación  ||  Conditions de travail-Planning (inexistant, mal re  ||  Work.cond.-Planning (not, poor, etc ...), Andere  ||  Autres  ||  Others  ||  Otros, Mensch-Bewusste Missachtung der Anforderungen  ||  People-Deliberate non respect of reqs  ||  Persona-Ignoración deliberada de requisitos  ||  Personnes-Non respect délibéré des exigences, Andere  ||  Autres  ||  Others  ||  Otros, Andere  ||  Autres  ||  Others  ||  Otros, Herramienta-No validada  ||  Outils-Non validés pour l'utilisation  ||  Tools-Not validated for use  ||  Werkzeug-Nicht validiert]",,,,,,,,,,,false,,,,,,,DOA,,[],[],[],[],,,false
+100,100,33.0,20.0,1V,000210489484,[A321NEO],1V - SMS - Wrong Data Entry Plug (Rating Plug) configuration on MSN 6839 (CFM LEAP),2023-08-31,1VXT,1VVID,Q1VA,N,1,1,false,10,04,04,0160,[6839],,[73],,N,,,,,,,,"[TEST, SARI]","[SAR, TES]","[SE-23.09449, TER-2023-08/0004]",,true,,true,,true,,false,,false,,2023-08-18," 
+ CFM LEAP Engine Thrust Rating Plugs: wrong configuration from 21/07/23 to 04/08/23: 
+  
+ _ Source F467-17: on Engine #1 (ESN 598583): Rating Plug 1A35A P/N: 2531M61P02 S/N: UNLJ3824 already installed since F460-6 instead of Rating Plug 1A35AX P/N 2531M61P81AA asked in SI C73PV0014443 - C 
+  
+ _ Source F467-18: on Engine #2 (ESN 599274): Rating Plug 1A35A P/N: 2531M61P02 S/N: UNLK0458 already installed since F460-5 instead of Rating Plug 1A35AX P/N 2531M61P81AA asked in SI C73PV001429 – D",," 
+ on MSN 6839 Engine 1 <(>&<)> 2",," 
+ 04/08/2023",," 
+ ETIENNE Cedric - CFM for PP <(>&<)> MONOT Yann - CFM for PP",," 
+ during F467-17 <(>&<)> F467-18 Rating plug change (SI_C73PV001443_D <(>&<)> SI_C73PV001429_E SI application)",," 
+ On 04/08/23, during F467-17 <(>&<)> F467-18 Rating plug change (SI_C73PV001443_D <(>&<)> SI_C73PV001429_E SI application), on A321 NEO MSN 6839 Engine 1 (ESN 598583) <(>&<)> 2 (ESN 599274), ETIENNE Cedric - CFM for PP <(>&<)> MONOT Yann - CFM for PP discovered CFM LEAP Engine Thrust Rating Plugs wrong configuration: 
+ _ Rating Plug 1A35A P/N: 2531M61P02 S/N: UNLJ3824 already installed since F460-6 instead of Rating Plug 1A35AX P/N 2531M61P81AA asked in SI C73PV0014443 - C 
+ _ Rating Plug 1A35A P/N: 2531M61P02 S/N: UNLK0458 already installed since F460-5 instead of Rating Plug 1A35AX P/N 2531M61P81AA asked in SI C73PV001429 – D",,"[DRFT, S0, S1, S4, S5, S1, S4, S1, S4, S5, S4, S5]",S5,[2023-08-31 16:56:29],2023-09-07,2023-09-20,"[2023-10-04 16:02:57, 2023-10-04 17:01:47, 2023-10-06 15:22:12, 2023-10-18 12:51:54]","[2023-10-04 16:04:23, 2023-10-18 10:49:38, 2023-10-18 12:52:23]",,,,,,," 
+ _ Airbus Logbook: no alert/showstopper to avoid the same SI application request consecutively"," 
+ _ detection process A1098 not applied 
+ _ traceability process M1113 not applied 
+ _ SI process A2846: split between supplier <(>&<)> Airbus 
+ _ SI process A2846: SI re-use condition 
+ _ SI content A2846: difference between SA <(>&<)> WB 
+ _ different teams working on redundant systems (install, inspection) only for ETOPS process 
+ ",," 
+ _ ALB request Interpretation 
+ _ no application of SI (retests + PN/SN) 
+ _ partial / final stamp mindset 
+ _ competences/trainings"," 
+ _ Communication 
+ _ Speak up / listen up 
+ _ partial / final stamp mindset",,2023-10-03," 
+ refer to attached ""5 Why Tree""",,,,,,,,,,"[task sharing not clear in SI, No configuration check before new request, no robust traceability tool: only Human factor
+(CAIR matching with ALB), ""final stamp following partial stamp"" referential lacking precision, Lack of referential knowledge regarding double source of requests misleading taken into account, no speak up to challenge the request]","[Doc.-Contenido inadecuado  ||  Doc.-Content not adequate  ||  Doc.-Contenu non approprié  ||  Dok.-Inhalt nicht ausreichend, Andere  ||  Autres  ||  Others  ||  Otros, Herramienta-No disponible  ||  Outils-Non disponible  ||  Tools-Not availiable  ||  Werkzeug-Nicht verfügbar, Proceso-No descrito  ||  Process-Not described  ||  Processus-Non décrit  ||  Prozess-Nicht beschrieben, Proceso-No conocido  ||  Process-Not known  ||  Processus-Inconnu  ||  Prozess-Nicht bekannt, Mensch-Nicht ausgebildet  ||  People-Not trained  ||  Persona-No entrenada  ||  Personnes-Non formées]",,,,,,,,,,,false,,2024-06-30,,,,,DOA concern,,[],[],[],[],,,false
+0,0,279.0,279.0,1-,000210596609,[A330],1-SMS  Harness EMI Protection between Safety Barrier Box and tank,2023-09-22,1VMI,1VMI,QLLM,N,1,1,false,00,00,00,0000,[MSN 1795],,[89],[FTI],N,,"[xxxx, xxxx]","[NZ351, TZ351]","[Safety Barrier Box, Safety Barrier Box]",,,,[OTHERS],[OTH],[HZR-2023-03-0005],,false,,false,,false,,false,,false,,2023-03-17," 
+ a mismatch between specialist requirements for the integration of SBB and the integration standards rules (SIDP89, ,FCIP 89A001V, and Technical Sheet NZ351 <(>&<)> TZ351). 
+  
+  a faraday cage (EMI Protection) is missing from the fuel Tank connector to the SBB (Safety Barrier Box). It was not requested within Requirements documentation (Rules) 
+  
+ Different kind of Requirements Documentation don't describe the same rules: all documents weren't present (Loss of Data, old version are used on metallic A/C: not the same rules: Not the same rule about EMI Protection) 
+ ",," 
+ the main landing Gear Bay (MLG- bay) 
+ On the Center tank",," 
+ Mar 17, 2023",," 
+ Equipement Specialist itself has detected the issue",," 
+ During a visit",," 
+ a mismatch between specialist requirements for the integration of SBB and the integration standards rules (SIDP89, ,FCIP 89A001V, and Technical Sheet NZ351 <(>&<)> TZ351).",,[DRFT],DRFT,[2023-09-22 08:44:26],,,,,,,,,," 
+ - availibility of the backshells could be an issue (XLR RCT)",," 
+ - on metallic A/C: not the same rules about EMI Protection 
+  
+ - good Design are provided within Wings but not within Tank in Fuselage and RCT and ACT (Auxillary Center Tank)",," 
+ - people (BLL) don't have a good vision about EMI protection (Good tools but don't have a global vision). They need to have more information 
+  
+ - Different kind of solutions are provided from different teams",,,,,,,,,,,,,,,,,,,,,,,,,,false,,,,,,,TOULOUSE,,[],[],[],[],,,false
+100,0,98.0,98.0,SM,000210607114,[A320],SMS: Maintenance task escalation letter not up to date,2023-09-25,SIMCI,SIMA,SIMA,N,1,1,false,04,03,05,0060,,,,,N,,,,,,,,"[QUALITY REVIEW, OCCURENCE]","[OCC, QRE]","[OCC 23.08634, None]",,true,,false,,false,,false,,false,,2023-06-30," 
+ Extended OMP for ACJ customers:",," 
+ Escalation letter (delivered as ""appendix"" of the OMP) contains incorrect information 
+  
+ Detected by customer Luxaviation (LMJ) when reviewing the latest version of the escalation letter and comparing it with one issued previously",," 
+ Upon receiving the lastest Extended OMP on customer side",," 
+ CAMO on customer side (Luxaviation)",," 
+ Comparing latest escalation letter with previous version",," 
+ MPD task 341300-11-1 (previously listed in the escalation letter) had its interval reduced to 4MO back in 2017, but the letters issued to customers (several) were not updated to reflect this change. Reason: Escalation letters are issued without validity information and, once issued, are not reviewed regularly by Airbus for correctness and update needs, resulting in outdated letters (which do not reflect current MRBR / MPD tasks or intervals anymore) being used by customers 
+  
+ Full information from initial issue reporting: 
+  
+ 1)Background 
+ - A-Check Escalation Letter delivered to some CJ Customers (FOC to CAMP Customers) to optimized some A-Check tasks from 4MO to 6MO. 
+ - MPD task 341300-11-1 (previously listed in the Letter) had its interval reduced to 4MO back in 2017. 
+ - No communication made internally about this change (no link between the MPD task interval update and the A-Check Escalation Letter). 
+ - New Escalation Letters do not include this task but previous Letters delivered to Customers have not been revised. 
+ - No communication towards Customers who already received the Letter (before 2017). 
+ - The Letter does not include any disclaimer that would require Customer to reassess the MPD task applicability/interval according to the successive MPD revisions. 
+  
+ 2) Issue 
+ It is likely that some CJ Customers are planning MPD tasks every 6MO instead of 4MO) as per the outdated Letter they received.",,"[DRFT, S0, S1, S4, S5]",S5,[2023-09-25 16:15:24],2023-10-06,2023-10-06,[2023-10-10 10:32:17],[2023-10-24 15:42:16],,,,,," 
+ N/A"," 
+ N/A"," 
+ Query Answering 
+ OMP Creation"," 
+ N/A"," 
+ Maintenance Program Manager 
+ Customer Manager 
+ Customers"," 
+ N/A",,2023-10-24," 
+ Customers are following the outdated Escalation Letter they received",," 
+ There was no disclaimer for the customer to reassess the MPD task applicability/interval according to the successive MPD revisions >>> Why? Escalation letter as part of the OMP was never introduced into the product definition >>> Root cause #1",," 
+ xxxxx Separator for new tree branch xxxxx There was no communication to customers who received the escalation letter on the MPD task removal",," 
+ There was no communication internally about the change to the MPD task interval",," 
+ Escalation letter and its creation/update process was never defined in SU.ED.01 >>> Root cause #2",,"[Escalation letter and its creation/update process was never defined in SU.ED.01, Escalation letter as part of the OMP was never introduced into the product definition]","[Proceso-No descrito  ||  Process-Not described  ||  Processus-Non décrit  ||  Prozess-Nicht beschrieben, Doc.-No actual  ||  Doc.-Non mis à jour  ||  Doc.-Not updated  ||  Dok.-Nicht aktuell]",,,,,,,,,,,false,,2024-01-31,,,,,CS-ENG.MTN.SMS.DOA,,[],[],[],[],,,false
+100,100,12.0,10.0,1V,000210666836,[A321NEO],1V - SMS - SA MSN 6839  Pre-Flight Check without up to date Aircraft Limitations  (ACL),2023-10-05,1VXT,Q1VT,1YDZ,N,1,2,false,03,03,06,0054,[MSN 6839],,,[FTC],N,,[SA27ACL230090V2],[XXX],,,,[ACL ref:  SA27ACL230090V2],"[TEST, SARI]","[SAR, TES]","[23.11276, TER-2023-09/0005]",,true,,true,,true,,true,,false,,2023-09-29," 
+ Une visite avant vol (Visite MCA 32080541200-131-00-IssueH6) a été réalisé sans la mise à jour du document ACL ref SA27ACL230090V2",," 
+ A la Gate au M81. Au AOA (angle of attack) Sensor Test (Stall Warning Test) 
+ Test réalisé au niveau du Cockpit.",," 
+  
+ Au moment de la visite Pré-Flight: le 21/09/23 07:15 Vol F476 prévu pour 8h00 
+ Au AOA (angle of attack) Sensor Test (Stall Warning Test)",," 
+ Le QLS a alerté",," 
+ Lors de la visite Pre-Flight par le QLS, un test AOA n'a pas fonctionné. 
+ Le TFE a été appelé et a informé le QLS de l'existence de l'ACL SA27ACL230090V2 à appliquer.",," 
+ -Le QLS a lancé ses visites. 
+ -Un test AOA: le test ne passe pas 
+ -Le controle des limitations a été fait suite au test non fonctionnel lors de la pré-visite mais n'a rien trouvé pour expliquer cette panne 
+ -Le TFE a été appelé 
+ -Le TFE avait connaissance de l'ACL et a informé le QLS en lui expliquant le contenu de l'ACL manquant dans la visite 
+ -Le QLS a appliqué la procédure avant vol de l'ACL avec test OK 
+ -Le QLS a stampé la visite standard sans préciser l'application de l'ACL: pas tracé dans l'ALB 
+ -Le TFE, en plus de la problématique du module ADIS, a décidé de ne pas voler. 
+  
+ Problemes: 
+  -Visite limitation pas à jour 
+  -Absence de tracabilité dans l'ALB 
+ ",,"[DRFT, S0, S1, S4, S1, S4, S5, S4, S1, S4, S5]",S5,[2023-10-05 15:47:19],2023-10-09,2023-10-11,"[2023-12-05 15:23:34, 2023-12-05 16:00:04, 2023-12-08 13:42:35, 2023-12-08 13:44:01]","[2023-12-08 12:00:09, 2023-12-08 13:44:19]",,,,,," 
+ ACL ref.: SA27ACL230090V2 
+  
+ Pre-Flight Check ref.: 
+ MCA 32080541200-131-00 IssueH6 
+ "," 
+ OASIS-COLA providing ACL activation to a given MSN 
+  
+ RACE tool to perform Pre-Flight check by QLS 
+  
+ ALB for traceability 
+ "," 
+ As per Manual M29502.5 
+ No deadline date defined for Pre-Flight check update when ACL is raised 
+  
+ Endorsement SI by production (SI applied). 
+ "," 
+ N/A"," 
+ Usually, for authoring of Pre-Flight check: the author 
+ collects several updates before launching modification. Except in case of emergency given from MAP Manager, CAMO or Operational Quality. 
+  
+ QLS did not apply of ACL v2 
+  
+ "," 
+ -Huge changes of configuration at this period: (around 20 ACLs launched) 
+  
+ -No prioritization given to Pre-Flight check author for update 
+ ",,2023-12-08," 
+ attached file",,,,,,,,,,"[RCA 1:The notion of Emergency is not defined within ACL Process, specifically within ACL Maintenance Team (MAP, AQ, TFE, QOM, CAMO, Prod and FTI), RCA 2: nothing is defined in the Oasis Cola tool on the notion of timeframes (no applicability timeframes)]","[Proceso-No adecuado  ||  Process-Not adequate  ||  Processus-Non approprié  ||  Prozess-Nicht geeignet, Herramienta-No disponible  ||  Outils-Non disponible  ||  Tools-Not availiable  ||  Werkzeug-Nicht verfügbar]",,,,,,,,,,,false,,2024-02-15,,,,,Toulouse M81,,[],[],[],[],,,false
+100,100,7.0,6.0,1S,000210773220,[A320NEO],1S-FHS-F.SMS DICA(Deviation in Continuing Airworthiness) 2020/00585/B Not performed ESN 598409,2023-10-26,AISBIES,AISBIEP,QBMR,Y,1,1,false,05,05,09,0225,[VT-TNB],,[72],,N,,[598409],[362-000-006-0],[Engine],,,,[OTHERS],[OTH],[2023-047],,true,,false,,false,,false,,false,,2023-10-20," 
+ Engine induction",," 
+ During shop visit (Off wing)",," 
+ During Shop visit",," 
+ Engine MRO",," 
+ The customer found it",," 
+ ESN 598409 had 2 shop visits parllely during year 2020. 
+ SIAEC: June 2020 
+ Brussles: Sep 2020 Post completion from SIAEC) 
+  
+ There were several DICAs issued in SIAEC Shop visits during its core module workscope, out of which DICA 2020/00585/B issued had onwing action to perform inspection on the LPT Stage 1 shrouds at 3200 FC. After shop visit completion, the deviations were captured in the SIAEC engine shop Visit documents. The second shop visit was held soon after SIAEC for other workscopes, and the shop visit documents did not contain any references to SIAEC deviations or open items and had listed the deviations issued only in the Brussels shop visit. 
+  
+ Currently, Engine 598409 has been removed and sent to shop Visit , and it has accrued 3590 FC since the last shop visit without the performance of the inspection on the LPT shroud as per the DICA 2020/0058/B issued by SIAEC. The engine has overflown 390 FC from the DICA limitations when installed on VTTNB 
+  
+ Chronology of events 
+ 02 June 2020 (ARC ): ESV at Singapore , released with deviation under discussion and other open items 
+ 02 Jun to 29 Sep: No in-service record / operation record, engine routed from SIN to BRU 
+ 29 Sep 2020 (ARC): ESV at Brussels, released with fresh list of deviation and open items, not containing the ones from previous SV 
+ 14 Oct 2020: Engine installed on aircraft and reviewed documents for supplied shop visit from BRU i.e. dt 29.09.2020. Few discrepancies observed on the VSB compliance from the paperwork of BRU SV, VTI made aware for further action 
+ 27 Oct 2020: Customer shared the ESV from SIN shop dt 02 June 2020 to close the observation made by TSP on VSB. No review performed on the SV package of previous SV from SIN dt 02 June 2020 
+ 16 Jan 2023: Engine removed from the aircraft. 
+  
+ ",,"[DRFT, S0, S1, S4]",S4,[2023-10-26 11:21:28],2023-10-26,2023-10-27,[2023-11-09 08:34:06],,,,,,,,,,,,,,," 
+ https://docs.google.com/spreadsheets/d/1-kznmMKdhQYo_2M5Xz4IeQlCOgiHMVR7 
+ BkGc5SXOZe0/edit#gid=1031226888<(>&<)>range=A1",,,,,,,,,,"[Airbus did not review the 2nd SV documents provided 15 days post replacement because it was understood that all deviations / open item were part of the latest SV package		, ESN underwent 2 SV without operating onwing due to customer decision]","[Proceso-No conocido  ||  Process-Not known  ||  Processus-Inconnu  ||  Prozess-Nicht bekannt, Mensch-Kommunikationsprob. Individuum/Organisation  ||  People-Human/Organisational interface failure  ||  Personas-Fallo en el interfaz humano/organización  ||  Personnes-Problème d'interface Humain/Organisation]",,,,,,,,,,,false,,,,,,,,,[],[],[],[],,,false
+100,100,-5.0,-5.0,1-,000210886525,[A321],1-SMS - TBC - SE-21.0632  - Over wing emergency exit slide release cable not connected,2023-11-16,KQV,1IAI,,N,1,1,false,06,02,09,0108,,,[52],,N,,,,,,,,"[OCCURENCE, SARI]","[OCC, SAR]","[21.09406, SE-21.0632]",,true,,true,,true,,true,,false,,2023-11-21," 
+ WO: 115790538 
+ Drawing: D522-72640-001 
+ Desc.:Notrutschenmechanik 
+  
+ And OCC investigation: 
+ ""Due to some room for interpretation of the definition dossier the working instruction and the related GTI are missing a full assembly procedure of this connection; e.g. it is not explicitly mentioned that these two wires need to be connected to each other. 
+ This lack of information will be closed by introduction of an additional test instruction (Door installation drawing for definition, GTR to trigger GTI update)."" 
+  
+ At a much later stage in the Final Assembly Line (FAL) the system is completed with the slide and the pressure bottle. 
+ As per definition of type ST08 the release cable is neither tested nor touched anymore in FAL. This is a deviation to former types of the A320 family (Over Wing Hatch) where the adapter installation was part of ATA2560 in FAL. 
+  
+ A quality survey (QSR) was launched to investigate that systematic errors can be excluded. Currently about 2/3 of the applicable MSN have been checked in the FALs. 
+ Two certain findings are yet reported which renders the topic beeing not an isolated case any more. 
+ MSN 10616 in HAM: Wire lockings were missing (LH and RH sid), connections were given. 
+ MSN 10711 without connection on both sides (see Corrective Actions block for details)."" 
+  
+ But in the impact on Airworthiness: ""The investigation does not identify any design deficiency. The most probable root cause is identified in the POA perimeter as 
+ the lack of information in the working instruction and in the related ground test instruction.""",," 
+ S17, UD, C46-47, P6-8, LH <(>&<)> RH",," 
+ Request based on OCC 21.09406: A321NEO ACF MSN 8517 - Overwing emergency exit slide release cable not connected; 
+ The issue was detected the Nov 9, 2021. 
+ ",," 
+ The customer",," 
+ During the MPD task, in inservice",," 
+ During a ToW from one Design organisation to another (Cabin to Structure) the GTR creation has been forgotten. Consequently the slide release cable joint was found not properly connected, preventing this way the activation of the pressurized bottle and therefore slide deployment 
+  
+ Object: Slide release cable 
+ Defect: not connected 
+ ",,"[DRFT, S0, S1]",S1,[2023-11-16 09:25:02],2023-11-16,2023-11-16,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,false,,,,,,,DOA TBD,,[],[SE-21.0632],[],[],,,false
+100,100,17.0,17.0,1V,000211059028,[A350-1000],1V SMS - MSN 59 Lost FTI panel Flap Support Fairing 2 RH WING,2023-12-15,1VXY,1VMEO,Q1V,N,1,2,false,08,04,06,0192,,,[57],,N,,,,,,,,[TEST],[TES],[TER-2023-11/0013],,true,,true,,true,,false,,false,,2023-12-01," 
+ During F599, 2 flight displays training (2T/O <(>&<)> 2LDG) performed for pilots and airfield procedures familiarization. 
+ Nothing to report on A/C side after landing. 
+ During post flight walkaround inspection, Quality inspector reported to TFE a panel missing on RH WING Flap Support Fairing 2 FIN 550ZXA1, PN V89ZI001173210.",," 
+ On the fairing 2 of the right hand wing",," 
+ During post flight walk around inspection",," 
+ QLS MSN 59 from Q1VT (Grégory ROLLAND, Mael LE COZ)",," 
+ Visually, with the post flight walk around inspection",," 
+ During post flight walkaround inspection, Quality inspector identified missing Flap Support Fairing 2 on right hand wing",,"[DRFT, S0, S1]",S1,[2023-12-15 15:42:46],2023-12-18,2023-12-18,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,false,,,,,,,,,[],[],[],[],,,false
+100,0,34.0,34.0,1I,000210089008,[ALL],1I-SMS_Incorrect usage of M1017 to validate ICY through RDAF,2023-05-22,1SYCY,1IVX,1IAI,N,1,1,false,04,04,05,0080,,,,,N,,,,,,,,[OTHERS],[OTH],[2023-Apr-0001],,true,,false,,false,,false,,false,,2023-04-25," 
+ Release of an RDAF to install a spare part (alternative PN from a supplier, which is not qualified for the datum A/C) using the SIAS (Spare Interchangeability Approval Sheet, see M1017) process. 
+ Problem is that SIAS process only applies to structural parts and not to equipement 2 cases TR 81059831 <(>&<)> 81095315. 
+  
+ At the initialization of the systemic case, it was shared that the SIAS was only applicable for AIRBUS part and not supplier part, but following the meeting performed the 13/10/2023, with M1017 Process owner it was clarified that it is applicable for Airbus and Suppliers structural parts but not for Airbus or Suppliers equipments. 
+  
+ The misuse of the M1017 is frequent to validate supplier parts. 
+  
+ ",," 
+ Speak-up",," 
+ With a speak-up (2023-Apr-0001), the 1S SMS Officer has made a first analysis which summary is available in the attachement.",," 
+ Speak-up originator",," 
+ He was handling the tech request where the RDAF has been shared with the customer.",," 
+ RDAF (M21031 - A2848.5) provides an SIAS on equipements when the SIAS is not applicable for equipement. When the intercheangebility of equipment is not mentioned by the supplier in the EDES (Equipment Definition Evolution Sheet), a MAS update has to be required (as per M1017)",,"[DRFT, S0, S1, S4, S1, S4]",S4,[2023-05-22 10:52:24],2023-05-29,2023-05-29,"[2023-07-04 15:59:26, 2023-10-17 15:02:00]",,,,,,,,,,,,,,,,,,,,,,,,,"[SIAS form doesn't reflect the limitation, SIAS form is not known as not applicable to Equipements by Customer services/1S, Design Officer and DAE team, For equipment there is no equivalent process as M1017 (SIAS).
+The process MOD (MAS update) need to be applied and in AOG context, the MOD process is too long to allow its use.]","[Proceso-No descrito  ||  Process-Not described  ||  Processus-Non décrit  ||  Prozess-Nicht beschrieben, Proceso-No conocido  ||  Process-Not known  ||  Processus-Inconnu  ||  Prozess-Nicht bekannt, Proceso-No adecuado  ||  Process-Not adequate  ||  Processus-Non approprié  ||  Prozess-Nicht geeignet]",,,,,,,,,,,false,,,,,,,DOA,,[],[],[],[],,,false
+0,0,198.0,106.0,1P,000210165625,[ALL],1P-SMS_CSR 23-059 Hutchison ESPA produces components with non-certified parts,2023-06-07,Q1O,1IAI,,N,1,1,false,00,00,00,0000,[To be confirmed],,,,N,,,,,,,,,,,,true,,false,,false,,false,,false,,2023-06-06," 
+ EASA received the following report: 
+ ""The reporter is an aviation professional who claims that there was a total of 1700 components manufactured by Hutchison ESPA (https 
+ ://www.hutchinson.com/en/aerospace) which made use of a non-certified part. According to the reporter the components are the AS61900-934 clamps which were not made according to the drawing standard. These clamps contained since 2019 a non-certified component with the reference EN10088, different from those that are original and referred as BS S526 or BS S527. Allegedly the entity that can certify this modification is the Engine and Airframes Technical Standards Committee (EATSC), but the manufacturer took mistakenly the approval from Airbus as a valid one. The reporter provides one document to support his allegations.""",," 
+ The AS61900-934 clamps contain an non-certified component with the reference EN10088",," 
+ Airbus reveceived the information via e-Mail the 19/04/2023",," 
+ An aviation professional (anonymus) has made the report to EASA (Carmela BOSSO)",," 
+ During a quality inspection carried out at a stockist/distributor, a material non-conformance was discovered.",," 
+ The AS61900-934 clamps manufactured by Hutchison ESPA contain the EN10088 material without approval.",,"[DRFT, S0]",S0,[2023-06-07 13:55:25],2023-09-20,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,false,,,,,,,,,[],[],[],[],,,false
+100,100,0.0,0.0,1G,000210340551,"[A330, A320]",1G-SMS aerodynamics and perfo assessment on flap leading edge after multi-repairs,2023-07-12,1GAO,1GAO,1IAI,N,1,1,false,06,08,05,0240,[Whole family],,,,N,,,,,,,,[OTHERS],[OTH],[Analysis],,true,,false,,false,,false,,false,,2023-07-12," 
+ flap leading edge after multi-repairs",," 
+ During the reassessment of a unitary flap repair drag penalty",," 
+ During the reassessment of a unitary flap repair drag penalty",," 
+ GERARD LUDOVIC",," 
+ During the reassessment of a unitary flap repair drag penalty",," 
+ SRM (Structural Repair Manual) allows too many repairs on a given aircraft: having properly reassessed the penalty of a single repair, multiple repairs may lead to unacceptable performance penalty 
+  
+ ",,"[DRFT, S0, S1, S4, S5]",S5,[2023-07-12 10:34:26],2023-07-12,2023-07-12,[2023-09-21 10:38:23],[2023-09-21 10:42:05],,,,,,,,,,,,,2023-08-22," 
+ because the SRM allows the airlines to apply multiple repairs without requesting Airbus support",," 
+ because the SRM (Structural Repair Manual) only asks to respect a certain gap between 2 repairs but it doesn't consider the total number of repairs (hence the total drag could exceed the mandated threshold).",,,,,,,,[The SRM (Structural Repair Manual) only asks to respect a certain gap between 2 repairs but it doesn't consider the total number of repairs (hence the total drag could exceed the mandated threshold).],[Proceso-No actual  ||  Process-Not updated  ||  Processus-Non mis à jour  ||  Prozess-Nicht aktuell],,,,,,,,,,,false,,2024-03-20,,,,,DOA,,[],[],[],[],,,false
+100,100,12.0,11.0,1V,000210618648,[A321NEO],1V - SMS - MSN 6839 ADIS (21999) module not loaded prior to flight,2023-09-27,Q1V,1VMEO,Q1V,N,1,2,false,06,06,04,0144,[6839],,[89],,N,,,,,,,,"[TEST, SARI]","[SAR, TES]","[23.10945, TER-2023-09/0004]",,true,,true,,true,,true,,false,,2023-09-21," 
+ For the F475-39 du 6839 : 
+ - Module 21999 ADIS missing 
+ - Menu 20322 ADIS not removed",," 
+ On the FTES",," 
+ Before the flight",," 
+ FTE Philippe Pupin",," 
+ Comparison FTR with ADIS statut",," 
+ Module 21999 ADIS missing despite partial and final stamps",,"[DRFT, S0, S1, S4, S1]",S1,[2023-09-27 08:59:43],2023-10-02,2023-10-03,[2023-10-18 09:32:28],,,,,,,," 
+ - ALB tool does not secure traceability : 
+ Allows overwriting of an open ALB request without tracing history 
+ Does not show that ALB request has been taken by an operator"," 
+ - Referential A5394 §3.2.8 does not require final stamping by QLS 
+ - M1123 and WD.2950.02.024 to be clarified to further work sharing and responsibilty regarding final and partial stamping"," 
+ - Referential A5394 issue B §3.2.7 known and applied by operator ?"," 
+ - TFE has modified the open ALB request (2 hours later) without further communication 
+ - Operator copied/pasted the ALB request to answer the ALB 
+ - QLS did not compare the ALB request with the FTES screenshot"," 
+ - Knowledge of worksharing betweem partial and final stamp 
+ - Knowledge of responsibility of final stamping 
+ - Knowledge of ADIS criticity QLS and operator",,,,,,,,,,,,,"[RCA (2) : the alb tool does not trace that an ALB point has been modified, RCAND (6) : Pending action RCAND 5 frequence of ADIS training not adapted  (and refresh), RCAND (5 bis) The link between DE.TA 05 and FU.PD 05 has not been sufficiently detailed, RCAND (5) : ADIS Referential A5394 does not mention QLS role in the inspection (final stamp not required), unofficial guideline (training material), RCAND (4) : WD.2950.02.024 does not detail the acceptance criteria covered by the final stamp, RCA (1 see 5 why) : Safran operator did not know that an ALB point in progress can be modified or updated]","[Herramienta-No/Mal definida  ||  Outils-Non/mal définis  ||  Tools-Not/Wrongly defined  ||  Werkzeug-Nicht/falsch definiert, Mensch-Nicht ausgebildet  ||  People-Not trained  ||  Persona-No entrenada  ||  Personnes-Non formées, Proceso-No descrito  ||  Process-Not described  ||  Processus-Non décrit  ||  Prozess-Nicht beschrieben, Proceso-No descrito  ||  Process-Not described  ||  Processus-Non décrit  ||  Prozess-Nicht beschrieben, Proceso-No descrito  ||  Process-Not described  ||  Processus-Non décrit  ||  Prozess-Nicht beschrieben, Andere  ||  Autres  ||  Others  ||  Otros]",,,,,,,,,,,false,,,,,,,DOA,,[],[],[],[],,,false
+100,0,29.0,29.0,1V,000210739248,[A321],1V-SMS- TER-2023-09/0005 Nose Landing Gear issue,2023-10-19,1YDZ,1VXT,1YDZ,N,1,1,false,05,05,05,0125,[MSN 7877],,[32],[FTC],N,,,,,,,,"[TEST, SARI]","[SAR, TES]","[23.11.276, -2023-09/0005]",,true,,true,,true,,true,,false,,2023-09-20," 
+ L'amortisseur de NLG en contact.",," 
+ Au parking P2 en plan de chargement Lourd avant",," 
+ La première fois, détecté le 20 Septembre 2023",," 
+ les équipes de piste",," 
+ Visuellement, lors du départ à la pesée, constat de l'amortisseur en butée.",," 
+ L'amortisseur de NLG en contact. 
+  
+ Timeline: 
+  
+ 12 Septembre: 
+ Découverte de traces de brûlures sur l'amortisseur du NLG au retour de vol. 
+ La décision MAP a été prise de changer le NLG. 
+ Jacking et changement de NLG sur le reste de la semaine. 
+  
+ 18 Septembre: 
+ SLS vient faire le oil servicing (Servicing N°1), puis gonflage à l'azote par l'équipe DAS. 
+  
+ 19 Septembre: 
+ Finalisation Tlb et re-tests 
+  
+ 20 Septembre: 
+ L'A/C effectue un vol avec un retour prévu vers 13h00 environ. Ce vol est prévu avec un plan de chargement qui donne un centrage léger arrière. 
+ Retour de vol => Operational post flight effectuée. 
+  Il n'est pas demandé d'effectuer de prise de mesure du NLG sur la visite et le qualiticien qui à contrôlé le NLG n'a rien remarqué à ce moment, bien qu'il ait apporté une attention particulière sur le fut pour voir si aucune trace de brûlure n'avait apparu. 
+ Application du plan de chargement 41 (Lourd avant!) 
+ On constate que le NLG vient en butée. 
+ On contrôle H,P,T et on demande un avis MAP: 
+ Sur demande de la MAP ATA 32: 
+ - On décharge le plan de chargement 41 
+ - On defuelle l'avion 
+ - On contrôle H,T,P avec H52mm pour 145mm, P66b et T:19.5°C => On est pas bon. 
+ - On regonfle le NLG et on re-contrôle H,T,P avec H:143mm pour 140mm, P:70b et T:19.5°C => On est bon. 
+ - On recharge le plan de chargement 41 et on refait le fuelling. 
+ - On refait un check H,T,P du NLG après la mise en conf A/C et on s'aperçoit que la hauteur/pression rechute. 
+ On redemande un avis MAP 
+ A la demande de la MAP: 
+ - On jacke l'A/C 
+ - On mesure H,T,P avion jacké. (Pression basse mais hauteur correcte amortisseur détendu) 
+ - On refait le servicing huile par SLS suivant AMM (il manquait 0.8l) avec présence de la MAP (Servicing N°2). 
+ - Remplacement de la nato par l'équipe SLS. 
+  
+ 22 Septembre: 
+ Gonflage à l'azote du NLG suivant AMM par l'équipe DAS en présence de la MAP (Je tiens à préciser qu'il existe un outillage de gonflage qui vient se positionner sur la nato et qui n'est pas disponible au FT!) 
+ Puis remise en conf du NLG (remontage des roues, etc...) 
+  
+ VSD: 
+ Dejacking de l'A/C avec monitoring H,T,P une fois l'avion sur ses roues => On est bon. 
+ Retour de l'A/C en P2 puis fermeture pour le week-end. 
+  
+ 25 Septembre: 
+ Monitoring du NLG avec H119mm pour 138, P:66b et T:12.4°C => On a reperdu hauteur/pression pendant le week-end. 
+ On demande un avis MAP 
+ A la demande de la MAP: 
+ - On re-jacke l'A/C pour confirmer qu'il y a bien une fuite de N² 
+ - On checke H,T,P puis on contrôle la nato au gazobulle => Pas de fuite constatée mais perte de pression avec 16b pour 19,6b. 
+ - Ouverture de la nato et dégonflage du NLG sur jacks pour la nuit. 
+  
+ 26 Septembre: 
+ SLS refait le servicing suivant AMM du NLG (Servicing N°3) en présence de la MAP => Il manquait encore 0.2l 
+ Regonflage du NLG en N² suivant AMM par l'équipe DAS en présence de la MAP. 
+ On dejacke l'A/C. 
+ On refait un contrôle H,T,P => On est bon. 
+ On tracte l'avion jusqu'en P2 et on refait un check H,T,P, 2 heures après le tractage => On est toujours bon. 
+ On redemande un avis MAP qui donne l'accord pour un bon pour vol.",,"[DRFT, S0, S1]",S1,[2023-10-19 16:31:55],2023-10-19,2023-10-19,,,,,,,," 
+ -plan de chargement n'a pas d'impact sur le NLG (Pression adaptée au plan de chargement):"," 
+ -Huile utilisé conforme"," 
+ - gonflé à 2-3 bars chez le fournisseur (avant installation sur avion; gonflage de stockage) 
+ - en FAL: servicing d'huile réalisé que en cas de fuite ou problème amortisseur 
+ - Process classique: servicing en huile fait par SAFRAN et gonflage au gaz N2 par AIRBUS 
+  
+ -VIsite pré-flight: vérification H mini faite en fonction d'une température donnée (inspection visuelle) 
+ Qu'est-il mentionnée dans la visite Pré-flight concernant l'amortisseur avant vol? 
+ Confirmation de l'inspection visuelle (Shock Absorber inclus). Recherche RCA Non Detection. 
+  
+ - pas de HTP Check réalisé avant vol"," 
+ -non détection 
+ -tout les deux ans: Vérification des niveaux d'huiles et des pressions. 
+ -Test de fuite au Gazobulle n'a rien révélé. 
+ -calcul du H mini réalisé sur centrage lourd avant"," 
+ - gonflé à 2-3 bar chez le fournisseur (avant installation sur avion; gonflage de stockage) 
+ Puis demande de la MAP de refaire un servicing complet sur avion (Huile et Gaz): cela est demandé systématiquement par la MAP (ajout de 10% en plus du nominal sur avion Jacké après le Oil Replenishment) 
+  
+ -pas de point de controle lors du retour de vol quand plan de chargement centrage léger arrière ( à part pour le fut): seul l'état de l'amortisseur visuellement est inspecté (mais pas H,T,P) en visite Post-Flight 
+  
+ - Fait suivant l'AMM (mais sans preuve de mesure sur le 1er serviving) 
+ - atterissages successifs nominaux (au nombre de 7) 
+  
+ -pression délivré potentiellement trop rapidement (la gaz chauffe: des écarts de pressions peuvent etre relevés: il s'en suit un réajustement de l'équipe) 
+ Pb de gaz: visible à la compression de l'amortisseur. 
+ Pb de d'huile: visible à l'extension de l'amortisseur."," 
+ - pas d'impact de la chaleur sur le NLG",,,,,,,,,,,,,,,,,,,,,,,,,false,,,,,,,Toulouse/ M81,,[],[],[],[],,,false
+100,0,45.0,23.0,1V,000210964417,[A350],1V - SMS Function multi ATA implementation on Ground Test Means,2023-11-29,1VMEP,1VMEO,Q1V,N,1,1,false,00,00,00,0000,[S52 / NSM],,[34],,N,,,,,,,,[TEST],[TES],[HZR 2023-11/0002],,false,,false,,false,,true,,true,,2023-11-06," 
+ Le processus de développement d'un moyen d'essai => processus entre DE.TA 02 et DE.TA 04",," 
+ ""Chez"" 1VM",," 
+ Durant toute la phase du projet de développement des essais sol",," 
+ L'équipe 1VMIA / 1VMEP / 1VMSL",," 
+ Les échanges pas mail, en réunion non cohérentes",," 
+ Problème de cohérence et de coordination des informations multi ATA reçues lors d'un développement de moyens d'essai sol 
+  
+ Autres cas de non représentativité : PPS 206955524 et PPS 206892088",,"[DRFT, S0]",S0,[2023-11-29 09:01:09],2023-11-29,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,false,,,,,,,DOA,,[],[],[],[],,,false
+0,0,139.0,43.0,1V,000210133770,[A321NEO],1V - SMS Non reporting of event during a certification test,2023-05-31,1VIO,1VIO,Q1V,N,1,1,false,07,07,05,0245,[MSN 6939],,,,N,,,,,,,,[OTHERS],[OTH],[PPS 210489484],,true,,true,,false,,false,,true,,2023-04-18," 
+ TER Management (A33 App. C) 
+ FISH Management (to be completed)",," 
+ N/A",," 
+ The issue of non-reporting as detected on 18/04/2023.",," 
+ Q1V",," 
+ The issue of non reporting was detected following a message by EASA issued on 18/04/2023.",," 
+ No TER issued following an event during which the engine cranking was launched while an operator was still in the pylon area. 
+ No FISH issued following an event during which the engine cranking was launched while an operator was still in the pylon area.",,"[DRFT, S0, S1, S4, S1, S4, S5, S1, S4]",S4,[2023-05-31 18:13:38],2023-05-31,2023-09-04,"[2023-09-11 15:22:52, 2023-10-30 17:42:43, 2023-12-14 10:49:53]",[2023-12-14 10:39:58],,,,,,,,,,,,,2024-04-30,,,,,,,,,,,"[Sharing in Ice Bucket considered by the crew as unnecessary, Debriefing done with teams involved in test set-up and execution after the test considered by the crew as sufficient
+, Error of judgment on reporting, TER process for reporting considered unnecessary by the crew]","[Andere  ||  Autres  ||  Others  ||  Otros, Andere  ||  Autres  ||  Others  ||  Otros, Andere  ||  Autres  ||  Others  ||  Otros, Andere  ||  Autres  ||  Others  ||  Otros]",,,,,,,,,,,false,,2024-03-01,,,,,DOA,,[],[],[],[],,,false
+100,0,53.0,53.0,CS,000210152421,[ALL],CS-ST.SMS SB anticipation in ops doc vs. aircraft real conf (OEB impact?),2023-06-05,Q1O,STLOS,STB,N,1,1,false,06,05,06,0180,,,,,N,,,,,,,,[TECHNICAL DOSSIER],[TDO],[TechRequest 81218582],,true,,true,,false,,false,,false,,2023-06-05," 
+ Process SU.ED.03.02 (production manual and delivery) 
+ Sometimes, Customers are asking to anticipate their flight ops doc in advance (to take into account future SB not yet embodied). In our Airbus tools and processes, we cannot provide 2 configurations at the same time so we need to force the future aircraft configuration (post SB). 
+ All the susbsequent revisions will consider only this aircraft configuration as the new reference (although SB is not yet embodied). 
+ In some cases, SB are implemented several months after meaning that a discrepancy may be introduced between the real aircraft configuration and the one known by Airbus. 
+ ",," 
+ Flight Ops engineering team in some airlines (XAX, JAT, DAL) 
+ Missing or inappropriate information in QRH linked to OEB",," 
+ Feedback reported by TechRequest: 
+ DAL: TR81218582 May 2023 
+ JAT: TR81095047 April 2023 
+ XAX: TR81188421 Jan 2023",," 
+ STLO (N. Gagnepain)",," 
+ TechRequest analysis",," 
+ SB anticipation asked by Customers. MP/SB forced in ops doc. SB not embodied quickly, next revision consider the SB embodied (even if delayed). 
+ Last revision does not reflect the real aircraft configuration.",,"[DRFT, S0, S1, S4, S5]",S5,[2023-06-05 14:40:50],2023-07-28,2023-07-28,[2023-07-28 14:50:51],[2023-07-28 14:52:23],,,,,,,,,,,,,2023-12-15,,,,,,,,,,,"[Miscommunication between Maintenance (request a system upgrade via SB and doc update accordingly) and Flight Operations Engineering teams (not aware of this request) within the Operator
++ Airbus tools do not allow to provide Customers with the aircraft configuration Before AND After SB embodiment in the same doc revision.]",[Doc.-Contenido inadecuado  ||  Doc.-Content not adequate  ||  Doc.-Contenu non approprié  ||  Dok.-Inhalt nicht ausreichend],,,,,,,,,,,false,,2024-12-10,,,,,CS-ST.SMS.DOA,,[],[],[],[],,,false
+0,0,128.0,101.0,1V,000210216270,[A321],1V -SMS Intervention 1VMDX sans point ALB / Fiche d'inter (MSN 11080),2023-06-16,BLLVE2,1VMDX,QLLM,N,1,2,false,01,02,02,0004,[MSN 11080],,[89],[FTI],N,,[xxxx],[RX 997],[Databird.Mesh],,,,[TLB],[TLB],[No TLB Point],,true,,false,,false,,false,,false,,2023-06-06," 
+ Accès à l'avion sans point TLB ni fiche d'intervention. 
+ Initialement, une demande avait été faite d'aller sur avion. 
+ Par la suite, un WO243398 avait été lancé pour pourvoir déposer les panneaux pour inspecter le système si besoin. 
+ Finalement, pas de besoin de déposer les panneaux, mais décision de rebooter le sytème aux breakers. (sans point TLB)",," 
+ Sur MSN11080",," 
+ Découverte du mail le 6/6/23.",," 
+ Compte-rendu de l'intervention fait (par mail). 
+ Constat fait par BLLVE (HO OL FTC) et BSLO2 (suite au mail)",," 
+ Constat fait par BLLVE (HO OL FTC) et BSLO2 (suite au mail)",," 
+ Accès à l'avion sans point TLB ni fiche d'intervention. 
+ Initialement, une demande avait été faite d'aller sur avion. 
+ Par la suite, un WO243398 avait été lancé pour pourvoir déposer les panneaux pour inspecter le système si besoin. 
+ Finalement, pas de besoin de déposer les panneaux, mais décision de rebooter le sytème aux breakers. (sans point TLB)",,"[DRFT, S0, S1, S4, S1, S4, S1, S4, S5, S6, S7, S6, S7, S6, S1, S4, S5, S6, S7]",S7,[2023-06-16 10:58:32],2023-09-15,2023-10-12,"[2023-10-12 16:06:10, 2023-10-12 16:08:58, 2023-10-12 16:11:36, 2023-12-05 09:18:59]","[2023-10-12 16:26:07, 2023-12-05 09:19:07]","[2023-10-12 16:26:32, 2023-11-21 12:03:11, 2023-11-30 16:18:17, 2023-12-05 09:19:13]","[2023-11-07 15:22:30, 2023-11-21 12:04:27, 2023-12-05 09:19:19]",,,," 
+ RAS"," 
+ RAS"," 
+ - le SNAG n'a pas été mis au TLB (prévu pour le troubleshooting) 
+  
+ - La V<(>&<)>V n'était pas présent avec la personne du Labo."," 
+ RAS"," 
+ - incompréhension sur le périmètre du troubleshooting. 
+ - l'OL pensait que c'était une simple visite 
+ - La V<(>&<)>V n'était pas présent avec la personne du Labo."," 
+ RAS",,2023-10-12," 
+ Voir 5 Why Tree en PJ",,,,,,,,,,"[RCA 1: Quiproquo/Incompréhension: le labo a expliqué qu'il n'y avait pas besoin de démonter les panneaux dans un premier temps, RCA 3: manque d'information sur ce qu'il est possible de faire ou pas sur avion, RCA 2: l'accord oral de l'OL parraissait suffisant aux yeux de l'intervant du Labo]","[Mensch-Kommunikationsprob. Individuum/Organisation  ||  People-Human/Organisational interface failure  ||  Personas-Fallo en el interfaz humano/organización  ||  Personnes-Problème d'interface Humain/Organisation, Proceso-No conocido  ||  Process-Not known  ||  Processus-Inconnu  ||  Prozess-Nicht bekannt, Mensch-Individuelles Fehlverhalten  ||  People-Individual behavior issue  ||  Personas-Problema de comportamiento individual  ||  Personnes-Problème de comportement individuel]",Y," 
+ Mémo diffusé ""Intervention Card in Flight Test"" le 17/07/23.",N," 
+ N/A",N," 
+ N/A",Y," 
+ Mémo diffusé ""Intervention Card in Flight Test"" le 17/07/23.",N," 
+ N/A",false,,2023-12-15,,,,,toulouse,,[],[],[],[],,,false
+0,0,168.0,168.0,1-,000210320388,[ALL],1-SMS_Risk assessment including STC holder information,2023-07-07,1IAI,1IAI,,N,1,1,false,00,00,00,0000,,,,,N,,,,,,,,,,,,true,,false,,false,,false,,false,,2023-07-06," 
+ The process affected is the MC.PS.02.01",," 
+ Not relevant for this risk 
+ ",," 
+ Cf. issue detection date. 
+ ",," 
+ No information",," 
+ During a discussion, this potential risk has been identified. 
+ There is no event, the people identify the scope of the risk assessment based on their experience and this not covered within the MC.PS.02.01 golden rules. 
+  
+ Additional information, it is complex to recover some Technical Notes exported to STC holder or affiliate TC holders.",," 
+ The identification of the scope for a risk assessement on Occurrences is based on the knowledge and experience of the RO level 2. 
+ There is a potential risk to forget the STC holders or affiliate TC holders.",,[DRFT],DRFT,[2023-07-07 11:48:47],,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,false,,,,,,,DOA,,[],[],[],[],,,false
+100,0,93.0,93.0,1-,000210579015,[ALL],1-SMS-Uncontrolled use of definition data by manufacturing suppliers,2023-09-19,1ZCI,1ZC,,N,1,1,false,04,05,07,0140,,,,,N,,,,,,,,,,,,true,,true,,true,,false,,false,,2023-09-19," 
+ Process: Conformity <(>&<)> attestation as parts may be installed which are not in line with A/C attestation 
+  
+ ",," 
+ Occasion 1: Spirit S15 gurt bar / bracket configuration on A/C not in line with CA attestation following a late change 
+ Occasion 2: A350 F development has also led to many late changes and MSN shifts which has led to inconsistencies between definition and work order 
+ Occasion 3: SAFRAN elec -> Supplier is working directly in Airbus tool-set without any mean to control",," 
+ During audits at supplier side 
+ Raised QSRs / SARIs",," 
+ Aircraft conformity 
+ Pre FAL supply chain 
+ A350 program quality 
+ CM Extended Enterprise",,,," 
+ Lack of Airbus control at DOA/POA interface to suppliers can lead to discrepancies between Airbus DO definition and supplier PO manu 
+ facturing. 
+ Origin is the ability of suppliers to download their input from Airbus archives at will without any control by Airbus. 
+ Pending on the impacted parts this may lead to a safety risk on A/C. 
+  
+ ",,[DRFT],DRFT,[2023-09-19 17:57:48],,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,false,,,,,,,several,,[],[],[],[],several,,false
+0,0,237.0,151.0,1C,000210613503,[A350],1C-SMS Change of location of FIN 101MJ ASPSU with Li Ionen batteries w/o ZSA & w/o DO involvement,2023-09-26,1CD1C,Q1,Q1CC,N,1,1,false,00,00,00,0000,[ASPSU],,[52-71],,N,,,,,,,,[OTHERS],[OTH],[Speak-up ref 2023-Ap],,true,,false,,false,,false,,false,,2023-04-28,,,,,,,,,,,,,"[DRFT, S0]",S0,[2023-09-26 12:21:04],2023-09-26,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,false,,,,,,,DOA,,[],[],[],[],,,false
+100,0,95.0,95.0,CS,000210670206,[A320],CS-ENG.UPG.SMS.SB25-1BXD-Cabin SA-DOA Rivet holes left unplugged after bracket relocation/removal,2023-10-06,SIMCI,SIMCC,QBOI,N,1,3,false,08,05,05,0200,,,[25],,N,,,,,,,,[OCCURENCE],"[OCC, OCC]","[22.03193, 23.07843]",,true,,true,,true,,true,,false,,2023-07-06," 
+ SA NEO/CEO: Frame 64 - Stringer 11 and Stringer 20 Left Hand Side /Right Hand Side.",," 
+ A-bracket removed without instruction to close the holes of the removed rivets afterwards. 
+ 22.03193 - bracket at stringer 20 (CC- Clasic Cabin, EHC - Enhanced Cabin) 
+ 23.07843 - bracket at stringer 11 (CC)",," 
+ During working party",," 
+ AVA - Avianca during the working party",," 
+ During embodiment os SB",," 
+ On SA NEO/CEO: Frame 64 - Stringer 11 <(>&<)> 20 Left Hand Side /Right Hand Side. A-bracket removed without instruction to close the holes of the removed rivets afterwards. Issue impacted more than 500 A/C and ~ 33 SBs.",,"[DRFT, S0, S1, S4, S5]",S5,[2023-10-06 08:29:52],2023-10-09,2023-10-09,[2023-10-27 14:30:49],[2023-11-24 11:31:41],,,,,,,,,,,,,2023-12-22," 
+ A-bracket removed without instruction to close the holes of the removed rivets afterwards.",," 
+ The line fit drawing used for the bracket removal doesn't contains the instruction to close the hole",," 
+ The ATA25 specialist is not aware of the ATA53 requirements to close unused hole (subject drawing was ATA25)",,,,,,[The ATA25 specialist is not aware of the ATA53 requirements to close unused hole (subject drawing was ATA25)],[Mensch-Nicht qualifiziert  ||  People-Not qualified  ||  Persona-No calificado  ||  Personnes-Non qualifiées],,,,,,,,,,,false,,2024-01-25,,,,,CS-ENG.UPG.SMS,,[],[],[],[],,,false
+0,0,184.0,143.0,1A,000210847873,[ALL],1A-SMS  Mismatches in Maintenance Program vs IRD deliveries,2023-11-10,1AXS,1AXS,1IAI,N,1,1,false,00,00,00,0000,,,,,N,,,,,,,,,,,,true,,false,,false,,false,,false,,2023-06-20," 
+ Descrepancies identified between maintenance data (AMM - Aircraft Main, NTM and MPD) and the stress design data (IRD - Inspection Requirement Dossier)",," 
+ N/A",," 
+ Design Office personnel has identified the discreapancy looking on the maintenance data to prepare a change on the IRD on the same area.",," 
+ Design Office",," 
+ By chance",," 
+ Descrepancies identified between maintenance data (AMM - Aircraft Main, NTM and MPD) and the stress design data (IRD - Inspection Requirement Dossier) that could lead to incorrect application of maintenance task",,"[DRFT, S0]",S0,[2023-11-10 10:12:08],2023-11-10,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,false,,,,,,,DOA,,[],[],[],[],,,false
+0,0,176.0,23.0,1-,000210346940,"[A330, BXL, A340, A310, A300]",1-SMS - Possibility of jigs breaking during internal transport in Beluga ST or Beluga XL,2023-07-13,1IALW,1IAI,,N,1,1,false,00,00,00,0000,,,,,N,,,,,,,,[OTHERS],[OTH],[Speak-up 2023-Jun-00],,true,,false,,false,,false,,false,,2023-06-28," 
+ Dans les dossiers de calculs pour les interfaces de transports (jigs): écarts entre le dossier de définition et le dossier de justification de la définition, . 
+  
+ Gaps detected between the definition and the justification dossier of the jigs during the conception process M20129",," 
+ Not relevent.",," 
+ Lors de la revue d'un dossier de calcul d'un bâti de transport par ATI, plusieurs erreurs ont été détectées à posteriori des transports le 26 Juin 2023. 
+ Puis communiqué par Speak-up au SMS network le 28/06/2023 
+  
+ During the review of the calculation dossier of a jib by ATI, several errors have been detected post transportation.",," 
+ ATI",," 
+ Revue d'un dossier de calcul d'un bâti de transport (jig). 
+  
+ Review of a a jig definition set.",," 
+ Errors between definition and justification dossier (not detected during jig conception following the process M20129). Thoses errors can lead to the possibility of jigs breaking during internal transport in Beluga ST or Beluga XL, due to Safety margins potentially not demonstrated (RF<(> 
+ <<)>1) on jigs. 
+  
+ Des erreurs ont été détectées entre le dossier de définition et le dossier de justification (écarts n'ont pas été détectés pendant le processus de conception M20129). Ces écarts pouvant entrainer la rupture des interfaces de transports (jigs) pendant un transport interne en Beluga ST ou Beluga XL. 
+  
+ ",,"[DRFT, S0]",S0,[2023-07-13 09:43:55],2023-07-21,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,false,,,,,,,DOA,,[],[],[],[],,,false
+100,0,94.0,94.0,Pr,000210555507,[A320],Problem in QRH update - All Engine Failure part,2023-09-14,STLI2,STL,QBST,N,1,1,false,09,08,04,0288,,,,,N,,,,,,,,[OCCURENCE],[OCC],[23.06740],,true,,true,,false,,false,,false,,2023-06-12," 
+ The Quick Reference Handbook (QRH) received by Airlines was incomplete for MSN 0053 / 0064 / 0076 
+ The chapter about Engine failure was not properly updated",," 
+ The problem impacted the QRH in chapter about ""Engine Failure"". 
+ QRH directed to the MSN 0053 / 0064 / 0076.",," 
+ when received by the customer",," 
+ First discovered by the customer on MSN 0053 / 0064 / 0076",," 
+ when the customer analyses the changes in the QRH he received",," 
+ QRH update directed to MSN 0053 / 0064 / 0076 was incomplete. 
+ The Engine Failure chapter were incomplete. 
+ Then we discovered a similare problem connected to MSN 5878",,"[DRFT, S0, S1, S4, S5]",S5,[2023-09-14 11:08:08],2023-09-14,2023-09-14,[2023-09-14 16:33:50],[2023-12-11 14:26:47],,,,,,,,,,,,,2023-09-13," 
+ Why “all engine failure” update in QRH is incomplete/wrong ? 
+ Why QHR update on “all engine failure” page (§19.03A) wasn’t available on MSN 53 / 64/ 76 ? 
+ ",," 
+ Because: Invariant 00021126.0001001 attributes “no content” to these MSN",," 
+ because: Invariant wrongly attributed to “No content” as Stack should refer to Engine failure",," 
+ Because: Either 
+ → the date were wrongly analysed, 
+ → there was an incorrect default value selected in HMI, 
+ → this sum of MODs was interpreted as impossible so this sum was attributed the solution “No Content”",," 
+ Conclusion: Stacks of Mods were not explicit / not self-explicit therefore it was not easy to understand what it was about. 
+ Action: --> Clarify naming / formula of stacks during its allocation to a Solution. For example, replace “P1225 and […] and P1370” by FWC_F13",,"[Conclusion: Stacks of Mods were not explicit / not self-explicit therefore it was not easy to understand what it was about.
+Clarify naming / formula of stacks during its allocation to a Solution.
+For example replace “P1225 and […] and P1370” by FWC_F13
+]",[Andere  ||  Autres  ||  Others  ||  Otros],,,,,,,,,,,false,,2024-03-31,,,,,CS-ST.SMS.DOA,,[],[],[],[],,,false

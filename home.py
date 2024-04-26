@@ -252,10 +252,8 @@ with col1:
                             css_styles = container_style, ) : 
         budg = st.container()
     budg.write("Actuals")
-    try:
-        budg.markdown(st.session_state.budg_metr, unsafe_allow_html=True)
-    except:
-        budg.write(":/")
+    budg.markdown(st.session_state.budg_metr, unsafe_allow_html=True)
+
     with stylable_container(key = 'Details_button', css_styles="""button{
                             background-color:#051650;
                             border: 1px solid #ffffff;
@@ -283,6 +281,12 @@ with col2 :
         st.write('Number of open SMS cases')
         st.markdown('<p style = "font-family:Arial; font-size: 30px;">34</p>', unsafe_allow_html= True)
         st.write('Sources of SMS cases')
+        st.table(np.array([
+            ['OCCURENCE', 2],
+            ['SARI', 10],
+            ['TEST', 4],
+            ['OTHERS', 3]
+        ]))
 
 with col3 :
     st.subheader('Assurance')

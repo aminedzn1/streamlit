@@ -10,7 +10,7 @@ st.set_page_config(
 st.title('PPS mock up')
 ###########################################################################################################
 
-pps_data = pd.read_csv(r'data/practical_problem_solving_filtered.csv', dtype = 'string',keep_default_na=False)
+pps_data = pd.read_csv(r'data/SMS FILTERED DATA ADDED COLUMNS (1).csv', dtype = 'string',keep_default_na=False)
 st.subheader('Top 3 SMS cases')
 st.write(pps_data.head(3))
 
