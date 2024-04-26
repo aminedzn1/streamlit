@@ -82,27 +82,26 @@ y_2 = list(data['Actuals (k€)'])
 y_3 = list(data['Commitment (k€)'])
 y_4 = list(data['Target linear (k€)'])
 
-baseline = go.Scatter(
+fig = px.bar(
+    data_frame=data[['Domain/Function','Actuals (k€)','Commitment (k€)']],
+    x='Domain/Function',
+    y=['Actuals (k€)','Commitment (k€)']
+)
+fig.add_trace(go.Scatter(
       x=x,
       y=y_1,
       mode = 'markers',
       marker=dict(symbol = "line-ew-open",color="red",size = 30),
       name = 'Baseline (k€)'
-)
+)) 
 
-target = go.Scatter(
+fig.add_trace(go.Scatter(
       x=x,
       y=y_4,
       mode = 'markers',
       marker=dict(symbol = 'cross', color="green",size = 20),
       name = 'Target (k€)'
-)
-fig = go.Figure(data = [baseline,target])
-fig.add_bar(
-    data_frame=data[['Domain/Function','Actuals (k€)','Commitment (k€)']],
-    x=x,
-    y=['Actuals (k€)','Commitment (k€)']
-)
+)) 
 
 st.plotly_chart(fig, use_container_width=True)
 ###########################################################################################################
