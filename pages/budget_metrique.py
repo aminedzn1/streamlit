@@ -100,7 +100,7 @@ target = go.Scatter(
 spending = go.Bar(
     x=x,
     y=[y_2,y_3],
-    name = ['Actuals (k€)','Commitment (k€)']
+    name = 'test'
 
 )
 fig = go.Figure(data = [baseline,target,spending])
