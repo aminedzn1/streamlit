@@ -246,42 +246,7 @@ with col1:
     
     if details_sqe : 
         switch_page('sqe metrique')
-    ###########################################################################################################    
-
-    st.subheader('Budget')
-    with stylable_container(key = 'metric_container',
-                            css_styles = container_style, ) : 
-        budg = st.container()
-    budg.write("Actuals")
-    budg.markdown(st.session_state.budg_metr, unsafe_allow_html=True)
-
-    with stylable_container(key = 'Details_button', css_styles="""button{
-                            background-color:#051650;
-                            border: 1px solid #ffffff;
-    }""")    :
-        details_budg = st.button('Details', key = 'DETAILSBUDGET')
-    
-    if details_budg : 
-        switch_page('budget metrique')
-###########################################################################################################    
-
-    st.subheader('CASID')
-    with stylable_container(key = 'metric_container',
-                            css_styles = container_style, ) : 
-        cas1, cas2 = st.columns(2)
-    cas1.write('Kick-off')
-    cas1.markdown('<p style = "font-family:Arial; font-size:30px; color:rgb(230, 184, 0); ">2</p>', unsafe_allow_html=True)
-    cas2.write('Nomination')
-    cas2.markdown('<p style = "font-family:Arial; font-size:30px; color:Red; ">4</p>', unsafe_allow_html=True)
-    with stylable_container(key = 'Details_button', css_styles="""button{
-                            background-color:#051650;
-                            border: 1px solid #ffffff;
-    }""")    :
-        details_budg = st.button('Details', key = 'DETAILSCASID')
-    
-    if details_budg : 
-        switch_page('casid metrique')
-###########################################################################################################    
+  
 
 with col2 :
     st.subheader('Risk Management on Systemic Safety Topics')
@@ -299,7 +264,43 @@ with col2 :
         st.markdown('<p style = "font-family:Arial; font-size: 30px;">34</p>', unsafe_allow_html= True)
         st.write('Sources of SMS cases')
         st.markdown(pd.DataFrame(np.array([['OCCURENCE', 2],['SARI', 10],['TEST', 4],['OTHERS', 3]]), columns = ['Source', 'Number']).style.hide(axis="index").to_html(), unsafe_allow_html=True)
+        ###########################################################################################################    
+    col21b,col22b = st.columns(2)
+    with col21b : 
+        st.subheader('Budget')
+        with stylable_container(key = 'metric_container',
+                                css_styles = container_style, ) : 
+            budg = st.container()
+        budg.write("Actuals")
+        budg.markdown(st.session_state.budg_metr, unsafe_allow_html=True)
 
+        with stylable_container(key = 'Details_button', css_styles="""button{
+                                background-color:#051650;
+                                border: 1px solid #ffffff;
+        }""")    :
+            details_budg = st.button('Details', key = 'DETAILSBUDGET')
+        
+        if details_budg : 
+            switch_page('budget metrique')
+###########################################################################################################    
+    with col22b :
+        st.subheader('CASID')
+        with stylable_container(key = 'metric_container',
+                                css_styles = container_style, ) : 
+            cas1, cas2 = st.columns(2)
+        cas1.write('Kick-off')
+        cas1.markdown('<p style = "font-family:Arial; font-size:30px; color:rgb(230, 184, 0); ">2</p>', unsafe_allow_html=True)
+        cas2.write('Nomination')
+        cas2.markdown('<p style = "font-family:Arial; font-size:30px; color:Red; ">4</p>', unsafe_allow_html=True)
+        with stylable_container(key = 'Details_button', css_styles="""button{
+                                background-color:#051650;
+                                border: 1px solid #ffffff;
+        }""")    :
+            details_budg = st.button('Details', key = 'DETAILSCASID')
+        
+        if details_budg : 
+            switch_page('casid metrique')
+###########################################################################################################  
 with col3 :
     st.subheader('Assurance')
     st.subheader('Promotion')
