@@ -33,7 +33,7 @@ st.title('1 & DOA CASID Status')
 casid_data = pd.read_csv(r'data/CASID status - CASID Status .csv', dtype = 'string',keep_default_na=False)
 
 ###########################################################################################################
-df =  casid_data.loc[(casid_data['Current status'] == '4. Internal Kick-off Meeting (KoM) performed') or
+df =  casid_data.loc[(casid_data['Current status'] == '4. Internal Kick-off Meeting (KoM) performed') +
                      (casid_data['Current status'] == '2. CASID introduced to the supplier')]
 
 df = df[['CoC', 'Current status']]
