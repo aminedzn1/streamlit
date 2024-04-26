@@ -98,11 +98,11 @@ target = go.Scatter(
       name = 'Target (k€)'
 )
 fig = go.Figure(data = [baseline,target])
-fig.add_bar(px.bar(
+fig.add_bar(
     data_frame=data[['Domain/Function','Actuals (k€)','Commitment (k€)']],
     x='Domain/Function',
     y=['Actuals (k€)','Commitment (k€)']
-)) 
+)
 
 st.plotly_chart(fig, use_container_width=True)
 ###########################################################################################################
