@@ -14,6 +14,6 @@ pps_data = pd.read_csv(r'data/SMS FILTERED DATA ADDED COLUMNS (1).csv', dtype = 
 speakup_data = pd.read_csv(r'data/Report database non-confidential - Employee speak-up follow-up.csv',dtype = 'string',keep_default_na=False)
 
 speakup_data['Timestamp'] = pd.to_datetime(speakup_data['Timestamp'], dayfirst=True, format='mixed')
-speakup_data['Initial amployee feedback'] = pd.to_datetime(speakup_data['Initial amployee feedback'], dayfirst=True, format='mixed')
+speakup_data['Initial employee feedback'] = pd.to_datetime(speakup_data['Initial employee feedback'], dayfirst=True, format='mixed')
 
 speakup_data['onTime'] = (speakup_data['Initial amployee feedback'] - speakup_data['Timestamp']) > pd.DateOffset(days =21)
