@@ -92,7 +92,7 @@ baseline = go.Scatter(
 
 target = go.Scatter(
       x=x,
-      y=y_1,
+      y=y_4,
       mode = 'markers',
       marker=dict(color="green",size = 20),
       name = 'Target (k€)'
