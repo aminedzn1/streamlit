@@ -40,6 +40,6 @@ df = df[['CoC', 'Current status']]
 df = df.replace({'4. Internal Kick-off Meeting (KoM) performed': 'Kick-off',
                  '2. CASID introduced to the supplier': 'Nomination'})
 
-df = pd.DataFrame(np.array(df.groupby(['CoC','Current status']).size()))
+df = df.groupby(['CoC','Current status']).size().reset_index()
 fig = px.bar(df, x = 'CoC', y = 0, color = 'Current status', barmode='group')
 st.plotly_chart(fig)
