@@ -26,7 +26,7 @@ st.markdown(
 st.title("1 & DOA SMS Dashboard")
 container_style = """
 {
-    background-color: #051650;
+    background-color: #00072d;
     border: 1px solid #ffffff;
     border-radius : 10px;
     padding-left:30px;
