@@ -270,9 +270,9 @@ with col1:
                             css_styles = container_style, ) : 
         cas1, cas2 = st.columns(2)
     cas1.write('Kick-off')
-    cas2.markdown('<p style = "font-family:Arial; font-size:30px; color:Red; ">4</p>', unsafe_allow_html=True)
-    cas2.write('Nomination')
     cas1.markdown('<p style = "font-family:Arial; font-size:30px; color:rgb(230, 184, 0); ">2</p>', unsafe_allow_html=True)
+    cas2.write('Nomination')
+    cas2.markdown('<p style = "font-family:Arial; font-size:30px; color:Red; ">4</p>', unsafe_allow_html=True)
     with stylable_container(key = 'Details_button', css_styles="""button{
                             background-color:#051650;
                             border: 1px solid #ffffff;
