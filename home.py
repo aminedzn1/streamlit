@@ -23,7 +23,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.title("1 & DOA SMS Dashboard")
+st.title("1 & DOA SMS Cockpit")
 container_style = """
 {
     background-color: #051650;
