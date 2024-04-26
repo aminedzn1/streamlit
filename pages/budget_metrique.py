@@ -86,7 +86,7 @@ baseline = go.Scatter(
       x=x,
       y=y_1,
       mode = 'markers',
-      marker=dict(symbol = 'line-ew',color="red",size = 20),
+      marker=dict(color="red",size = 20),
       name = 'Baseline (k€)'
 )
 
@@ -94,7 +94,7 @@ target = go.Scatter(
       x=x,
       y=y_1,
       mode = 'markers',
-      marker=dict(symbol = 'cross-thin',color="green",size = 20),
+      marker=dict(color="green",size = 20),
       name = 'Target (k€)'
 )
 spending = go.Bar(
