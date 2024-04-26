@@ -86,7 +86,7 @@ baseline = go.Scatter(
       x=x,
       y=y_1,
       mode = 'markers',
-      marker=dict(symbol = "-",color="red",size = 20),
+      marker=dict(symbol = "line-ew-open",color="red",size = 40),
       name = 'Baseline (k€)'
 )
 
