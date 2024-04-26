@@ -27,6 +27,7 @@ st.markdown(
 ###########################################################################################################
 
 st.page_link('home.py', label = 'Home', icon = '🏠', use_container_width=True)
+st.title('1 & DOA SMS Budget')
 
 ###########################################################################################################
 
@@ -75,7 +76,37 @@ st.plotly_chart(fig, use_container_width=True)
 
 ###########################################################################################################
 data = pd.read_csv(r'data/sms_budget_f.csv')
+x = list(data['Domain/Function'])
+y_1 = list(data['Baseline (k€)'])
+y_2 = list(data['Actuals (k€)'])
+y_3 = list(data['Commitment (k€)'])
+y_4 = list(data['Target linear (k€)'])
 
+baseline = go.Scatter(
+      x=x,
+      y=y_1,
+      mode = 'markers',
+      symbol = 'line-ew',
+      marker=dict(color="red"),
+      name = 'Baseline (k€)'
+)
+
+target = go.Scatter(
+      x=x,
+      y=y_1,
+      mode = 'markers',
+      symbol = 'cross-thin',
+      marker=dict(color="green"),
+      name = 'Target (k€)'
+)
+spending = px.bar(
+    x=x,
+    y=[y_2,y_3],
+    name = ['Actuals (k€)','Commitment (k€)']
+
+)
+fig = go.Figure(data = [baseline,target,spending])
+st.plotly_chart(fig, use_container_width=True)
 ###########################################################################################################
 with stylable_container(key = 'Details_button', css_styles="""button{
                             background-color:#051650;
