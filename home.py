@@ -307,7 +307,7 @@ with col2 :
         st.markdown('Deployement')
         st.markdown(f'<p style="font-family:Arial; color:white; font-size: 30px;">44 %</p>', unsafe_allow_html=True)
         st.write('DOA ScoreCard')
-        st.markdown(f'<p style="font-family:Arial; color:Green; font-size: 30px;">⬤</p>', unsafe_allow_html=True)
+        st.markdown(f'<p style="font-family:Arial; color:Green; font-size: 40px;">⬤</p>', unsafe_allow_html=True)
     with col22b :
         st.markdown('Number of EASA findings on time')
         st.markdown(f'<p style="font-family:Arial; color:White; font-size: 30px;">1/1</p>', unsafe_allow_html=True)
