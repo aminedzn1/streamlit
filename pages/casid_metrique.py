@@ -52,4 +52,13 @@ for i in df.index :
 df = df.groupby(['CoC','Status']).size().reset_index()
 df = df.rename(columns = {'CoC':'Function/Domain', 0: 'Count'})
 fig = px.bar(df, x = 'Function/Domain', y = 'Count', color = 'Status', barmode='group')
-st.plotly_chart(fig)
+st.plotly_chart(fig, use_container_width='True')
+
+###########################################################################################################
+with stylable_container(key = 'Details_button', css_styles="""button{
+                            background-color:#051650;
+                            border: 1px solid #ffffff;
+    }""")    :
+        details_obj = st.button('Details', key = "DETAILSOBJETS")
+if details_obj : 
+        switch_page('casid display')
