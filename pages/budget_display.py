@@ -33,6 +33,6 @@ st.table(data_budg[filt])
 
 data_func = pd.read_csv(r'data/sms_budget_f.csv')
 
-filt2 = st.multiselect("Filter columns", options = data_func.columns, default = list(data_budg.columns) )
+filt2 = st.multiselect("Filter columns", options = data_func.columns, default = list(data_func.columns) )
 
 st.table(data_budg[filt])
