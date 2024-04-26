@@ -280,11 +280,8 @@ with col2 :
     with col22 : 
         st.write('Number of open SMS cases')
         st.markdown('<p style = "font-family:Arial; font-size: 30px;">34</p>', unsafe_allow_html= True)
-    st.subheader('Sources of SMS cases')
-    with stylable_container(key = 'metric_container',
-                            css_styles = container_style, ) : 
-        source = st.container()
-    source.markdown(pd.DataFrame(np.array([['OCCURENCE', 2],['SARI', 10],['TEST', 4],['OTHERS', 3]]), columns = ['Source', 'Number']).style.hide(axis="index").to_html(), unsafe_allow_html=True)
+        st.write('Sources of SMS cases')
+        st.markdown(pd.DataFrame(np.array([['OCCURENCE', 2],['SARI', 10],['TEST', 4],['OTHERS', 3]]), columns = ['Source', 'Number']).style.hide(axis="index").to_html(), unsafe_allow_html=True)
 
 with col3 :
     st.subheader('Assurance')
