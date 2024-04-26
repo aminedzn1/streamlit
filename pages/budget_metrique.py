@@ -103,7 +103,7 @@ spending = go.Bar(
     name = 'test'
 
 )
-fig = go.Figure(data = [baseline,target,spending])
+fig = go.Figure(data = [baseline,target])
 st.plotly_chart(fig, use_container_width=True)
 ###########################################################################################################
 with stylable_container(key = 'Details_button', css_styles="""button{
