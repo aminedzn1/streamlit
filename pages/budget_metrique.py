@@ -97,13 +97,12 @@ target = go.Scatter(
       marker=dict(symbol = 'cross', color="green",size = 20),
       name = 'Target (k€)'
 )
-spending = go.Bar(
-    x=x,
-    y=[y_2,y_3],
-    name = 'test'
-
+spending = px.bar(
+    data_frame=data[['Domain/Function','Actuals (k€)','Commitment (k€)']],
+    x='Domain/Function',
+    y=['Actuals (k€)','Commitment (k€)']
 )
-fig = go.Figure(data = [baseline,target])
+fig = go.Figure(data = [baseline,target,spending])
 st.plotly_chart(fig, use_container_width=True)
 ###########################################################################################################
 with stylable_container(key = 'Details_button', css_styles="""button{
