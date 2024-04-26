@@ -44,10 +44,10 @@ df =  casid_data.loc[(casid_data['statusus'] >=2)]
 df = df[['CoC', 'statusus']].reset_index()
 df['Status'] = ''
 for i in df.index :
-    if df.iloc[[i, 'statusus']]>= 4 :
-        df.iloc[[i,'Status']] = 'Kick-off'
-    elif df.iloc[[i, 'statusus']]>= 2 :
-        df.iloc[[i,'Status']] = 'Nomination'
+    if df.loc[i, 'statusus']>= 4 :
+        df.loc[i,'Status'] = 'Kick-off'
+    elif df.loc[i, 'statusus']>= 2 :
+        df.loc[i,'Status'] = 'Nomination'
 
 df = df.groupby(['CoC','Status']).size().reset_index()
 df.rename(columns = {'CoC':'Function/Domain', '0': 'Count'})
