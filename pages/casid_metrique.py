@@ -31,15 +31,20 @@ st.title('1 & DOA CASID Status')
 ###########################################################################################################
 
 casid_data = pd.read_csv(r'data/CASID status - CASID Status .csv', dtype = 'string',keep_default_na=False)
+casid_data['statusus'] = casid_data['Current status'].apply(lambda x : int(x[0]))
 
 ###########################################################################################################
-df =  casid_data.loc[(casid_data['Current status'] == '4. Internal Kick-off Meeting (KoM) performed') +
-                     (casid_data['Current status'] == '2. CASID introduced to the supplier')]
+df =  casid_data.loc[(casid_data['statusus'] >=2)]
 
-df = df[['CoC', 'Current status']]
-df = df.replace({'4. Internal Kick-off Meeting (KoM) performed': 'Kick-off',
-                 '2. CASID introduced    to the supplier': 'Nomination'})
-df = df.groupby(['CoC','Current status']).size().reset_index()
-df = df.rename(columns={'CoC' : 'Domain/Function', 0 : 'Count'})
-fig = px.bar(df, x = 'CoC', y = 0, color = 'Current status', barmode='group')
+df = df[['CoC', 'statusus']]
+df['Status'] = ''
+for i in df.index :
+    if df.iloc[i, 'statusus']>= 4 :
+        df.iloc[i,'Status'] = 'Kick-off'
+    elif df.iloc[i, 'statusus']>= 2 :
+        df.iloc[i,'Status'] = 'Nomination'
+
+df = df.groupby(['CoC','Status']).size().reset_index()
+df.rename(columns = {'CoC':'Function/Domain', '0': 'Count'})
+fig = px.bar(df, x = 'Function/Domain', y = 'Count', color = 'Status', barmode='group')
 st.plotly_chart(fig)
