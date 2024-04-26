@@ -280,8 +280,8 @@ with col2 :
     with col22 : 
         st.write('Number of open SMS cases')
         st.markdown('<p style = "font-family:Arial; font-size: 30px;">34</p>', unsafe_allow_html= True)
-        st.write('Sources of SMS cases')
-        st.table(pd.DataFrame(np.array([['OCCURENCE', 2],['SARI', 10],['TEST', 4],['OTHERS', 3]]), columns = ['Source', 'Number']))
+    st.write('Sources of SMS cases')
+    st.table(pd.DataFrame(np.array([['OCCURENCE', 2],['SARI', 10],['TEST', 4],['OTHERS', 3]]), columns = ['Source', 'Number']))
 
 with col3 :
     st.subheader('Assurance')
