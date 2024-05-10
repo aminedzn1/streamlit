@@ -26,8 +26,8 @@ st.markdown(
 st.title("1 & DOA SMS Cockpit")
 container_style = """
 {
-    background-color: #051650;
-    border: 1px solid #ffffff;
+    background-color: #171717;
+    border: 1px solid #373737;
     border-radius : 10px;
     padding-left:30px;
     padding-bottom:30px;
@@ -218,8 +218,8 @@ with col1:
         st.markdown(st.session_state.obj_fil, unsafe_allow_html= True)
 
     with stylable_container(key = 'Details_button', css_styles="""button{
-                            background-color:#051650;
-                            border: 1px solid #ffffff;
+                            background-color:#171717;
+                            border: 1px solid #373737;
     }""")    :
         details_obj = st.button('Details', key = "DETAILSOBJETS")
     if details_obj : 
@@ -239,8 +239,8 @@ with col1:
             st.session_state.sqe_kpi = f.read()
         sqe.markdown(st.session_state.sqe_kpi, unsafe_allow_html=True)
     with stylable_container(key = 'Details_button', css_styles="""button{
-                            background-color:#051650;
-                            border: 1px solid #ffffff;
+                            background-color:#171717;
+                            border: 1px solid #373737;
     }""")    :
         details_sqe = st.button('Details', key = 'DETAILSSQE')
     
@@ -256,8 +256,8 @@ with col1:
     budg.markdown(st.session_state.budg_metr, unsafe_allow_html=True)
 
     with stylable_container(key = 'Details_button', css_styles="""button{
-                            background-color:#051650;
-                            border: 1px solid #ffffff;
+                            background-color:#171717;
+                            border: 1px solid #373737;
     }""")    :
         details_budg = st.button('Details', key = 'DETAILSBUDGET')
     
@@ -274,8 +274,8 @@ with col1:
     cas2.write('Nomination')
     cas2.markdown('<p style = "font-family:Arial; font-size:30px; color:Red; ">4</p>', unsafe_allow_html=True)
     with stylable_container(key = 'Details_button', css_styles="""button{
-                            background-color:#051650;
-                            border: 1px solid #ffffff;
+                            background-color:#171717;
+                            border: 1px solid #373737;
     }""")    :
         details_budg = st.button('Details', key = 'DETAILSCASID')
     
@@ -322,8 +322,8 @@ with col3 :
     promo.markdown(st.session_state.promo, unsafe_allow_html=True)
 
     with stylable_container(key = 'Details_button', css_styles="""button{
-                            background-color:#051650;
-                            border: 1px solid #ffffff;
+                            background-color:#171717;
+                            border: 1px solid #373737;
     }""")    :
         details_promo = st.button('Details', key = 'DETAILSPROMO')
     if details_promo :
@@ -335,8 +335,8 @@ with col3 :
     training.markdown(st.session_state.trained, unsafe_allow_html=True)
 
     with stylable_container(key = 'Details_button', css_styles="""button{
-                            background-color:#051650;
-                            border: 1px solid #ffffff;
+                            background-color:#171717;
+                            border: 1px solid #373737;
     }""")    :
         details_training = st.button('Details', key = 'DETAILSTRAINING')
     if details_training :
