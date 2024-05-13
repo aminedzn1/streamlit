@@ -3,6 +3,8 @@ import pandas as pd
 import numpy as np
 from streamlit_extras.stylable_container import stylable_container 
 from streamlit_extras.switch_page_button import switch_page
+import plotly.express as px
+import plotly.graph_objects as go
 
 st.set_page_config(
      page_title = 'SQE Measure',
@@ -85,13 +87,10 @@ container_style = """
   
 }
 """
-domain = st.selectbox('Fonction / Domaine', ("1","1A","1C","1G","1I","1P","1S","1T","1V","1Y","1Z","B","S","P","Q"))
-with stylable_container(key = 'metric_container',
-                        css_styles = container_style, ) :
-    co = st.container()
-co.markdown(f'<p style="font-family:Arial; color:White; font-size: 20px;">Number of SQE for {domain}</p>', unsafe_allow_html=True) 
-co.markdown(f'<p style="font-family:Arial; color:{sqe_count_domain.loc[domain,"color"]}; font-size: 50px;">{sqe_count_domain.loc[domain,"activeBool"]}</p>', unsafe_allow_html=True)
+sqe_count_domain = sqe_count_domain.rename(columns = {'activeBool' : 'Active SQEs'})
 
+fig = px.bar(sqe_count_domain, x = 'Domain/Function', y = 'Active SQEs')
+st.plotly_chart(fig, use_container_width=True   )
 ###########################################################################################################
 with stylable_container(key = 'Details_button', css_styles="""button{
                             background-color:#051650;
