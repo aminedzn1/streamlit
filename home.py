@@ -268,11 +268,10 @@ with col1:
     st.subheader('CASID')
     with stylable_container(key = 'metric_container',
                             css_styles = container_style, ) : 
-        cas1, cas2 = st.columns(2)
-    cas1.write('Kick-off')
-    cas1.markdown('<p style = "font-family:system-ui; font-size:30px; color:rgb(230, 184, 0); ">2</p>', unsafe_allow_html=True)
-    cas2.write('Nomination')
-    cas2.markdown('<p style = "font-family:system-ui; font-size:30px; color:Red; ">4</p>', unsafe_allow_html=True)
+        casid = st.container()
+    casid.write('Casid status')
+    casid.markdown('<p style = "font-family: system-ui; color: Green; font-size : font-size: 40px;">⬤</p>', unsafe_allow_html=True)
+
     with stylable_container(key = 'Details_button', css_styles="""button{
                             background-color:#171717;
                             border: 1px solid #373737;
