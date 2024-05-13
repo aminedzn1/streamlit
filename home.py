@@ -270,7 +270,7 @@ with col1:
                             css_styles = container_style, ) : 
         casid = st.container()
     casid.write('Casid status')
-    casid.markdown('<p style = "font-family: system-ui; color: Green; font-size : font-size: 40px;">⬤</p>', unsafe_allow_html=True)
+    casid.markdown('<p style = "font-family: system-ui; color: Green; font-size: 40px;">⬤</p>', unsafe_allow_html=True)
 
     with stylable_container(key = 'Details_button', css_styles="""button{
                             background-color:#171717;
