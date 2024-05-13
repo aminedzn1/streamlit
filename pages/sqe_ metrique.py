@@ -89,7 +89,7 @@ container_style = """
 """
 sqe_count_domain = sqe_count_domain.rename(columns = {'activeBool' : 'Active SQEs'})
 
-fig = px.bar(sqe_count_domain, x = 'Domain/Function', y = 'Active SQEs')
+fig = px.bar(sqe_count_domain, y = 'Active SQEs')
 st.plotly_chart(fig, use_container_width=True   )
 ###########################################################################################################
 with stylable_container(key = 'Details_button', css_styles="""button{
