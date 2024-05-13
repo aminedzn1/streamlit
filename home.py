@@ -208,15 +208,15 @@ with col1:
     with stylable_container(key = 'metric_container',
                             css_styles = container_style, ) :
         objectives = st.container()
-    col11, col12 = objectives.columns(2)
-    with col11 :
-        st.write('Accomplished')
-        st.markdown(st.session_state.obj_acc, unsafe_allow_html= True)
+#    col11, col12 = objectives.columns(2)
+#    with col11 :
+#        st.write('Accomplished')
+#        st.markdown(st.session_state.obj_acc, unsafe_allow_html= True)
 
-    with col12 :
-        st.write('Filled')
-        st.markdown(st.session_state.obj_fil, unsafe_allow_html= True)
-
+#    with col12 :
+#        st.write('Filled')
+#        st.markdown(st.session_state.obj_fil, unsafe_allow_html= True)
+    objectives.markdown('<p style = "font-size : 40px;">TBD<p>', unsafe_allow_html=True)
     with stylable_container(key = 'Details_button', css_styles="""button{
                             background-color:#171717;
                             border: 1px solid #373737;
