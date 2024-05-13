@@ -55,7 +55,7 @@ fig = px.bar(df, x = 'Function/Domain', y = 'Count', color = 'Status', barmode='
 #st.plotly_chart(fig, use_container_width=True   )
 
 for coc in df['Function/Domain'] :
-    st.markdown(f'<p> <span> Status for{coc} : </span> <span style = "font-family : Arial ; font-size : 40px; color : Green;">⬤</span></p>', unsafe_allow_html=True)
+    st.markdown(f'<p> <span> Status for {coc} : </span> <span style = "font-family : Arial ; font-size : 40px; color : Green;">⬤</span></p>', unsafe_allow_html=True)
 
 ###########################################################################################################
 with stylable_container(key = 'Details_button', css_styles="""button{
