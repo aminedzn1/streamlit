@@ -205,6 +205,20 @@ st.session_state.trained = text
 col1, col2, col3 = st.columns([1,2,1])
 
 with col1:
+    with stylable_container(key = 'Details_button', css_styles="""button{
+                            background-color:#171717;
+                            opacity: 0.5;
+                            padding-bottom : 80px;
+                            padding-right : 80px ;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            z-index : 1;
+                            border: 1px solid #373737;
+    }""")    :
+        details_obj = st.button('Details', key = "DETAILSOBJETS")
+    if details_obj : 
+        switch_page('objectives metriques')
     st.subheader('Objectives')
     with stylable_container(key = 'metric_container',
                             css_styles = container_style, ) :
@@ -218,20 +232,7 @@ with col1:
 #        st.write('Filled')
 #        st.markdown(st.session_state.obj_fil, unsafe_allow_html= True)
     objectives.markdown('<p style = "font-size : 40px;">TBD<p>', unsafe_allow_html=True)
-    with stylable_container(key = 'Details_button', css_styles="""button{
-                            background-color:#171717;
-                            opacity: 0.5;
-                            padding-top : 60px;
-                            padding-right : 80px ;
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            z-index : 1;
-                            border: 1px solid #373737;
-    }""")    :
-        details_obj = st.button('Details', key = "DETAILSOBJETS")
-    if details_obj : 
-        switch_page('objectives metriques')
+
     
 ###########################################################################################################    
 
