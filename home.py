@@ -201,12 +201,7 @@ st.session_state.trained = text
 ###########################################################################################################
 ###########################################################################################################
 #DAHSBOARD
-
-col1, col2, col3 = st.columns([1,2,1])
-
-with col1:
-    st.subheader('Objectives')
-    with stylable_container(key = 'Details_button', css_styles="""button{
+button_style = """button{
                             background-color:#171717;
                             opacity: 0;
                             padding-bottom : 90px;
@@ -215,7 +210,13 @@ with col1:
                             left: 0;
                             z-index : 1;
                             border: 1px solid #373737;
-    }""")    :
+    }"""
+
+col1, col2, col3 = st.columns([1,2,1])
+
+with col1:
+    st.subheader('Objectives')
+    with stylable_container(key = 'Details_button', css_styles= button_style)    :
         details_obj = st.button('Details', use_container_width= True, key = "DETAILSOBJETS")
     if details_obj : 
         switch_page('objectives metriques')
@@ -237,7 +238,7 @@ with col1:
 ###########################################################################################################    
 
     st.subheader('SQE Nomination')
-    with stylable_container(key = 'Details_button')    :
+    with stylable_container(key = 'Details_button', css_styles= button_style)    :
         details_sqe = st.button('Details', key = 'DETAILSSQE')
     
     with stylable_container(key = 'metric_container',
