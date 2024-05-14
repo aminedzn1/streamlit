@@ -204,12 +204,13 @@ st.session_state.trained = text
 button_style = """button{
                             background-color:#171717;
                             opacity: 0.5;
-                            padding-bottom : auto;
+                            padding-bottom : 50 % ;
                             float :right;
                             position: absolute;
                             top: 0;
                             left: 0;
                             z-index : 1;
+                            margin : 0 ;
                             border: 1px solid #373737;
     }"""
 
