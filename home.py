@@ -25,7 +25,8 @@ st.markdown(
 
 st.title("1 & DOA SMS Cockpit")
 container_style = """
-{
+{   
+    z-index : 0;
     background-color: #171717;
     border: 1px solid #373737;
     border-radius : 10px;
@@ -224,6 +225,7 @@ with col1:
                             position: absolute;
                             top: 0;
                             left: 0;
+                            z-index : 1;
                             border: 1px solid #373737;
     }""")    :
         details_obj = st.button('Details', key = "DETAILSOBJETS")
