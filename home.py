@@ -210,14 +210,13 @@ with col1:
                             background-color:#171717;
                             opacity: 0.5;
                             padding-bottom : 80px;
-                            padding-right : 80px ;
                             position: absolute;
                             top: 0;
                             left: 0;
                             z-index : 1;
                             border: 1px solid #373737;
     }""")    :
-        details_obj = st.button('Details', key = "DETAILSOBJETS")
+        details_obj = st.button('Details', use_container_width= True, key = "DETAILSOBJETS")
     if details_obj : 
         switch_page('objectives metriques')
     
