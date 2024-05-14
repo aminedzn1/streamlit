@@ -44,7 +44,7 @@ X = np.linspace(1, len(Y), num = len(Y))
 
 B0 = sum((Y-np.mean(Y))*(X - np.mean(X)))/np.var(X)
 B1 = np.mean(Y) - B0*np.mean(X)
-
+st.write(y_pro)
 y_pro = list(B0*X+B1)
 
 bar_1 = go.Bar(
