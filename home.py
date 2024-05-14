@@ -208,7 +208,7 @@ with col1:
     st.subheader('Objectives')
     with stylable_container(key = 'Details_button', css_styles="""button{
                             background-color:#171717;
-                            opacity: 0.5;
+                            opacity: 0;
                             padding-bottom : 90px;
                             position: absolute;
                             top: 0;
