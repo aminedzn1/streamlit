@@ -239,14 +239,14 @@ with col1:
     
 ###########################################################################################################    
 
-    st.subheader('SQE Nomination')
+    st.subheader('SQE')
     with stylable_container(key = 'Details_button', css_styles= button_style)    :
         details_sqe = st.button('Details', key = 'DETAILSSQE', use_container_width= True)
     
     with stylable_container(key = 'metric_container',
                             css_styles = container_style, ) :
         sqe = st.container()
-    sqe.write('Domain / Function with SQE')
+    sqe.write('Domain / Function with Active SQE')
     try :    
         sqe.markdown(st.session_state.sqe_kpi, unsafe_allow_html=True)
     except :
