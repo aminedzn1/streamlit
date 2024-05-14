@@ -46,7 +46,7 @@ B0 = sum((Y-np.mean(Y))*(X - np.mean(X)))/np.var(X)
 B1 = np.mean(Y) - B0*np.mean(X)
 
 y_pro = list(B0*X+B1)
-st.write(y_pro)
+st.write(X)
 bar_1 = go.Bar(
     x=x,
     y=y_evo,
