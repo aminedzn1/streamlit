@@ -219,8 +219,8 @@ with col1:
     objectives.markdown('<p style = "font-size : 40px;">TBD<p>', unsafe_allow_html=True)
     with stylable_container(key = 'Details_button', css_styles="""button{
                             background-color:#171717;
-                            opacity: 0;
-                            padding-top : 10px
+                            opacity: 0.5;
+                            padding-top : 80px
                             border: 1px solid #373737;
     }""")    :
         details_obj = st.button('Details', key = "DETAILSOBJETS")
