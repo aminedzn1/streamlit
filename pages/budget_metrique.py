@@ -42,7 +42,7 @@ y_tar = list(data_budg['Target linear evolution (k€)'])
 Y = np.array(y_evo)[~np.isnan(y_evo)]
 X = np.linspace(1, len(Y), num = len(Y))
 
-B0 = sum((Y-np.mean(Y))*(X - np.mean(X)))/np.var(X)
+B0 = sum((Y-np.mean(Y))*(X - np.mean(X)))/np.std(X)
 B1 = np.mean(Y) - B0*np.mean(X)
 
 y_pro = list(B0*X+B1)
