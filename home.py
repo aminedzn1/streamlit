@@ -206,8 +206,8 @@ col1, col2, col3 = st.columns([1,2,1])
 with col1:
     st.subheader('Objectives')
     with stylable_container(key = 'metric_container',
-                            css_styles = container_style, on_click = switch_page('objectives metriques')) :
-        objectives = st.container()
+                            css_styles = container_style, ) :
+        objectives = st.container(on_click = switch_page('objectives metriques'))
 #    col11, col12 = objectives.columns(2)
 #    with col11 :
 #        st.write('Accomplished')
