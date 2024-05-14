@@ -256,36 +256,32 @@ with col1:
         switch_page('sqe metrique')
     ###########################################################################################################    
 
-    st.subheader('Budget')
+    st.subheader('Budget')    
+    with stylable_container(key = 'Details_button', css_styles=button_style)    :
+        details_budg = st.button('Details', key = 'DETAILSBUDGET', use_container_width=True)
+    
     with stylable_container(key = 'metric_container',
                             css_styles = container_style, ) : 
         budg = st.container()
     budg.write("Actuals")
     budg.markdown(st.session_state.budg_metr, unsafe_allow_html=True)
 
-    with stylable_container(key = 'Details_button', css_styles="""button{
-                            background-color:#171717;
-                            border: 1px solid #373737;
-    }""")    :
-        details_budg = st.button('Details', key = 'DETAILSBUDGET')
-    
+
     if details_budg : 
         switch_page('budget metrique')
 ###########################################################################################################    
 
     st.subheader('CASID')
+    with stylable_container(key = 'Details_button', css_styles=button_style)    :
+        details_budg = st.button('Details', key = 'DETAILSCASID', use_container_width=True)
+    
     with stylable_container(key = 'metric_container',
                             css_styles = container_style, ) : 
         casid = st.container()
     casid.write('Casid status')
     casid.markdown('<p style = "font-family: system-ui; color: Green; font-size: 40px;">⬤</p>', unsafe_allow_html=True)
 
-    with stylable_container(key = 'Details_button', css_styles="""button{
-                            background-color:#171717;
-                            border: 1px solid #373737;
-    }""")    :
-        details_budg = st.button('Details', key = 'DETAILSCASID')
-    
+
     if details_budg : 
         switch_page('casid metrique')
 ###########################################################################################################    
