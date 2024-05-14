@@ -209,7 +209,7 @@ with col1:
     with stylable_container(key = 'Details_button', css_styles="""button{
                             background-color:#171717;
                             opacity: 0.5;
-                            padding-bottom : 80px;
+                            padding-bottom : 90px;
                             position: absolute;
                             top: 0;
                             left: 0;
