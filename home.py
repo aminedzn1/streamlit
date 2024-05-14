@@ -239,7 +239,7 @@ with col1:
 
     st.subheader('SQE Nomination')
     with stylable_container(key = 'Details_button', css_styles= button_style)    :
-        details_sqe = st.button('Details', key = 'DETAILSSQE')
+        details_sqe = st.button('Details', key = 'DETAILSSQE', use_container_width= True)
     
     with stylable_container(key = 'metric_container',
                             css_styles = container_style, ) :
