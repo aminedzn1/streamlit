@@ -102,7 +102,7 @@ fig.add_trace(go.Scatter(
       x=x,
       y=y_1,
       mode = 'markers',
-      marker=dict(symbol = "arrow-bar-down",color="red",size = 20,line=dict(width=2, color="#e6e6e6")),
+      marker=dict(symbol = "arrow-bar-down",color="Blue",size = 20,line=dict(width=2, color="#e6e6e6")),
       name = 'Baseline (k€)'
 )) 
 
