@@ -237,6 +237,9 @@ with col1:
 ###########################################################################################################    
 
     st.subheader('SQE Nomination')
+    with stylable_container(key = 'Details_button')    :
+        details_sqe = st.button('Details', key = 'DETAILSSQE')
+    
     with stylable_container(key = 'metric_container',
                             css_styles = container_style, ) :
         sqe = st.container()
@@ -247,12 +250,7 @@ with col1:
         with open('data/sqe_kpi.txt') as f :
             st.session_state.sqe_kpi = f.read()
         sqe.markdown(st.session_state.sqe_kpi, unsafe_allow_html=True)
-    with stylable_container(key = 'Details_button', css_styles="""button{
-                            background-color:#171717;
-                            border: 1px solid #373737;
-    }""")    :
-        details_sqe = st.button('Details', key = 'DETAILSSQE')
-    
+
     if details_sqe : 
         switch_page('sqe metrique')
     ###########################################################################################################    
