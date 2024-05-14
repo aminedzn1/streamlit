@@ -226,7 +226,7 @@ with col1:
                             left: 0;
                             border: 1px solid #373737;
     }""")    :
-        details_obj = objectives.button('Details', key = "DETAILSOBJETS")
+        details_obj = st.button('Details', key = "DETAILSOBJETS")
     if details_obj : 
         switch_page('objectives metriques')
     
