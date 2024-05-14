@@ -39,7 +39,7 @@ y_com = list(data_budg['Commitment (k€)'])
 y_evo = list(data_budg['Actuals evolution (k€)'])
 y_tar = list(data_budg['Target linear evolution (k€)'])
 
-Y = np.array(y_evo)
+Y = np.array(y_evo)[~np.isnan(y_evo)]
 X = np.linspace(1, len(Y), num = len(Y))
 
 B0 = sum((Y-np.mean(Y))*(X - np.mean(X)))/np.var(X)
