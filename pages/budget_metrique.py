@@ -78,7 +78,7 @@ line_2 = go.Scatter(
     zorder=4,
     marker=dict(color="red"),
 )
-fig = go.Figure(data=[bar_1,line_1,line_2])
+fig = go.Figure(data=[bar_1,line_2])
 st.plotly_chart(fig, use_container_width=True)
 
 
