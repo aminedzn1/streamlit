@@ -207,7 +207,7 @@ with col1:
     st.subheader('Objectives')
     with stylable_container(key = 'metric_container',
                             css_styles = container_style, ) :
-        objectives = st.container(on_click = switch_page('objectives metriques'))
+        objectives = st.container()
 #    col11, col12 = objectives.columns(2)
 #    with col11 :
 #        st.write('Accomplished')
@@ -219,6 +219,8 @@ with col1:
     objectives.markdown('<p style = "font-size : 40px;">TBD<p>', unsafe_allow_html=True)
     with stylable_container(key = 'Details_button', css_styles="""button{
                             background-color:#171717;
+                            opacity: 0;
+                            padding-top : 10px
                             border: 1px solid #373737;
     }""")    :
         details_obj = st.button('Details', key = "DETAILSOBJETS")
