@@ -221,6 +221,7 @@ with col1:
                             background-color:#171717;
                             opacity: 0.5;
                             padding-top : 80px
+                            position: relative;
                             border: 1px solid #373737;
     }""")    :
         details_obj = st.button('Details', key = "DETAILSOBJETS")
