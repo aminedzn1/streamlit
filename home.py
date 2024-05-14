@@ -221,7 +221,8 @@ with col1:
     with stylable_container(key = 'Details_button', css_styles="""button{
                             background-color:#171717;
                             opacity: 0.5;
-                            padding-bottom : 20px;
+                            padding-top : 60px;
+                            padding-right : 80px ;
                             position: absolute;
                             top: 0;
                             left: 0;
