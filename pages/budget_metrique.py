@@ -39,26 +39,34 @@ y_com = list(data_budg['Commitment (k€)'])
 y_evo = list(data_budg['Actuals evolution (k€)'])
 y_tar = list(data_budg['Target linear evolution (k€)'])
 
+Y = np.array(y_act)
+X = np.linspace(1, len(Y), num = len(Y))
+
+B0 = sum((Y-np.mean(Y))*(X - np.mean(X)))/np.var(X)
+B1 = np.mean(Y) - B0*np.mean(X)
+
+y_pro = list(B0*X+B1)
 
 bar_1 = go.Bar(
     x=x,
-    y=y_act,
-    name='Actuals (k€)',
+    y=y_evo,
+    name='Actuals evolution (k€)',
     zorder=1,
     marker=dict(color="blue"),
 )
-bar_2 = go.Bar(
-    x=x,
-    y=y_com,
-    name='Commitment (k€)',
-    zorder=2,
-    marker=dict(color="green"),
-)
+#bar_2 = go.Bar(
+#    x=x,
+#    y=y_com,
+#    name='Commitment (k€)',
+#    zorder=2,
+#    marker=dict(color="green"),
+#)
+
 line_1 = go.Scatter(
     x=x,
-    y=y_evo,
+    y=y_pro,
     mode="lines+markers",
-    name='Actuals evolution (k€)',
+    name='Projected trendline (k€)',
     zorder=3,
     marker=dict(color="blue"),
 )
