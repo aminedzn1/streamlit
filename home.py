@@ -63,24 +63,24 @@ array_filled = np.array(pd.Series(array_filled).apply(lambda x : filled_values(x
 
 value = round(array_accomplished.mean()*100 / array_filled.mean(), 2) 
 if value < 50 :
-    st.session_state.obj_acc = f'<p style="font-weight: 900; font-family:system-ui; color:Red; font-size: 40px;">{value} %</p>'
+    st.session_state.obj_acc = f'<p style="font-weight: 900; font-family:system-ui; color:rgb(255,102,102); font-size: 40px;">{value} %</p>'
 
 elif value > 50 and value < 85 :
-    st.session_state.obj_acc = f'<p style="font-weight: 900; font-family:system-ui; color:rgb(230, 184, 0); font-size: 40px;">{value} %</p>'
+    st.session_state.obj_acc = f'<p style="font-weight: 900; font-family:system-ui; color:rgb(255,166,77); font-size: 40px;">{value} %</p>'
 
 elif value > 85 and value <= 100 :
-    st.session_state.obj_acc = f'<p style="font-weight: 900; font-family:system-ui; color:Green; font-size: 40px;">{value} %</p>'
+    st.session_state.obj_acc = f'<p style="font-weight: 900; font-family:system-ui; color:rgb(0,230,115); font-size: 40px;">{value} %</p>'
 
 
 value = round(array_filled.mean()*100, 2)
 if value < 50 :
-    st.session_state.obj_fil = f'<p style="font-weight: 900; font-family:system-ui; color:Red; font-size: 40px;">{value} %</p>'
+    st.session_state.obj_fil = f'<p style="font-weight: 900; font-family:system-ui; color:rgb(255,102,102); font-size: 40px;">{value} %</p>'
 
 elif value > 50 and value < 85 :
-    st.session_state.obj_fil = f'<p style="font-weight: 900; font-family:system-ui; color:rgb(230, 184, 0); font-size: 40px;">{value}  %</p>'
+    st.session_state.obj_fil = f'<p style="font-weight: 900; font-family:system-ui; color:rgb(255,166,77); font-size: 40px;">{value}  %</p>'
 
 elif value > 85 and value <= 100 :
-    st.session_state.obj_fil = f'<p style="font-weight: 900; font-family:system-ui; color:Green; font-size: 40px;">{value} %</p>'
+    st.session_state.obj_fil = f'<p style="font-weight: 900; font-family:system-ui; color:rgb(0,230,115); font-size: 40px;">{value} %</p>'
 ###########################################################################################################
 ###########################################################################################################
 #BUDGET
@@ -99,23 +99,23 @@ tol = .05*y_tar[month]
 if delta < -tol :
     text = f"""
 <p style ="font-weight: 900; font-family:system-ui; font-size:40px; color: White;">{y_evo[month]} k€ \n</p>
-<p style ="font-weight: 900; font-family:system-ui; font-size:20px; color: rgb(230, 184, 0);">Overspend of {delta} k€</p>
+<p style ="font-weight: 900; font-family:system-ui; font-size:20px; color: rgb(255,166,77);">Overspend of {delta} k€</p>
 """
 elif delta > tol :
     text = f"""
 <p style ="font-weight: 900; font-family:system-ui; font-size:40px; color: White;">{y_evo[month]} k€ \n</p>
-<p style ="font-weight: 900; font-family:system-ui; font-size:20px; color: Red;">Underspend of {delta} k€</p>
+<p style ="font-weight: 900; font-family:system-ui; font-size:20px; color: rgb(255,102,102);">Underspend of {delta} k€</p>
 """
 else :
     if delta > 0 :
         text = f"""
     <p style ="font-weight: 900; font-family:system-ui; font-size:40px; color: White;">{y_evo[month]} k€ \n</p>
-    <p style ="font-weight: 900; font-family:system-ui; font-size:20px; color: Green;">Underspend of {delta} k€</p>
+    <p style ="font-weight: 900; font-family:system-ui; font-size:20px; color: rgb(0,230,115);">Underspend of {delta} k€</p>
     """
     else :
         text = f"""
     <p style ="font-weight: 900; font-family:system-ui; font-size:40px; color: White;">{y_evo[month]} k€ \n</p>
-    <p style ="font-weight: 900; font-family:system-ui; font-size:20px; color: Green;">Overspend of {delta} k€</p>
+    <p style ="font-weight: 900; font-family:system-ui; font-size:20px; color: rgb(0,230,115);">Overspend of {delta} k€</p>
     """
 
 st.session_state.budg_metr = text
@@ -151,35 +151,35 @@ for i in sqe_data.index :
 
 for i in sqe_data.index :
     if sqe_data.loc[i,'SQE Active?'] == 'Y' and sqe_data.loc[i, 'dateAlert'] == 0 :
-        sqe_data.loc[i,'color'] = 'Green'
+        sqe_data.loc[i,'color'] = 'rgb(0,230,115)'
     elif sqe_data.loc[i,'SQE Active?'] == 'Y' and sqe_data.loc[i, 'dateAlert'] == 1 :
-        sqe_data.loc[i,'color'] = 'rgb(230, 184, 0)'
+        sqe_data.loc[i,'color'] = 'rgb(255,166,77)'
     else :
-        sqe_data.loc[i,'color'] = 'Red'
+        sqe_data.loc[i,'color'] = 'rgb(255,102,102)'
 ############################################################################################################
 
 sqe_count_domain = sqe_data[['Domain/Function', 'activeBool']].groupby(['Domain/Function']).sum()
 sqe_count_domain['color'] = ''
 for func in sqe_count_domain.index :
     vColor = list(sqe_data.loc[sqe_data['Domain/Function'] == func]['color'])
-    if 'Green' in vColor :
-        sqe_count_domain.loc[func,'color'] = 'Green'
+    if 'rgb(0,230,115)' in vColor :
+        sqe_count_domain.loc[func,'color'] = 'rgb(0,230,115)'
     elif 'rgb(230,184,0)' in vColor :
         sqe_count_domain.loc[func,'color'] = 'rgb(230,184,0)'
     else : 
-        sqe_count_domain.loc[func,'color'] = 'Red'
+        sqe_count_domain.loc[func,'color'] = 'rgb(255,102,102)'
 
 sqe_number = sum(np.array(sqe_count_domain['activeBool']) > 0)
 domain_number = len(sqe_count_domain['activeBool'])
 
 value = f"{sqe_number}/{domain_number}"
 
-if 'Red' in list(sqe_count_domain['color']) :
-    st.session_state.sqe_kpi = f'<p style="font-weight: 900; font-family:system-ui; color:Red; font-size: 40px;">{value}</p>'
-elif 'rgb(230, 184, 0)' in list(sqe_count_domain['color'])  :
-    st.session_state.sqe_kpi = f'<p style="font-weight: 900; font-family:system-ui; color:rgb(230, 184, 0); font-size: 40px;">{value}</p>'
+if 'rgb(255,102,102)' in list(sqe_count_domain['color']) :
+    st.session_state.sqe_kpi = f'<p style="font-weight: 900; font-family:system-ui; color:rgb(255,102,102); font-size: 40px;">{value}</p>'
+elif 'rgb(255,166,77)' in list(sqe_count_domain['color'])  :
+    st.session_state.sqe_kpi = f'<p style="font-weight: 900; font-family:system-ui; color:rgb(255,166,77); font-size: 40px;">{value}</p>'
 else : 
-    st.session_state.sqe_kpi = f'<p style="font-weight: 900; font-family:system-ui; color:Green; font-size: 40px;">{value}</p>'
+    st.session_state.sqe_kpi = f'<p style="font-weight: 900; font-family:system-ui; color:rgb(0,230,115); font-size: 40px;">{value}</p>'
 ###########################################################################################################
 ###########################################################################################################
 #PROMO
@@ -281,11 +281,11 @@ with col1:
                             css_styles = container_style, ) : 
         cas1, cas2, cas3 = st.columns(3)
     cas1.write('On time')
-    cas1.markdown('<p style = "font-weight: 900; font-family: system-ui; color: Green; font-size: 40px;">12</p>', unsafe_allow_html=True)
+    cas1.markdown('<p style = "font-weight: 900; font-family: system-ui; color: rgb(0,230,115); font-size: 40px;">12</p>', unsafe_allow_html=True)
     cas2.write('At risk')
-    cas2.markdown('<p style = "font-weight: 900; font-family: system-ui; color: rgb(230, 184, 0); font-size: 40px;">1</p>', unsafe_allow_html=True)
+    cas2.markdown('<p style = "font-weight: 900; font-family: system-ui; color: rgb(255,166,77); font-size: 40px;">1</p>', unsafe_allow_html=True)
     cas3.write('Late')
-    cas3.markdown('<p style = "font-weight: 900; font-family: system-ui; color: Red; font-size: 40px;">3</p>', unsafe_allow_html=True)
+    cas3.markdown('<p style = "font-weight: 900; font-family: system-ui; color: rgb(255,102,102); font-size: 40px;">3</p>', unsafe_allow_html=True)
 
 
     if details_budg : 
@@ -299,9 +299,9 @@ with col2 :
         col21, col22 = st.columns(2)
     with col21 : 
         st.markdown('Assessement on time')
-        st.markdown(f'<p style="font-weight: 900; font-family:system-ui; color:Red; font-size: 40px;">44 %</p>', unsafe_allow_html=True)
+        st.markdown(f'<p style="font-weight: 900; font-family:system-ui; color:rgb(255,102,102); font-size: 40px;">44 %</p>', unsafe_allow_html=True)
         st.write('Acknowledgement on time')
-        st.markdown(f'<p style="font-weight: 900; font-family:system-ui; color:Green; font-size: 40px;">89 %</p>', unsafe_allow_html=True)
+        st.markdown(f'<p style="font-weight: 900; font-family:system-ui; color:rgb(0,230,115); font-size: 40px;">89 %</p>', unsafe_allow_html=True)
 
     with col22 : 
         st.write('Number of open SMS cases')
@@ -316,7 +316,7 @@ with col2 :
         st.markdown('Deployement')
         st.markdown(f'<p style="font-weight: 900; font-family:system-ui; color:white; font-size: 40px;">44 %</p>', unsafe_allow_html=True)
         st.write('DOA ScoreCard')
-        st.markdown(f'<p style="font-weight: 900; font-family:system-ui; color:Green; font-size: 40px;">⬤</p>', unsafe_allow_html=True)
+        st.markdown(f'<p style="font-weight: 900; font-family:system-ui; color:rgb(0,230,115); font-size: 40px;">⬤</p>', unsafe_allow_html=True)
     with col22b :
         st.markdown('Number of EASA findings on time')
         st.markdown(f'<p style="font-weight: 900; font-family:system-ui; color:White; font-size: 40px;">1/1</p>', unsafe_allow_html=True)
