@@ -204,7 +204,7 @@ st.session_state.trained = text
 #DAHSBOARD
 button_style = """button{
                             background-color:#171717;
-                            opacity: 0.5;
+                            opacity: 0.8;
                             max-height : 100% ;
                             padding-bottom: 100%; 
                             float :right;
