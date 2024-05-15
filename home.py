@@ -63,24 +63,24 @@ array_filled = np.array(pd.Series(array_filled).apply(lambda x : filled_values(x
 
 value = round(array_accomplished.mean()*100 / array_filled.mean(), 2) 
 if value < 50 :
-    st.session_state.obj_acc = f'<p style="font-family:system-ui; color:Red; font-size: 30px;">{value} %</p>'
+    st.session_state.obj_acc = f'<p style="font-weight: bolder; font-family:system-ui; color:Red; font-size: 30px;">{value} %</p>'
 
 elif value > 50 and value < 85 :
-    st.session_state.obj_acc = f'<p style="font-family:system-ui; color:rgb(230, 184, 0); font-size: 30px;">{value} %</p>'
+    st.session_state.obj_acc = f'<p style="font-weight: bolder; font-family:system-ui; color:rgb(230, 184, 0); font-size: 30px;">{value} %</p>'
 
 elif value > 85 and value <= 100 :
-    st.session_state.obj_acc = f'<p style="font-family:system-ui; color:Green; font-size: 30px;">{value} %</p>'
+    st.session_state.obj_acc = f'<p style="font-weight: bolder; font-family:system-ui; color:Green; font-size: 30px;">{value} %</p>'
 
 
 value = round(array_filled.mean()*100, 2)
 if value < 50 :
-    st.session_state.obj_fil = f'<p style="font-family:system-ui; color:Red; font-size: 30px;">{value} %</p>'
+    st.session_state.obj_fil = f'<p style="font-weight: bolder; font-family:system-ui; color:Red; font-size: 30px;">{value} %</p>'
 
 elif value > 50 and value < 85 :
-    st.session_state.obj_fil = f'<p style="font-family:system-ui; color:rgb(230, 184, 0); font-size: 30px;">{value}  %</p>'
+    st.session_state.obj_fil = f'<p style="font-weight: bolder; font-family:system-ui; color:rgb(230, 184, 0); font-size: 30px;">{value}  %</p>'
 
 elif value > 85 and value <= 100 :
-    st.session_state.obj_fil = f'<p style="font-family:system-ui; color:Green; font-size: 30px;">{value} %</p>'
+    st.session_state.obj_fil = f'<p style="font-weight: bolder; font-family:system-ui; color:Green; font-size: 30px;">{value} %</p>'
 ###########################################################################################################
 ###########################################################################################################
 #BUDGET
@@ -98,24 +98,24 @@ tol = .05*y_tar[month]
 
 if delta < -tol :
     text = f"""
-<p style ="font-family:system-ui; font-size:30px; color: White;">{y_evo[month]} k€ \n</p>
-<p style ="font-family:system-ui; font-size:20px; color: rgb(230, 184, 0);">Overspend of {delta} k€</p>
+<p style ="font-weight: bolder; font-family:system-ui; font-size:30px; color: White;">{y_evo[month]} k€ \n</p>
+<p style ="font-weight: bolder; font-family:system-ui; font-size:20px; color: rgb(230, 184, 0);">Overspend of {delta} k€</p>
 """
 elif delta > tol :
     text = f"""
-<p style ="font-family:system-ui; font-size:30px; color: White;">{y_evo[month]} k€ \n</p>
-<p style ="font-family:system-ui; font-size:20px; color: Red;">Underspend of {delta} k€</p>
+<p style ="font-weight: bolder; font-family:system-ui; font-size:30px; color: White;">{y_evo[month]} k€ \n</p>
+<p style ="font-weight: bolder; font-family:system-ui; font-size:20px; color: Red;">Underspend of {delta} k€</p>
 """
 else :
     if delta > 0 :
         text = f"""
-    <p style ="font-family:system-ui; font-size:30px; color: White;">{y_evo[month]} k€ \n</p>
-    <p style ="font-family:system-ui; font-size:20px; color: Green;">Underspend of {delta} k€</p>
+    <p style ="font-weight: bolder; font-family:system-ui; font-size:30px; color: White;">{y_evo[month]} k€ \n</p>
+    <p style ="font-weight: bolder; font-family:system-ui; font-size:20px; color: Green;">Underspend of {delta} k€</p>
     """
     else :
         text = f"""
-    <p style ="font-family:system-ui; font-size:30px; color: White;">{y_evo[month]} k€ \n</p>
-    <p style ="font-family:system-ui; font-size:20px; color: Green;">Overspend of {delta} k€</p>
+    <p style ="font-weight: bolder; font-family:system-ui; font-size:30px; color: White;">{y_evo[month]} k€ \n</p>
+    <p style ="font-weight: bolder; font-family:system-ui; font-size:20px; color: Green;">Overspend of {delta} k€</p>
     """
 
 st.session_state.budg_metr = text
@@ -175,11 +175,11 @@ domain_number = len(sqe_count_domain['activeBool'])
 value = f"{sqe_number}/{domain_number}"
 
 if 'Red' in list(sqe_count_domain['color']) :
-    st.session_state.sqe_kpi = f'<p style="font-family:system-ui; color:Red; font-size: 30px;">{value}</p>'
+    st.session_state.sqe_kpi = f'<p style="font-weight: bolder; font-family:system-ui; color:Red; font-size: 30px;">{value}</p>'
 elif 'rgb(230, 184, 0)' in list(sqe_count_domain['color'])  :
-    st.session_state.sqe_kpi = f'<p style="font-family:system-ui; color:rgb(230, 184, 0); font-size: 30px;">{value}</p>'
+    st.session_state.sqe_kpi = f'<p style="font-weight: bolder; font-family:system-ui; color:rgb(230, 184, 0); font-size: 30px;">{value}</p>'
 else : 
-    st.session_state.sqe_kpi = f'<p style="font-family:system-ui; color:Green; font-size: 30px;">{value}</p>'
+    st.session_state.sqe_kpi = f'<p style="font-weight: bolder; font-family:system-ui; color:Green; font-size: 30px;">{value}</p>'
 ###########################################################################################################
 ###########################################################################################################
 #PROMO
@@ -189,14 +189,14 @@ troismois = pd.Timestamp.today() - pd.DateOffset(months = 3)
 promo = promo.loc[promo['Date']>troismois]
 
 value  = len(list(promo['Date']))
-text =f"<p style = 'font-family:system-ui; font-size:30px; color:White;'>{value}</p>"
+text =f"<p style = 'font-weight: bolder; font-family:system-ui; font-size:30px; color:White;'>{value}</p>"
 st.session_state.promo = text
 ###########################################################################################################
 ###########################################################################################################
 #TRAINED
 network_data = pd.read_csv(r'data/Network Contact list - SMS contact.csv')
 value = round(np.mean(network_data['Trained'] == 'Yes')*100, 2)
-text = f"<p style = 'font-family:system-ui; font-size: 30px;'>{value} %</p>"
+text = f"<p style = 'font-weight: bolder; font-family:system-ui; font-size: 30px;'>{value} %</p>"
 st.session_state.trained = text
 ###########################################################################################################
 ###########################################################################################################
@@ -281,11 +281,11 @@ with col1:
                             css_styles = container_style, ) : 
         cas1, cas2, cas3 = st.columns(3)
     cas1.write('On time')
-    cas1.markdown('<p style = "font-family: system-ui; color: Green; font-size: 30px;">12</p>', unsafe_allow_html=True)
+    cas1.markdown('<p style = "font-weight: bolder; font-family: system-ui; color: Green; font-size: 30px;">12</p>', unsafe_allow_html=True)
     cas2.write('At risk')
-    cas2.markdown('<p style = "font-family: system-ui; color: rgb(230, 184, 0); font-size: 30px;">1</p>', unsafe_allow_html=True)
+    cas2.markdown('<p style = "font-weight: bolder; font-family: system-ui; color: rgb(230, 184, 0); font-size: 30px;">1</p>', unsafe_allow_html=True)
     cas3.write('Late')
-    cas3.markdown('<p style = "font-family: system-ui; color: Red; font-size: 30px;">3</p>', unsafe_allow_html=True)
+    cas3.markdown('<p style = "font-weight: bolder; font-family: system-ui; color: Red; font-size: 30px;">3</p>', unsafe_allow_html=True)
 
 
     if details_budg : 
@@ -299,13 +299,13 @@ with col2 :
         col21, col22 = st.columns(2)
     with col21 : 
         st.markdown('Assessement on time')
-        st.markdown(f'<p style="font-family:system-ui; color:Red; font-size: 30px;">44 %</p>', unsafe_allow_html=True)
+        st.markdown(f'<p style="font-weight: bolder; font-family:system-ui; color:Red; font-size: 30px;">44 %</p>', unsafe_allow_html=True)
         st.write('Acknowledgement on time')
-        st.markdown(f'<p style="font-family:system-ui; color:Green; font-size: 30px;">89 %</p>', unsafe_allow_html=True)
+        st.markdown(f'<p style="font-weight: bolder; font-family:system-ui; color:Green; font-size: 30px;">89 %</p>', unsafe_allow_html=True)
 
     with col22 : 
         st.write('Number of open SMS cases')
-        st.markdown('<p style = "font-family:system-ui; font-size: 30px;">34</p>', unsafe_allow_html= True)
+        st.markdown('<p style = "font-weight: bolder; font-family:system-ui; font-size: 30px;">34</p>', unsafe_allow_html= True)
         st.write('Sources of SMS cases')
         st.markdown(pd.DataFrame(np.array([['OCCURENCE', 2],['SARI', 10],['TEST', 4],['OTHERS', 3]]), columns = ['Source', 'Number']).style.hide(axis="index").to_html(), unsafe_allow_html=True)
     st.subheader('Assurance')
@@ -314,14 +314,14 @@ with col2 :
         col21b, col22b = st.columns(2)
     with col21b : 
         st.markdown('Deployement')
-        st.markdown(f'<p style="font-family:system-ui; color:white; font-size: 30px;">44 %</p>', unsafe_allow_html=True)
+        st.markdown(f'<p style="font-weight: bolder; font-family:system-ui; color:white; font-size: 30px;">44 %</p>', unsafe_allow_html=True)
         st.write('DOA ScoreCard')
-        st.markdown(f'<p style="font-family:system-ui; color:Green; font-size: 40px;">⬤</p>', unsafe_allow_html=True)
+        st.markdown(f'<p style="font-weight: bolder; font-family:system-ui; color:Green; font-size: 40px;">⬤</p>', unsafe_allow_html=True)
     with col22b :
         st.markdown('Number of EASA findings on time')
-        st.markdown(f'<p style="font-family:system-ui; color:White; font-size: 30px;">1/1</p>', unsafe_allow_html=True)
+        st.markdown(f'<p style="font-weight: bolder; font-family:system-ui; color:White; font-size: 30px;">1/1</p>', unsafe_allow_html=True)
         st.markdown('Number of Internal findings on time')
-        st.markdown(f'<p style="font-family:system-ui; color:White; font-size: 30px;">2/3</p>', unsafe_allow_html=True)
+        st.markdown(f'<p style="font-weight: bolder; font-family:system-ui; color:White; font-size: 30px;">2/3</p>', unsafe_allow_html=True)
 with col3 :
     st.subheader('Promotion')
 
