@@ -204,8 +204,8 @@ st.session_state.trained = text
 #DAHSBOARD
 button_style = """button{
                             background-color:#171717;
-                            opacity: 0;
-                            padding-bottom : 33% ;
+                            opacity: 0.5;
+                            padding-bottom : 100% ;
                             float :right;
                             position: absolute;
                             top: 0;
@@ -218,24 +218,26 @@ st.session_state.button_style = button_style
 col1, col2, col3 = st.columns([1,2,1])
 
 with col1:
-    st.subheader('Objectives')
-    with stylable_container(key = 'Details_button', css_styles= button_style)    :
-        details_obj = st.button('Details', use_container_width= True, key = "DETAILSOBJETS")
-    if details_obj : 
-        switch_page('objectives metriques')
-    
-    with stylable_container(key = 'metric_container',
-                            css_styles = container_style, ) :
-        objectives = st.container()
-#    col11, col12 = objectives.columns(2)
-#    with col11 :
-#        st.write('Accomplished')
-#        st.markdown(st.session_state.obj_acc, unsafe_allow_html= True)
+    totobj = st.container()
+    with totobj :
+        st.subheader('Objectives')
+        with stylable_container(key = 'Details_button', css_styles= button_style)    :
+            details_obj = st.button('Details', use_container_width= True, key = "DETAILSOBJETS")
+        if details_obj : 
+            switch_page('objectives metriques')
+        
+        with stylable_container(key = 'metric_container',
+                                css_styles = container_style, ) :
+            objectives = st.container()
+    #    col11, col12 = objectives.columns(2)
+    #    with col11 :
+    #        st.write('Accomplished')
+    #        st.markdown(st.session_state.obj_acc, unsafe_allow_html= True)
 
-#    with col12 :
-#        st.write('Filled')
-#        st.markdown(st.session_state.obj_fil, unsafe_allow_html= True)
-    objectives.markdown('<p style = "font-size : 40px;">TBD<p>', unsafe_allow_html=True)
+    #    with col12 :
+    #        st.write('Filled')
+    #        st.markdown(st.session_state.obj_fil, unsafe_allow_html= True)
+        objectives.markdown('<p style = "font-size : 40px;">TBD<p>', unsafe_allow_html=True)
 
     
 ###########################################################################################################    
