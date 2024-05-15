@@ -298,30 +298,30 @@ with col2 :
                             css_styles = container_style, ) : 
         col21, col22 = st.columns(2)
     with col21 : 
-        st.markdown('<p style = "font-w">Assessement on time')
+        st.markdown("<p style = 'font-weight: bold; font-size: 20px;'>Assessement On Time</p>", unsafe_allow_html=True)
         st.markdown(f'<p style="font-weight: 900; font-family:system-ui; color:rgb(255,102,102); font-size: 40px;">44 %</p>', unsafe_allow_html=True)
-        st.write('Acknowledgement on time')
+        st.markdown("<p style = 'font-weight: bold; font-size: 20px;'>Acknowledgement On Time</p>", unsafe_allow_html=True)
         st.markdown(f'<p style="font-weight: 900; font-family:system-ui; color:rgb(0,230,115); font-size: 40px;">89 %</p>', unsafe_allow_html=True)
 
     with col22 : 
-        st.write('Number of open SMS cases')
+        st.markdown("<p style = 'font-weight: bold; font-size: 20px;'>Number Of SMS Cases</p>", unsafe_allow_html=True)
         st.markdown('<p style = "font-weight: 900; font-family:system-ui; font-size: 40px;">34</p>', unsafe_allow_html= True)
-        st.write('Sources of SMS cases')
+        st.markdown("<p style = 'font-weight: bold; font-size: 20px;'>Sources Of SMS Cases</p>", unsafe_allow_html=True)
         st.markdown(pd.DataFrame(np.array([['OCCURENCE', 2],['SARI', 10],['TEST', 4],['OTHERS', 3]]), columns = ['Source', 'Number']).style.hide(axis="index").to_html(), unsafe_allow_html=True)
     st.subheader('Assurance')
     with stylable_container(key = 'metric_container',
                             css_styles = container_style, ) : 
         col21b, col22b = st.columns(2)
     with col21b : 
-        st.markdown('Deployement')
+        st.markdown("<p style = 'font-weight: bold; font-size: 20px;'>Deployment</p>", unsafe_allow_html=True)
         st.markdown(f'<p style="font-weight: 900; font-family:system-ui; color:white; font-size: 40px;">44 %</p>', unsafe_allow_html=True)
-        st.write('DOA ScoreCard')
-        st.markdown(f'<p style="font-weight: 900; font-family:system-ui; color:rgb(0,230,115); font-size: 40px;">⬤</p>', unsafe_allow_html=True)
+        st.markdown("<p style = 'font-weight: bold; font-size: 20px;'>DOA Score Card</p>", unsafe_allow_html=True)
+        st.markdown(f'<p style="font-weight: 900; font-family:system-ui; color:rgb(0,230,115); font-size: 50px;">⬤</p>', unsafe_allow_html=True)
     with col22b :
-        st.markdown('Number of EASA findings on time')
-        st.markdown(f'<p style="font-weight: 900; font-family:system-ui; color:White; font-size: 40px;">1/1</p>', unsafe_allow_html=True)
+        st.markdown("<p style = 'font-weight: bold; font-size: 20px;'>Number of EASA Findings On Time</p>", unsafe_allow_html=True)
+        st.markdown(f'<p style="font-weight: 900; font-family:system-ui; color:rgb(0,230,115); font-size: 40px;">1/1</p>', unsafe_allow_html=True)
         st.markdown('Number of Internal findings on time')
-        st.markdown(f'<p style="font-weight: 900; font-family:system-ui; color:White; font-size: 40px;">2/3</p>', unsafe_allow_html=True)
+        st.markdown(f'<p style="font-weight: 900; font-family:system-ui; color:rgb(255,166,77); font-size: 40px;">2/3</p>', unsafe_allow_html=True)
 with col3 :
     st.subheader('Promotion')
 
@@ -331,7 +331,7 @@ with col3 :
     with stylable_container(key = 'metric_container',
                             css_styles = container_style, ) : 
         promo = st.container()
-    promo.write("Number of promotions in the last 3 months")
+    promo.markdown(f'<p style="font-weight: bold; font-family:system-ui; font-size: 20px;">Number Of Promotions In The Last Three Months</p>', unsafe_allow_html=True)
     promo.markdown(st.session_state.promo, unsafe_allow_html=True)
 
 
@@ -342,7 +342,7 @@ with col3 :
     with stylable_container(key = 'metric_container',
                             css_styles = container_style, ) : 
         training = st.container()
-    training.write("Trained safety reps")
+    training.markdown(f'<p style="font-weight: bold; font-family:system-ui; font-size: 20px;">Trained Safety Reps</p>', unsafe_allow_html=True)
     training.markdown(st.session_state.trained, unsafe_allow_html=True)
 
 
