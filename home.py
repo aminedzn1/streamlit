@@ -241,24 +241,25 @@ with col1:
 
     
 ###########################################################################################################    
+    totsqe = st.container()
+    with totsqe :
+        st.subheader('SQE')
+        with stylable_container(key = 'Details_button', css_styles= button_style)    :
+            details_sqe = st.button('Details', key = 'DETAILSSQE', use_container_width= True)
+        
+        with stylable_container(key = 'metric_container',
+                                css_styles = container_style, ) :
+            sqe = st.container()
+        sqe.markdown('<p style = "font-weight: bold; font-size: 20px;">Domain / Function with Active SQE</p>', unsafe_allow_html=True)
+        try :    
+            sqe.markdown(st.session_state.sqe_kpi, unsafe_allow_html=True)
+        except :
+            with open('data/sqe_kpi.txt') as f :
+                st.session_state.sqe_kpi = f.read()
+            sqe.markdown(st.session_state.sqe_kpi, unsafe_allow_html=True)
 
-    st.subheader('SQE')
-    with stylable_container(key = 'Details_button', css_styles= button_style)    :
-        details_sqe = st.button('Details', key = 'DETAILSSQE', use_container_width= True)
-    
-    with stylable_container(key = 'metric_container',
-                            css_styles = container_style, ) :
-        sqe = st.container()
-    sqe.markdown('<p style = "font-weight: bold; font-size: 20px;">Domain / Function with Active SQE</p>', unsafe_allow_html=True)
-    try :    
-        sqe.markdown(st.session_state.sqe_kpi, unsafe_allow_html=True)
-    except :
-        with open('data/sqe_kpi.txt') as f :
-            st.session_state.sqe_kpi = f.read()
-        sqe.markdown(st.session_state.sqe_kpi, unsafe_allow_html=True)
-
-    if details_sqe : 
-        switch_page('sqe metrique')
+        if details_sqe : 
+            switch_page('sqe metrique')
     ###########################################################################################################    
 
     st.subheader('Budget')    
