@@ -64,5 +64,14 @@ bar_4= go.Bar(
     zorder=4,
     marker=dict(color="#ADD8E6"),
 )
-fig = go.Figure(data=bar_1)
-st.plotly_chart(bar_1, use_container_width=True)
+col1, col2, = st.columns(2)
+with col1 : 
+    fig = go.Figure(data=bar_1)
+    st.plotly_chart(fig, use_container_width=True)
+    fig = go.Figure(data=bar_2)
+    st.plotly_chart(fig, use_container_width=True)
+with col2 : 
+    fig = go.Figure(data=bar_3)
+    st.plotly_chart(fig, use_container_width=True)
+    fig = go.Figure(data=bar_4)
+    st.plotly_chart(fig, use_container_width=True)
