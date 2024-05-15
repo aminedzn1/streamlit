@@ -23,7 +23,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.title("1 & DOA SMS Cockpit")
+st.title("1 (& DOA ?) SMS Cockpit")
 container_style = """
 {   
     z-index : 0;
@@ -279,9 +279,13 @@ with col1:
     
     with stylable_container(key = 'metric_container',
                             css_styles = container_style, ) : 
-        casid = st.container()
-    casid.write('Casid status')
-    casid.markdown('<p style = "font-family: system-ui; color: Green; font-size: 40px;">⬤</p>', unsafe_allow_html=True)
+        cas1, cas2, cas3 = st.columns()
+    cas1.write('On time')
+    cas1.markdown('<p style = "font-family: system-ui; color: Green; font-size: 30px;">12</p>', unsafe_allow_html=True)
+    cas2.write('At risk')
+    cas2.markdown('<p style = "font-family: system-ui; color: Green; font-size: 30px;">1</p>', unsafe_allow_html=True)
+    cas3.write('Late')
+    cas3.markdown('<p style = "font-family: system-ui; color: Green; font-size: 30px;">3</p>', unsafe_allow_html=True)
 
 
     if details_budg : 
