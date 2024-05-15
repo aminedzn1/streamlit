@@ -206,13 +206,14 @@ button_style = """button{
                             background-color:#171717;
                             opacity: 0.2;
                             padding-bottom : 0 ;
+                            height : 100% ; 
                             float :right;
                             position: absolute;
                             top: 0;
                             left: 0;
                             z-index : 1;
                             margin : 0 ;
-                            border: 50%;
+                            border: 0;
     }"""
 st.session_state.button_style = button_style
 col1, col2, col3 = st.columns([1,2,1])
