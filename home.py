@@ -207,7 +207,9 @@ button_style = """button{
                             opacity: 0.8;
                             max-height : 100% ;
                             padding-bottom: 100%; 
-                            float :right;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
                             z-index : 1;
                             margin : 0 ;
                             border: 1px solid white;
