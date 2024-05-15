@@ -68,17 +68,17 @@ col1, col2, = st.columns(2)
 with col1 : 
     fig = go.Figure(data=bar_1)
     st.plotly_chart(fig, use_container_width=True)
-    st.markdown("<p style ='text-align: center; font-family: Arial; font-size: 20px;'>CASID On Time</p>", unsafe_allow_html=True)
+    st.markdown("<p style ='text-align: center; font-family: Arial; font-size: 40px;'>CASID On Time</p>", unsafe_allow_html=True)
     
     fig = go.Figure(data=bar_2)
     st.plotly_chart(fig, use_container_width=True)
-    st.markdown("<p style ='text-align: center; font-family: Arial; font-size: 20px;'>CASID At Risk</p>", unsafe_allow_html=True)
+    st.markdown("<p style ='text-align: center; font-family: Arial; font-size: 40px;'>CASID At Risk</p>", unsafe_allow_html=True)
 
 with col2 : 
     fig = go.Figure(data=bar_3)
     st.plotly_chart(fig, use_container_width=True)
-    st.markdown("<p style ='text-align: center; font-family: Arial; font-size: 20px;'>CASID Late</p>", unsafe_allow_html=True)
+    st.markdown("<p style ='text-align: center; font-family: Arial; font-size: 40px;'>CASID Late</p>", unsafe_allow_html=True)
 
     fig = go.Figure(data=bar_4)
     st.plotly_chart(fig, use_container_width=True)
-    st.markdown("<p style ='text-align: center; font-family: Arial; font-size: 20px;'>CASID On Follow Up</p>", unsafe_allow_html=True)
+    st.markdown("<p style ='text-align: center; font-family: Arial; font-size: 40px;'>CASID On Follow Up</p>", unsafe_allow_html=True)
