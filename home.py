@@ -246,7 +246,7 @@ with col1:
     with stylable_container(key = 'metric_container',
                             css_styles = container_style, ) :
         sqe = st.container()
-    sqe.write('Domain / Function with Active SQE')
+    sqe.markdown('<p style = "font-weight: bold; font-size: 20px;">Domain / Function with Active SQE</p>', unsafe_allow_html=True)
     try :    
         sqe.markdown(st.session_state.sqe_kpi, unsafe_allow_html=True)
     except :
@@ -265,7 +265,7 @@ with col1:
     with stylable_container(key = 'metric_container',
                             css_styles = container_style, ) : 
         budg = st.container()
-    budg.write("Actuals")
+    budg.markdown("<p style = 'font-weight: bold; font-size: 20px;'>Actuals</p>", unsafe_allow_html=True)
     budg.markdown(st.session_state.budg_metr, unsafe_allow_html=True)
 
 
@@ -280,11 +280,11 @@ with col1:
     with stylable_container(key = 'metric_container',
                             css_styles = container_style, ) : 
         cas1, cas2, cas3 = st.columns(3)
-    cas1.write('On time')
+    cas1.markdown("<p style = 'font-weight: bold; font-size: 20px;'>On Time</p>", unsafe_allow_html=True)
     cas1.markdown('<p style = "font-weight: 900; font-family: system-ui; color: rgb(0,230,115); font-size: 40px;">12</p>', unsafe_allow_html=True)
-    cas2.write('At risk')
+    cas2.markdown("<p style = 'font-weight: bold; font-size: 20px;'>At Risk</p>", unsafe_allow_html=True)
     cas2.markdown('<p style = "font-weight: 900; font-family: system-ui; color: rgb(255,166,77); font-size: 40px;">1</p>', unsafe_allow_html=True)
-    cas3.write('Late')
+    cas3.markdown("<p style = 'font-weight: bold; font-size: 20px;'>Late</p>", unsafe_allow_html=True)
     cas3.markdown('<p style = "font-weight: 900; font-family: system-ui; color: rgb(255,102,102); font-size: 40px;">3</p>', unsafe_allow_html=True)
 
 
@@ -298,7 +298,7 @@ with col2 :
                             css_styles = container_style, ) : 
         col21, col22 = st.columns(2)
     with col21 : 
-        st.markdown('Assessement on time')
+        st.markdown('<p style = "font-w">Assessement on time')
         st.markdown(f'<p style="font-weight: 900; font-family:system-ui; color:rgb(255,102,102); font-size: 40px;">44 %</p>', unsafe_allow_html=True)
         st.write('Acknowledgement on time')
         st.markdown(f'<p style="font-weight: 900; font-family:system-ui; color:rgb(0,230,115); font-size: 40px;">89 %</p>', unsafe_allow_html=True)
