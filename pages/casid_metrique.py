@@ -41,21 +41,21 @@ bar_1 = go.Bar(
     y=ontime,
     name='CASID on time',
     zorder=1,
-    marker=dict(color="Green"),
+    marker=dict(color="rgb(0,230,115)"),
 )
 bar_2= go.Bar(
     x=COC,
     y=risk,
     name='CASID at risk',
     zorder=2,
-    marker=dict(color="rgb(230, 184, 0)"),
+    marker=dict(color="rgb(255, 166,77 )"),
 )
 bar_3= go.Bar(
     x=COC,
     y=late,
     name='CASID late',
     zorder=3,
-    marker=dict(color="Red"),
+    marker=dict(color="rgb(255,102,102)"),
 )
 bar_4= go.Bar(
     x=COC,
