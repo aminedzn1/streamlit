@@ -65,4 +65,4 @@ bar_4= go.Bar(
     marker=dict(color="#ADD8E6"),
 )
 fig = go.Figure(data=bar_1)
-st.plotly_chart(fig, use_container_width=True)
+st.plotly_chart(bar_1, use_container_width=True)
