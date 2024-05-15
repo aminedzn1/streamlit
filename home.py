@@ -213,7 +213,7 @@ button_style = """button{
                             margin : 0 ;
                             border: 1px solid #373737;
     }"""
-
+st.session_state.button_style = button_style
 col1, col2, col3 = st.columns([1,2,1])
 
 with col1:
