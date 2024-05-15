@@ -81,4 +81,4 @@ with col2 :
 
     fig = go.Figure(data=bar_4)
     st.plotly_chart(fig, use_container_width=True)
-    st.markdown("<p style :'text-align: center; font-family: Arial; font-size: 20px;'>CASID On Follow Up</p>", unsafe_allow_html=True)
+    st.markdown("<p style ='text-align: center; font-family: Arial; font-size: 20px;'>CASID On Follow Up</p>", unsafe_allow_html=True)
