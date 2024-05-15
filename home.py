@@ -196,7 +196,7 @@ st.session_state.promo = text
 #TRAINED
 network_data = pd.read_csv(r'data/Network Contact list - SMS contact.csv')
 value = round(np.mean(network_data['Trained'] == 'Yes')*100, 2)
-text = f"<p style = 'font-weight: 900; font-family:system-ui; font-size: 40px;'>{value} %</p>"
+text = f"<p style = 'font-weight: 900; font-family:system-ui;color:rgb(255,166,77);font-size: 40px;'>{value} %</p>"
 st.session_state.trained = text
 ###########################################################################################################
 ###########################################################################################################
