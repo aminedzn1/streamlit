@@ -283,9 +283,9 @@ with col1:
     cas1.write('On time')
     cas1.markdown('<p style = "font-family: system-ui; color: Green; font-size: 30px;">12</p>', unsafe_allow_html=True)
     cas2.write('At risk')
-    cas2.markdown('<p style = "font-family: system-ui; color: Green; font-size: 30px;">1</p>', unsafe_allow_html=True)
+    cas2.markdown('<p style = "font-family: system-ui; color: rgb(230, 184, 0); font-size: 30px;">1</p>', unsafe_allow_html=True)
     cas3.write('Late')
-    cas3.markdown('<p style = "font-family: system-ui; color: Green; font-size: 30px;">3</p>', unsafe_allow_html=True)
+    cas3.markdown('<p style = "font-family: system-ui; color: Red; font-size: 30px;">3</p>', unsafe_allow_html=True)
 
 
     if details_budg : 
