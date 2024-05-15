@@ -309,7 +309,7 @@ with col2 :
         st.markdown('<p style = "font-weight: 900; font-family:system-ui; font-size: 40px;">34</p>', unsafe_allow_html= True)
         st.markdown("<p style = 'font-weight: bold; font-size: 20px;'>Sources Of SMS Cases</p>", unsafe_allow_html=True)
         fig = px.pie(pd.DataFrame(np.array([['OCCURENCE', 2],['SARI', 10],['TEST', 4],['OTHERS', 3]]), columns = ['Source', 'Number']), values= 'Number', names='Source')
-        st.plotly_chart(fig)
+        st.plotly_chart(fig, use_container_width=True)
     st.subheader('Assurance')
     with stylable_container(key = 'metric_container',
                             css_styles = container_style, ) : 
