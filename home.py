@@ -279,7 +279,7 @@ with col1:
     
     with stylable_container(key = 'metric_container',
                             css_styles = container_style, ) : 
-        cas1, cas2, cas3 = st.columns()
+        cas1, cas2, cas3 = st.columns(3)
     cas1.write('On time')
     cas1.markdown('<p style = "font-family: system-ui; color: Green; font-size: 30px;">12</p>', unsafe_allow_html=True)
     cas2.write('At risk')
