@@ -211,7 +211,7 @@ button_style = """button{
                             top: 0;
                             left: 0;
                             z-index : 1;
-                            margin : 0 ;
+                            margin : 10% ;
                             border: 1px solid white;
     }"""
 st.session_state.button_style = button_style
