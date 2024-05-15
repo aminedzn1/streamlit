@@ -320,29 +320,27 @@ with col2 :
         st.markdown(f'<p style="font-family:system-ui; color:White; font-size: 30px;">2/3</p>', unsafe_allow_html=True)
 with col3 :
     st.subheader('Promotion')
+
+    with stylable_container(key = 'Details_button', css_styles=button_style)    :
+        details_promo = st.button('Details', key = 'DETAILSPROMO', use_container_width=True)
+    
     with stylable_container(key = 'metric_container',
                             css_styles = container_style, ) : 
         promo = st.container()
     promo.write("Number of promotions in the last 3 months")
     promo.markdown(st.session_state.promo, unsafe_allow_html=True)
 
-    with stylable_container(key = 'Details_button', css_styles="""button{
-                            background-color:#171717;
-                            border: 1px solid #373737;
-    }""")    :
-        details_promo = st.button('Details', key = 'DETAILSPROMO')
+
     if details_promo :
         switch_page('promotion display')
+    with stylable_container(key = 'Details_button', css_styles=button_style)    :
+        details_training = st.button('Details', key = 'DETAILSTRAINING', use_container_width=True)
     with stylable_container(key = 'metric_container',
                             css_styles = container_style, ) : 
         training = st.container()
     training.write("Trained safety reps")
     training.markdown(st.session_state.trained, unsafe_allow_html=True)
 
-    with stylable_container(key = 'Details_button', css_styles="""button{
-                            background-color:#171717;
-                            border: 1px solid #373737;
-    }""")    :
-        details_training = st.button('Details', key = 'DETAILSTRAINING')
+
     if details_training :
         switch_page('network metrique')
