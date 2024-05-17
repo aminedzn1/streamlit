@@ -103,7 +103,7 @@ fig.add_trace(go.Scatter(
       x=x,
       y=y_1,
       mode = 'markers',
-      marker=dict(symbol = "line-ew-open",color="rgb(191,128,255)",size = 20,line=dict(width=2, color="rgb(191,128,255)")),
+      marker=dict(symbol = "line-ew-open",color="rgb(191,128,255)",size = 40,line=dict(width=2, color="rgb(191,128,255)")),
       name = 'Baseline EOY (k€)'
 )) 
 
@@ -111,7 +111,7 @@ fig.add_trace(go.Scatter(
       x=x,
       y=y_4,
       mode = 'markers',
-      marker=dict(symbol = 'line-ew-open', color="rgb(0,230,115)",size = 20,line=dict(width=2, color="rgb(0,230,115)")),
+      marker=dict(symbol = 'line-ew-open', color="rgb(0,230,115)",size = 40,line=dict(width=2, color="rgb(0,230,115)")),
       name = 'Linear Taget (k€)'
 )) 
 
