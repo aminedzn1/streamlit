@@ -54,7 +54,7 @@ bar_1 = go.Bar(
     y=y_evo,
     name='Actuals evolution (k€)',
     zorder=1,
-    marker=dict(color="blue"),
+    marker=dict(color="#ADD8E6"),
 )
 #bar_2 = go.Bar(
 #    x=x,
@@ -70,7 +70,7 @@ line_1 = go.Scatter(
     mode="lines+markers",
     name='Projected trendline (k€)',
     zorder=3,
-    marker=dict(color="blue"),
+    marker=dict(color="#ADD8E6"),
 )
 line_2 = go.Scatter(
     x=x,
@@ -78,7 +78,7 @@ line_2 = go.Scatter(
     mode="lines",
     name='Target linear evolution (k€)',
     zorder=4,
-    marker=dict(color="Green"),
+    marker=dict(color="rgb(0,230,115)"),
 )
 fig = go.Figure(data=[bar_1,line_1, line_2])
 st.plotly_chart(fig, use_container_width=True)
@@ -102,16 +102,16 @@ fig.add_trace(go.Scatter(
       x=x,
       y=y_1,
       mode = 'markers',
-      marker=dict(symbol = "arrow-bar-down",color="Blue",size = 20,line=dict(width=2, color="#e6e6e6")),
-      name = 'Baseline (k€)'
+      marker=dict(symbol = "line-ew-open",color="rgb(191,128,255)",size = 20,line=dict(width=2, color="rgb(191,128,255)")),
+      name = 'Baseline EOY (k€)'
 )) 
 
 fig.add_trace(go.Scatter(
       x=x,
       y=y_4,
       mode = 'markers',
-      marker=dict(symbol = 'arrow-bar-up', color="green",size = 20,line=dict(width=2, color="#e6e6e6")),
-      name = 'Target (k€)'
+      marker=dict(symbol = 'line-ew-open', color="rgb(0,230,115)",size = 20,line=dict(width=2, color="rgb(0,230,115)")),
+      name = 'Linear Taget (k€)'
 )) 
 
 st.plotly_chart(fig, use_container_width=True)
