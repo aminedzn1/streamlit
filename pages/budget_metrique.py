@@ -54,7 +54,7 @@ bar_1 = go.Bar(
     y=y_evo,
     name='Actuals evolution (k€)',
     zorder=1,
-    marker=dict(color="#4683B7"),
+    marker=dict(color="#1035AC"),
 )
 #bar_2 = go.Bar(
 #    x=x,
