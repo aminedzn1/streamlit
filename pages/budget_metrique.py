@@ -54,7 +54,7 @@ bar_1 = go.Bar(
     y=y_evo,
     name='Actuals evolution (k€)',
     zorder=1,
-    marker=dict(color="#ADD8E6"),
+    marker=dict(color="#000370"),
 )
 #bar_2 = go.Bar(
 #    x=x,
@@ -98,6 +98,7 @@ fig = px.bar(
     x='Domain/Function',
     y=['Actuals (k€)','Commitment (k€)']
 )
+fig.update_traces(marker_color=['#ADD8E6','#000370'])
 fig.add_trace(go.Scatter(
       x=x,
       y=y_1,
