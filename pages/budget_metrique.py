@@ -96,9 +96,9 @@ y_4 = list(data['Target linear (k€)'])
 fig = px.bar(
     data_frame=data[['Domain/Function','Actuals (k€)','Commitment (k€)']],
     x='Domain/Function',
-    y=['Actuals (k€)','Commitment (k€)']
+    y=['Actuals (k€)','Commitment (k€)'],
+    color_discrete_sequence=px.colors.sequential.Blues_r
 )
-fig.update_traces(marker_color = '#000370')
 fig.add_trace(go.Scatter(
       x=x,
       y=y_1,
