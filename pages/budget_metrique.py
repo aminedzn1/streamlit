@@ -98,7 +98,7 @@ fig = px.bar(
     x='Domain/Function',
     y=['Actuals (k€)','Commitment (k€)']
 )
-fig.update_traces(marker_color = {'Commitment (k€)' :'#000370'})
+fig.update_traces(marker_color = '#000370')
 fig.add_trace(go.Scatter(
       x=x,
       y=y_1,
