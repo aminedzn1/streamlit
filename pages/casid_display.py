@@ -27,7 +27,7 @@ file = st.file_uploader('Upload .csv file')
 if file is not None :
     df = pd.read_csv(file)
 
-    df['Opening Date'] = pd.to_datetime(df['Opening Date'])
+    df['Opening Date'] = pd.to_datetime(df['Opening Date'], dayfirst= True)
     df = df.loc[df['Opening Date'] >= pd.to_datetime('22/05/2023')]
     df2 = df[[
         'Opening Date',
