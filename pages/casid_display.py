@@ -62,13 +62,14 @@ if file is not None :
         if df2.loc[i,'Systemic Safety Impact\n\nYes / No'] != 'Yes' and df2.loc[i,'Systemic Safety Impact\n\nYes / No'] != 'No':
                 df2.loc[i,'Systemic Safety Impact\n\nYes / No'] = 'Under review'
 
-    #st.bar_chart(df2['Systemic Safety Impact\n\nYes / No.1'].value_counts())
-    #st.bar_chart(df2['Systemic Safety Impact\n\nYes / No'].value_counts())
+
     
     dfinal = df2[['Title', 'Systemic Safety Impact\n\nYes / No','SMS Officer','Systemic Safety Impact\n\nYes / No.1', 'SMS Officer.1']]
     dfinal = dfinal.rename(columns={
         'Systemic Safety Impact\n\nYes / No' : 'Systemic Safety Impact Yes / No',
         'Systemic Safety Impact\n\nYes / No.1' : 'Systemic Safety Impact Yes / No.1'
     })
-    st.write(dfinal.head())
 
+    st.write(dfinal.head())
+    st.bar_chart(dfinal['Systemic Safety Impact Yes / No.1'].value_counts())
+    st.bar_chart(dfinal['Systemic Safety Impact Yes / No'].value_counts())
