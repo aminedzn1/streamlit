@@ -53,7 +53,7 @@ if file is not None :
 
     for i in df2.index : 
         if type(df2.loc[i,'SMS Officer.1']) == float :
-            df2.loc[i,'Systemic Safety Impact\n\nYes / No.1'] = 'N/A'
+            df2.loc[i,'Systemic Safety Impact\n\nYes / No.1'] = 'Not relevant'
         else :
             if df2.loc[i,'Systemic Safety Impact\n\nYes / No.1'] != 'Yes' and df2.loc[i,'Systemic Safety Impact\n\nYes / No.1'] != 'No':
                 df2.loc[i,'Systemic Safety Impact\n\nYes / No.1'] = 'Under review'
