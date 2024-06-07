@@ -23,8 +23,8 @@ st.markdown(
 ###########################################################################################################
 
 st.title('DOA Concern follow-up file upload')
-df = pd.read_csv(st.file_uploader('Upload .csv file'))
-
+file = st.file_uploader('Upload .csv file')
+df = pd.read_csv(file)
 
 df['Opening Date'] = pd.to_datetime(df['Opening Date'])
 df = df.loc[df['Opening Date'] >= pd.to_datetime('22/05/2023')]
